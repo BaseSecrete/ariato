@@ -1,0 +1,420 @@
+---
+layout: default
+title: Ariato
+---
+<header>
+  <h1>form</h1>
+  <pre><p><span class="badge is-success">CSS</span> elements/form.css</p></pre>
+</header>
+
+<section>
+  <div id="example-form">
+    <form aria-label="form title">
+      <fieldset>
+        <legend>Legend</legend>
+        <label>Text Field:
+          <input type="text" placeholder="placeholder" />
+        </label>
+        <label>Disabled Text Field:
+          <input type="text" disabled value="I'm disabled" />
+        </label>
+        <label>Readonly Text Field:
+          <input type="text" readonly value="I'm readonly" />
+        </label>
+        <label>Text Area:
+          <textarea placeholder="placeholder"></textarea>
+        </label>
+        <label>Disabled Text Area:
+          <textarea placeholder="placeholder" disabled>I'm disabled</textarea>
+        </label>
+        <label>Readonly Text Area:
+          <textarea placeholder="placeholder" readonly>I'm readonly</textarea>
+        </label>
+        <label>Select Element:
+          <div class="select">
+            <select>
+              <optgroup label="Option Group 1">
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+              </optgroup>
+              <optgroup label="Option Group 2">
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3" disabled>Disabled Option</option>
+              </optgroup>
+            </select>
+          </div>
+        </label>
+        <label>
+          Disabled Select Element:
+          <div class="select">
+            <select disabled>
+              <option value="1">Unselectable Option</option>
+              <option value="2">This option should not even be seen</option>
+            </select>
+          </div>
+        </label>
+
+        
+        <label>
+          Select multiple <span class="badge is-error">todo</span>
+          <select multiple="multiple" name="select_multi">
+            <optgroup label="Group 1">
+              <option value="1">Some text goes here </option>
+              <option value="2">Another choice could be here</option>
+              <option value="3">Yet another item to be chosen</option>
+            </optgroup>
+            <optgroup label="Group 2">
+              <option value="4">Some text goes here</option>
+              <option value="5">Another choice could be here</option>
+              <option value="6">Yet another item to be chosen</option>
+            </optgroup>
+            <optgroup label="Group 3">
+              <option value="7">Some text goes here</option>
+              <option value="8">Another choice could be here</option>
+              <option value="9">Yet another item to be chosen</option>
+            </optgroup>
+          </select>
+        </label>
+
+        <fieldset class="is-checkbox">
+          <legend>Radio buttons</legend>
+          <label>
+            <input type="radio" name="radios" value="1" checked /> Radio 1
+          </label>
+
+          <label>
+            <input type="radio" name="radios" value="2" /> Radio 2
+          </label>
+
+          <label>
+            <input type="radio" name="radios" value="3" /> Radio 3
+          </label>
+
+          <label>
+           <!-- span needed to style disabled label-->
+            <input type="radio" name="radios" value="4" disabled /> <span>Radio Disabled</span>
+          </label>
+        </fieldset>
+
+        <fieldset class="is-checkbox">
+          <legend>Checkboxes</legend>
+          <label>
+            <input type="checkbox" name="checkboxes" value="1" checked /> Checkbox 1
+          </label>
+
+          <label>
+            <input type="checkbox" name="checkboxes" value="2" /> Checkbox 2
+          </label>
+
+          <label>
+            <input type="checkbox" name="checkboxes" value="3" /> Checkbox 3
+          </label>
+
+          <label>
+           <!-- span needed to style disabled label-->
+            <input type="checkbox" name="checkboxes" value="4" disabled /> <span>Checkbox Disabled</span>
+          </label>
+        </fieldset>
+
+        <fieldset class="is-checkbox">
+          <legend>Switches</legend>
+          <label>
+            <input type="checkbox" class="is-switch" name="checkboxes" value="1" checked /> Checkbox 1
+          </label>
+
+          <label>
+            <input type="checkbox" class="is-switch" name="checkboxes" value="2" /> Checkbox 2
+          </label>
+
+          <label>
+            <input type="checkbox" class="is-switch" name="checkboxes" value="3" /> Checkbox 3
+          </label>
+
+          <label>
+           <!-- span needed to style disabled label-->
+            <input type="checkbox" class="is-switch" name="checkboxes" value="4" disabled /> <span>Checkbox Disabled</span>
+          </label>
+        </fieldset>
+
+        <label>Email:
+          <input type="email" placeholder="placeholder" />
+        </label>
+
+        <label>Password:
+          <input type="password" placeholder="placeholder" />
+        </label>
+
+        <label>File Input:
+          <input type="file" placeholder="placeholder" />
+        </label>
+
+        <label>URL:
+          <input type="url" placeholder="placeholder" />
+        </label>
+
+        <label>Telephone:
+          <input type="tel" placeholder="placeholder" />
+        </label>
+
+        <label>Number:
+          <input type="number" placeholder="placeholder" />
+        </label>
+
+        <label>Search:
+          <input type="search" placeholder="placeholder" />
+        </label>
+
+        <label>Date:
+          <input type="date" placeholder="placeholder" />
+        </label>
+
+        <label>Time:
+          <input type="time" placeholder="placeholder" />
+        </label>
+
+        <label>Color:
+          <input type="color" placeholder="placeholder" />
+        </label>
+
+        <label>Datalist:
+          <input list="browsers" name="browser" type="datalist" />
+          <datalist id="browsers">
+            <option value="Internet Explorer" />
+            <option value="Firefox" />
+            <option value="Chrome" />
+            <option value="Opera" />
+            <option value="Safari" />
+          </datalist>
+        </label>
+
+        <label>Range:
+          <input type="range" name="points" min="1" max="10" />
+        </label>
+
+        <label>Output:
+          <output name="result">42</output>
+        </label>
+
+        <label>Progress:
+          <progress value="50" max="100"></progress>
+        </label>
+
+        <label>Meter:
+          <meter min="200" max="500" value="350"><span>350 degrees</span></meter>
+        </label>
+
+        <label>Meter:
+          <meter min="0" value="20" low="30" optimum="50" high="90" max="100"></meter>
+        </label>
+
+        <button class="button">Button Element</button>
+        <input type="button" value="Input button">
+        <input class="button" type="reset" value="Clear" />
+        <input class="button" type="submit" value="Submit" />
+      </fieldset>
+    </form>
+    
+  </div>
+  <aside>
+    <pre class="language-markup"><code data-code-example="example-form"></code></pre>
+  </aside>
+</section>
+
+
+<section>
+  <div id="example-form-2">
+    <form aria-label="form title">
+      <fieldset>
+        <legend>Legend</legend>
+        <label for="input">Text Field:</label>
+        <input id="input" type="text" placeholder="placeholder" />
+
+        <label for="input-disabled">Disabled Text Field:</label>
+        <input id="input-disabled" type="text" disabled value="I'm disabled" />
+
+        <label for="input-readonly">Readonly Text Field:</label>
+        <input id="input-readonly" type="text" readonly value="I'm readonly" />
+
+        <label for="textarea">Text Area:</label>
+        <textarea id="textarea" placeholder="placeholder"></textarea>
+        
+        <label for="textarea-disabled">Disabled Text Area:</label>
+        <textarea id="textarea-disabled" placeholder="placeholder" disabled>I'm disabled</textarea>
+
+        <label for="textarea-readonly">Disabled Text Area:</label>
+        <textarea id="textarea-readonly" placeholder="placeholder" readonly>I'm readonly</textarea>
+        
+        <label for="select-element">Select Element:</label>
+        <div class="select">
+          <select id="select-element">
+            <optgroup label="Option Group 1">
+              <option value="1">Option 1</option>
+              <option value="2">Option 2</option>
+            </optgroup>
+            <optgroup label="Option Group 2">
+              <option value="1">Option 1</option>
+              <option value="2">Option 2</option>
+              <option value="3" disabled>Disabled Option</option>
+            </optgroup>
+          </select>
+        </div>
+
+        <label for="select-element-disabled">Disabled Select Element:</label>
+        <div class="select">
+          <select id="select-element-disabled" disabled>
+            <option value="1">Unselectable Option</option>
+            <option value="2">This option should not even be seen</option>
+          </select>
+        </div>
+
+        <!--
+        <label>
+          Select multiple <span class="badge is-error">todo</span>
+          <select multiple="multiple" name="select_multi">
+            <optgroup label="Group 1">
+              <option value="1">Some text goes here </option>
+              <option value="2">Another choice could be here</option>
+              <option value="3">Yet another item to be chosen</option>
+            </optgroup>
+            <optgroup label="Group 2">
+              <option value="4">Some text goes here</option>
+              <option value="5">Another choice could be here</option>
+              <option value="6">Yet another item to be chosen</option>
+            </optgroup>
+            <optgroup label="Group 3">
+              <option value="7">Some text goes here</option>
+              <option value="8">Another choice could be here</option>
+              <option value="9">Yet another item to be chosen</option>
+            </optgroup>
+          </select>
+        </label>
+        -->
+
+        <fieldset class="is-checkbox">
+          <legend>Radio buttons</legend>
+          <label>
+            <input type="radio" name="radios" value="1" checked /> Radio 1
+          </label>
+
+          <label>
+            <input type="radio" name="radios" value="2" /> Radio 2
+          </label>
+
+          <label>
+            <input type="radio" name="radios" value="3" /> Radio 3
+          </label>
+
+          <label>
+           <!-- span needed to style disabled label-->
+            <input type="radio" name="radios" value="4" disabled /> <span>Radio Disabled</span>
+          </label>
+        </fieldset>
+
+        <fieldset class="is-checkbox">
+          <legend>Checkboxes</legend>
+          <label>
+            <input type="checkbox" name="checkboxes" value="1" checked /> Checkbox 1
+          </label>
+
+          <label>
+            <input type="checkbox" name="checkboxes" value="2" /> Checkbox 2
+          </label>
+
+          <label>
+            <input type="checkbox" name="checkboxes" value="3" /> Checkbox 3
+          </label>
+
+          <label>
+           <!-- span needed to style disabled label-->
+            <input type="checkbox" name="checkboxes" value="4" disabled /> <span>Checkbox Disabled</span>
+          </label>
+        </fieldset>
+
+        <label>Email:
+          <input type="email" placeholder="placeholder" />
+        </label>
+
+        <label>Password:
+          <input type="password" placeholder="placeholder" />
+        </label>
+
+        <label>File Input:
+          <input type="file" placeholder="placeholder" />
+        </label>
+
+        <label>URL:
+          <input type="url" placeholder="placeholder" />
+        </label>
+
+        <label>Telephone:
+          <input type="tel" placeholder="placeholder" />
+        </label>
+
+        <label>Number:
+          <input type="number" placeholder="placeholder" />
+        </label>
+
+        <label>Search:
+          <input type="search" placeholder="placeholder" />
+        </label>
+
+        <label>Date:
+          <input type="date" placeholder="placeholder" />
+        </label>
+
+        <label>Time:
+          <input type="time" placeholder="placeholder" />
+        </label>
+
+        <label>Color:
+          <input type="color" placeholder="placeholder" />
+        </label>
+
+        <label>Datalist:
+          <input list="browsers" name="browser" type="datalist" />
+          <datalist id="browsers">
+            <option value="Internet Explorer" />
+            <option value="Firefox" />
+            <option value="Chrome" />
+            <option value="Opera" />
+            <option value="Safari" />
+          </datalist>
+        </label>
+
+        <label>Range:
+          <input type="range" name="points" min="1" max="10" />
+        </label>
+
+        <label>Output:
+          <output name="result">42</output>
+        </label>
+
+        <label>Progress:
+          <progress value="50" max="100"></progress>
+        </label>
+
+        <label>Meter:
+          <meter min="200" max="500" value="350">350 degrees</meter>
+        </label>
+
+        <!--<label>meter
+          <meter min="0" low="10" optimum="50" high="90" max="100"></meter>
+        </label>
+
+        <meter max="256" value="120" title="GB">120GB out of 256GB are used</meter>
+
+        <meter max="120" value="55.93" title="GB"></meter>-->
+
+        <button class="button">Button Element</button>
+        <input type="button" value="Input button">
+        <input class="button" type="reset" value="Clear" />
+        <input class="button" type="submit" value="Submit" />
+      </fieldset>
+    </form>
+    
+  </div>
+  <aside>
+    <pre class="language-markup"><code data-code-example="example-form-2"></code></pre>
+  </aside>
+</section>

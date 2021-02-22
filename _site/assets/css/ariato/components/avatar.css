@@ -1,0 +1,62 @@
+.avatar,
+a.avatar {
+  display: block;
+  position: relative;
+  height: var(--space-5x);
+  width: var(--space-5x);
+  background: rgba(var(--color-grey-50), 1);
+  border-radius: 50%;
+  box-shadow: 0 0 0 var(--space-1-4) rgba(var(--color-bg), 1);
+  overflow: hidden;
+  text-decoration: none;
+  text-align: center;
+  line-height: var(--space-5x);
+}
+
+.avatar:after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  box-shadow: 0 1px 2px 0 rgba(var(--color-black), 0.1) inset;
+}
+
+.avatar img {
+  height: 100%;
+  margin: 0;
+}
+
+@supports (object-fit: cover) {
+  .avatar img {
+    position: absolute;
+    object-fit: cover;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.avatar-group {
+  padding: 0;
+}
+
+.avatar-group li {
+  list-style-type: none;
+  height: var(--space-5x);
+}
+
+.avatar-group li + li {
+  margin-left: calc(var(--space) * -1);
+}
+
+.avatar-group .avatar:hover {
+  z-index: 20;
+}
+
+
+.avatar.is-large {
+  height: var(--space-9x);
+  width: var(--space-9x);
+  line-height: var(--space-9x);
+}

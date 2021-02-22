@@ -1,0 +1,60 @@
+---
+layout: default
+title: Ariato
+---
+<header>
+  <h1>carousel</h1>
+  <pre><p><span class="badge is-success">CSS</span> components/carousel.css <br><span class="badge is-warning">JS</span> ariato/carousel.js</p></pre>
+</header>
+
+<section>
+  <div id="example-carousel">
+    <section class="carousel" aria-roledescription="carousel" aria-label="Carousel label">
+
+      <nav aria-label="carousel controls">
+        <div role="group" aria-label="carousel controls">
+          <button type="button" aria-label="Previous Slide" data-carousel="previous">&#8249;</button>
+          <button type="button" aria-label="Stop automatic slide show">&#9632;</button>
+          <button type="button" aria-label="Next Slide" data-carousel="next">&#8250;</button>
+        </div>
+      </nav>
+
+      <div class="carousel__body" aria-live="off">
+        <div aria-current="slide" role="group" aria-roledescription="slide" aria-label="1 of 3">
+          <picture class="slide__image is-3-2">
+            <img src='/assets/images/1.jpg' alt="image 1" />
+          </picture>
+          <div class="slide__body">
+            <h3>Title slide 1</a> </h3>
+            <p>Lorem ipsum</p>
+          </div>
+        </div>
+
+        <div role="group" aria-roledescription="slide" aria-label="2 of 3">
+          <picture class="slide__image is-3-2">
+            <img src='/assets/images/2.jpg' alt="image 2" />
+          </picture>
+          <div class="slide__body">
+            <h3>Title slide 2</h3>
+            <p>Lorem ipsum</p>
+          </div>
+        </div>
+
+        <div role="group" aria-roledescription="slide" aria-label="3 of 3">
+          <picture class="slide__image is-3-2">
+            <img src='/assets/images/3.jpg' alt="image 3" />
+          </picture>
+          <div class="slide__body">
+            <h3>Title slide 3</h3>
+            <p>Lorem ipsum</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /.carousel -->
+
+  </div>
+  <aside>
+    <pre class="language-markup"><code data-code-example="example-carousel"></code></pre>
+  </aside>   
+</section>

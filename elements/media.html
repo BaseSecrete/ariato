@@ -1,0 +1,48 @@
+---
+layout: default
+title: Ariato
+---
+<header>
+  <h1>media</h1>
+  <pre><p><span class="badge is-success">CSS</span> elements/media.css</p></pre>
+</header>
+
+<section>
+  <header>audio element</header>
+  <div id="example-audio">
+    <audio controls>
+      <source src="https://simpl.info/audio/audio/audio.ogv" type="audio/ogg" />
+      <source src="https://simpl.info/audio/audio/audio.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+  <aside>
+    <pre class="language-markup"><code data-code-example="example-audio"></code></pre>
+  </aside>
+</section>
+
+<section>
+  <header>video element</header>
+  <div id="example-video">
+    <video width="320" height="240" controls>
+      <source src="https://www.html5rocks.com/en/tutorials/video/basics/devstories.webm" type='video/webm;codecs="vp8, vorbis"' />
+      <source src="https://www.html5rocks.com/en/tutorials/video/basics/devstories.mp4" type='video/mp4;codecs="avc1.42E01E, mp4a.40.2"' />
+      <track src="https://www.html5rocks.com/en/tutorials/video/basics/devstories-en.vtt" label="English subtitles" kind="subtitles" srclang="en" default />
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  <aside>
+    <pre class="language-markup"><code data-code-example="example-video"></code></pre>
+  </aside>
+</section>
+
+<section>
+  <header>embedded content</header>
+  <div id="example-embed">
+    <p>YouTube video (iframe):</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/l4f9QF0SGuQ" frameborder="0" allowfullscreen></iframe>
+  </div>
+  <aside>
+    <pre class="language-markup"><code data-code-example="example-embed"></code></pre>
+  </aside>
+</section>

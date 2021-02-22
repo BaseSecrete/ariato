@@ -1,0 +1,34 @@
+ul,
+ol,
+dl {
+  margin: 0;
+  padding: 6px 0 18px 24px;
+}
+
+ul ul,
+ol ol,
+ol ul {
+  padding: 0 0 0 24px;
+}
+
+ul.is-nobullet {
+  list-style-type: none;
+  padding: 0;
+}
+
+dl {
+  padding: 6px 0 18px 0;
+}
+
+dt {
+  font-weight: var(--font-weight-700);
+  color: rgba(var(--color-grey-700), 1);
+}
+
+dd {
+  margin: 0;
+}
+
+dd + dt {
+  margin-top: var(--space-3x)
+}

@@ -1,0 +1,70 @@
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: flex;
+  width: auto;
+  line-height: 40px;
+  text-align: center;
+  padding: 0 24px 0 24px;
+}
+
+
+
+.switch[aria-pressed="true"] {
+  background: transparent;
+  color: rgba(var(--color-grey-700), 1);
+  box-shadow: 0 0 0 1px rgba(var(--color-grey-200), 1) inset;
+ 
+}
+
+.switch:hover {
+  box-shadow: 0 0 0 1px rgba(var(--color-grey-300), 1) inset, var(--box-shadow-s);
+
+}
+
+.switch:focus {
+  color: rgba(var(--color-grey-700), 1);
+  outline: 2px solid rgba(var(--color-blue-200), 1);
+}
+
+.switch[aria-pressed="true"] .slider {
+  background: rgba(var(--color-blue-100), 1);
+  box-shadow: 0 0 0 1px rgba(var(--color-blue-300), 1);
+}
+
+.switch[aria-pressed="true"] .slider:before {
+  -webkit-transform: translateX(var(--space-2x));
+  -ms-transform: translateX(var(--space-2x));
+  transform: translateX(var(--space-2x));
+  background-color: rgba(var(--color-blue-600), 1);
+}
+
+/* The slider */
+.slider {
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  width: calc(var(--space-4x) - 2px);
+  height: calc(var(--space-2x) - 2px);
+  background-color: rgba(var(--color-grey-00), 0);
+  box-shadow: 0 0 0 1px rgba(var(--color-grey-200), 1),
+    var(--box-inset-shadow-s);
+  border-radius: var(--space);
+  -webkit-transition: .4s;
+  transition: .4s;
+  margin-left: var(--space);
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  border-radius: 4px;
+  left: 3px;
+  bottom: 3px;
+  background-color: rgba(var(--color-grey-300), 1);
+  box-shadow: var(--box-shadow-m);
+  -webkit-transition: .4s;
+  transition: .4s;
+}

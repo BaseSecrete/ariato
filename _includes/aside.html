@@ -1,0 +1,47 @@
+{% assign current = page.url %}
+<aside aria-label="sidebar"> <!-- role="complementary" is implicit, and since we have more than one complementary landmarks on a page, we need an aria-label -->
+  <nav aria-label="sidebar">
+    <ul role="menu" aria-label="Design tokens">
+      <li role="menuitem" aria-haspopup="true" aria-expanded="true" tabindex="0"><span class="menu__title">Design tokens</span>
+        <ul role="menu" aria-label="Design tokens">
+          <li role="none"><a role="menuitem" href="/design_tokens/color" tabindex="-1" {% if current == '/design_tokens/color.html' %}aria-current=true{% endif %}>color</a></li>
+          <li role="none"><a role="menuitem" href="/design_tokens/font" tabindex="-1" {% if current == '/design_tokens/font.html' %}aria-current=true{% endif %}>font</a></li>
+          <li role="none"><a role="menuitem" href="/design_tokens/shadow" tabindex="-1" {% if current == '/design_tokens/shadow.html' %}aria-current=true{% endif %}>shadow</a></li>
+          <li role="none"><a role="menuitem" href="/design_tokens/shape" tabindex="-1" {% if current == '/design_tokens/shape.html' %}aria-current=true{% endif %}>shape</a></li>
+          <li role="none"><a role="menuitem" href="/design_tokens/space" tabindex="-1" {% if current == '/design_tokens/space.html' %}aria-current=true{% endif %}>space</a></li>
+        </ul>
+      </li>
+      <li role="menuitem" aria-haspopup="true" aria-expanded="true" tabindex="0"><span class="menu__title">Elements</span>
+        <ul role="menu" aria-label="Elements">
+          <li role="none"><a href="/elements/button" role="menuitem" tabindex="-1" {% if current == '/elements/button.html' %}aria-current=true{% endif %}>button</a></li>
+          <li role="none"><a href="/elements/code" role="menuitem" tabindex="-1" {% if current == '/elements/code.html' %}aria-current=true{% endif %}>code</a></li>
+          <li role="none"><a href="/elements/form" role="menuitem" tabindex="-1" {% if current == '/elements/form.html' %}aria-current=true{% endif %}>form</a></li>
+          <li role="none"><a href="/elements/image" role="menuitem" tabindex="-1" {% if current == '/elements/image.html' %}aria-current=true{% endif %}>image</a></li>
+          <li role="none"><a href="/elements/list" role="menuitem" tabindex="-1" {% if current == '/elements/list.html' %}aria-current=true{% endif %}>list</a></li>
+          <li role="none"><a href="/elements/media" role="menuitem" tabindex="-1" {% if current == '/elements/media.html' %}aria-current=true{% endif %}>media</a></li> 
+          <li role="none"><a href="/elements/table" role="menuitem" tabindex="-1" {% if current == '/elements/table.html' %}aria-current=true{% endif %}>table</a></li>
+          <li role="none"><a role="menuitem" href="/elements/text" tabindex="-1" {% if current == '/elements/text.html' %}aria-current=true{% endif %}>text</a></li>
+        </ul>
+      </li>
+      <li role="menuitem" aria-haspopup="true" aria-expanded="true" tabindex="0"><span class="menu__title">Components</span>
+        <ul role="menu" aria-label="Components">
+          <li role="none"><a href="/components/accordion" role="menuitem" tabindex="-1" {% if current == '/components/accordion.html' %}aria-current=true{% endif %}>accordion<span class="badge is-warning">JS</span></a></li>
+          <li role="none"><a href="/components/alert" role="menuitem" tabindex="-1" {% if current == '/components/alert.html' %}aria-current=true{% endif %}>alert</a></li>
+          <li role="none"><a href="/components/avatar" role="menuitem" tabindex="-1" {% if current == '/components/avatar.html' %}aria-current=true{% endif %}>avatar</a></li>
+          <li role="none"><a href="/components/badge" role="menuitem" tabindex="-1" {% if current == '/components/badge.html' %}aria-current=true{% endif %}>badge</a></li>
+          <li role="none"><a href="/components/breadcrumb" role="menuitem" tabindex="-1" {% if current == '/components/breadcrumb.html' %}aria-current=true{% endif %}>breadcrumb</a></li>
+          <li role="none"><a href="/components/card" role="menuitem" tabindex="-1" {% if current == '/components/card.html' %}aria-current=true{% endif %}>card</a></li>
+          <li role="none"><a href="/components/carousel" role="menuitem" tabindex="-1" {% if current == '/components/carousel.html' %}aria-current=true{% endif %}>carousel<span class="badge is-warning">JS</span></a></li>
+          <li role="none"><a href="/components/dialog" role="menuitem" tabindex="-1" {% if current == '/components/dialog.html' %}aria-current=true{% endif %}>dialog<span class="badge is-warning">JS</span></a></li>
+          <li role="none"><a href="/components/grid_auto" role="menuitem" tabindex="-1" {% if current == '/components/grid_auto.html' %}aria-current=true{% endif %}>grid-auto</a></li>
+          <li role="none"><a href="/components/group" role="menuitem" tabindex="-1" {% if current == '/components/group.html' %}aria-current=true{% endif %}>group</a></li>
+          <li role="none"><a href="/components/menu" role="menuitem" tabindex="-1" {% if current == '/components/menu.html' %}aria-current=true{% endif %}>menu</a></li>
+          <li role="none"><a href="/components/menubar" role="menuitem" tabindex="-1" {% if current == '/components/menubar.html' %}aria-current=true{% endif %}>menubar<span class="badge is-warning">JS</span></a></li>
+          <li role="none"><a href="/components/menubutton" role="menuitem" tabindex="-1" {% if current == '/components/menubutton.html' %}aria-current=true{% endif %}>menubutton<span class="badge is-warning">JS</span></a></li>
+          <li role="none"><a href="/components/tab" role="menuitem" tabindex="-1" {% if current == '/components/tab.html' %}aria-current=true{% endif %}>tab<span class="badge is-warning">JS</span></a></li>
+          <li role="none"><a href="/components/toolbar" role="menuitem" tabindex="-1" {% if current == '/components/toolbar.html' %}aria-current=true{% endif %}>toolbar</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>  
+</aside>

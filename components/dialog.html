@@ -1,0 +1,72 @@
+---
+layout: default
+title: Ariato
+---
+<header>
+  <h1>dialog / alertdialog</h1>
+  <pre><p><span class="badge is-success">CSS</span> components/dialog.css <br><span class="badge is-warning">JS</span> ariato/dialog.js</p></pre>
+</header>
+
+<section>
+  <header>role="dialog"</header>
+  <div id="example-dialog">
+    <button type="button" onclick="Ariato.Dialog.open('dialog1')">Open dialog</button>
+    
+    <div role="dialog" id="dialog1" aria-labelledby="dialog1-label" aria-modal="true">
+      <header id="dialog1-label">Dialog</header>
+      <form>
+        <label>
+          The first input <input type="text" value="get the focus" />
+        </label>
+        <label>
+          Then, it loops <input type="text" value="through all elements inside the dialog"/>
+        </label>
+      </form>
+      <footer>
+        <button type="button" onclick="Ariato.Dialog.open('dialog2')">Open a child dialog</button>
+        <button type="reset" onclick="Ariato.Dialog.close(this)">Close</button>
+      </footer>
+    </div>
+
+    <div id="dialog2" role="dialog" aria-labelledby="dialog2-label" aria-describedby="dialog2-desc" aria-modal="true">
+      <h2 id="dialog2-label">Child dialog</h2>
+      <p id="dialog2-desc">Once you close it, you go back to the first dialog.</p>
+      <button type="button" onclick="Ariato.Dialog.closeCurrent()">Close</button>
+      <button type="button" onclick="Ariato.Dialog.replace('dialog3')">Replace current dialog</button>
+    </div>
+
+    <div id="dialog3" role="dialog" aria-labelledby="dialog3-label" aria-describedby="dialog3-desc" aria-modal="true">
+      <h2 id="dialog3-label">Replace dialog</h2>
+      <p id="dialog3-desc">The previous dialog has been replaced by this one.</p>
+      <button type="button" onclick="Ariato.Dialog.closeCurrent()">Close</button>
+    </div>
+  </div>
+
+  <aside>
+    <pre class="language-markup"><code data-code-example="example-dialog"></code></pre>
+  </aside>
+</section>
+
+<section>
+  <header>role="alertdialog"</header>
+  <div id="example-alertdialog">
+    <button type="reset" onclick="Ariato.Dialog.open('alert-dialog')">
+      delete
+    </button>
+
+    <div id="alert-dialog" role="alertdialog" aria-modal="true" aria-labelledby="alert-label" aria-describedby="alert-description">
+      <header>
+        <span id="alert-label">Confirmation</span>
+      </header>
+      <p id="alert-description">Are you sure ?</p>
+      <footer>
+        <button type="button" onclick="/* Bind your own event */">Yes</button>
+        <button type="reset" onclick="Ariato.Dialog.closeCurrent()">No</button>
+      </footer>
+    </div>
+  </div>
+
+  <aside>
+    <pre class="language-markup"><code data-code-example="example-alertdialog"></code></pre>
+  </aside>  
+</section>

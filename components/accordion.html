@@ -1,0 +1,58 @@
+---
+layout: default
+title: Ariato
+---
+<header>
+  <h1>accordion</h1>
+  <pre><p><span class="badge is-success">CSS</span> components/accordion.css<br><span class="badge is-warning">JS</span> ariato/accordion.js</p></pre>
+</header>
+
+<section>
+  <header>Accordion with only one region expanded at a time</header>
+  <div id="example-accordion-allow-one">
+    <div class="accordion">
+      <button type="button" id="button1" aria-controls="region1" aria-expanded="true">Title 1</button>
+      <section id="region1" role="region" aria-labelledby="button1">
+        <p>Panel 1</p>
+      </section>
+
+      <button type="button" id="button2" aria-expanded="false" aria-controls="region2">Title 2</button>
+      <section id="region2" role="region" aria-labelledby="button2" hidden>
+        <p>Panel 2</p>
+      </section>
+
+      <button type="button" id="button3" aria-expanded="false" aria-controls="region3">Title 3</button>
+      <section id="region3" role="region" aria-labelledby="button3" hidden>
+        <p>Panel 3</p>
+      </section>
+    </div>
+  </div>
+  <aside>
+    <pre class="language-markup"><code data-code-example="example-accordion-allow-one"></code></pre>
+  </aside>
+</section>
+
+<section>
+  <header>Accordion with <code>data-allow-multiple</code> options</header>  
+  <div id="example-accordion-allow-multiple">
+    <div class="accordion" data-allow-multiple>
+      <button type="button" id="button4" aria-controls="region4" aria-expanded="true">Title 1</button>
+      <section id="region4" role="region" aria-labelledby="button4">
+        <p>Panel 1</p>
+      </section>
+
+      <button type="button" id="button5" aria-expanded="false" aria-controls="region5">Title 2 </button>
+      <section id="region5" role="region" aria-labelledby="button5" hidden>
+        <p>Panel 2</p>
+      </section>
+
+      <button type="button" id="button6" aria-expanded="false" aria-controls="region6">Title 3</button>
+      <section id="region6" role="region" aria-labelledby="button6" hidden>
+        <p>Panel 3</p>
+      </section>
+    </div>
+  </div>
+  <aside>
+    <pre class="language-markup"><code data-code-example="example-accordion-allow-multiple"></code></pre>
+  </aside>
+</section>

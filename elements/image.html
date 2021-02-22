@@ -1,0 +1,100 @@
+---
+layout: default
+title: Ariato
+---
+<header>
+  <h1>image</h1>
+  <pre><p><span class="badge is-success">CSS</span> elements/image.css</p></pre>
+</header>
+
+<section>
+  <div id="example-img">
+    <img src="http://placehold.it/320x168" alt="ravioli" />
+  </div>
+  <aside>
+    <pre class="language-markup"><code data-code-example="example-img"></code></pre>
+  </aside>
+</section>
+
+<section>
+  <header>figure</header>
+  <div id="example-figure">
+    <figure>
+      <img src="https://placehold.it/320x168" alt="A placeholder figure image." />
+      <figcaption>figcaption</figcaption>
+    </figure>
+  </div>
+  <aside>
+    <pre class="language-markup"><code data-code-example="example-figure"></code></pre>
+  </aside>
+</section>
+
+<section>
+  <header>responsive picture</header>
+  <div id="example-picture">
+    <figure>
+      <picture>
+        <source media="(min-width: 640px)" srcset="https://placehold.it/640x336 1x, https://placehold.it/1240x672 2x">
+        <source media="(min-width: 320px)" srcset="https://placehold.it/320x168 1x, https://placehold.it/640x336 2x">
+        <img src="https://placehold.it/320x168" alt="A placeholder figure image." />
+      </picture>
+      <figcaption>figcaption</figcaption>
+    </figure>
+  </div>
+  <aside>
+    <pre class="language-markup"><code data-code-example="example-picture"></code></pre>
+  </aside>
+</section>
+
+
+<h2>Modifiers</h2>
+<section>
+  <header>class="is-16-9" // 16/9 responsive cover picture</header>
+  <div id="example-16-9">
+    <figure>
+      <picture class="is-16-9">
+        <source media="(min-width: 640px)" srcset="https://placehold.it/640x336 1x, https://placehold.it/1240x672 2x">
+        <source media="(min-width: 320px)" srcset="https://placehold.it/320x168 1x, https://placehold.it/640x336 2x">
+        <img src="https://placehold.it/320x168" alt="A placeholder figure image." />
+      </picture>
+      <figcaption>figcaption</figcaption>
+    </figure>
+  </div>
+  <aside>
+    <pre class="language-markup"><code data-code-example="example-16-9"></code></pre>
+  </aside>
+</section>
+
+<section>
+  <header>class="is-3-2" // 3/2 responsive cover picture</header>
+  <div id="example-3-2">
+    <figure>
+      <picture class="is-3-2">
+        <source media="(min-width: 640px)" srcset="https://placehold.it/640x336 1x, https://placehold.it/1240x672 2x">
+        <source media="(min-width: 320px)" srcset="https://placehold.it/320x168 1x, https://placehold.it/640x336 2x">
+        <img src="https://placehold.it/320x168" alt="A placeholder figure image." />
+      </picture>
+      <figcaption>figcaption</figcaption>
+    </figure>
+  </div>
+  <aside>
+    <pre class="language-markup"><code data-code-example="example-3-2"></code></pre>
+  </aside>
+</section>
+
+<section>
+  <header>class="is-1-1" // square responsive cover picture</header>
+  <div id="example-1-1">
+    <figure>
+      <picture class="is-1-1">
+        <source media="(min-width: 640px)" srcset="https://placehold.it/640x336 1x, https://placehold.it/1240x672 2x">
+        <source media="(min-width: 320px)" srcset="https://placehold.it/320x168 1x, https://placehold.it/640x336 2x">
+        <img src="https://placehold.it/320x168" alt="A placeholder figure image." />
+      </picture>
+      <figcaption>figcaption</figcaption>
+    </figure>
+  </div>
+  <aside>
+    <pre class="language-markup"><code data-code-example="example-1-1"></code></pre>
+  </aside>
+</section>

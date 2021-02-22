@@ -1,0 +1,87 @@
+---
+layout: default
+title: Ariato
+---
+<header>
+  <h1>group</h2>
+  <pre><p><span class="badge is-success">CSS</span> elements/groups.css</p></pre>
+</header>
+
+<section>
+  <header>role="group"</header>
+
+  <div id="example-group">
+    <div role="group">
+      <button>button</button>
+      <button>button</button>
+      <button>button</button>
+    </div>
+    <div role="group">
+      <button class="is-small">button</button>
+      <button class="is-small">button</button>
+      <button class="is-small">button</button>
+      <button class="is-small">button</button>
+    </div>
+    <form>
+      <div role="group">
+        <label>Text Field:
+          <input type="text" placeholder="placeholder" />
+        </label>
+        <label>Text Field:
+          <input type="text" placeholder="placeholder" />
+        </label>
+        <label>Text Field:
+          <input type="text" placeholder="placeholder" />
+        </label>
+      </div>
+    </form>
+  </div>
+
+  <aside>
+    <pre class="language-markup"><code class="language-markup" data-code-example="example-group"></code></pre>
+  </aside>
+</section>
+
+<section>
+  <header>role="group" class="is-block"</header>
+    
+  <div id="example-group-1" class="is-flow">
+    <div role="group" class="is-block">
+      <button>button</button>
+      <button>button</button>
+      <button>button</button>
+    </div>
+
+    <div role="group" class="is-block">
+      <button class="is-icon is-empty">{% svg "/assets/images/icons/play.svg" %}</button>
+      <button class="is-icon is-empty">{% svg "/assets/images/icons/x.svg" %}</button>
+      <button class="is-icon is-empty">{% svg "/assets/images/icons/play.svg" %}</button>
+      <button class="is-icon is-empty">{% svg "/assets/images/icons/play.svg" %}</button>
+      <button class="is-icon is-empty">{% svg "/assets/images/icons/play.svg" %}</button>
+    </div>
+
+    <form class="is-flow">
+      <div role="group" class="is-block">
+        <input type="text"/>
+        <input type="text" />
+        <button>button</button>
+      </div>
+    
+      <div role="group" class="is-block">
+        <label>Text Field:
+          <input type="text" placeholder="placeholder" />
+        </label>
+
+        <label>Text Field:
+          <input type="text" placeholder="placeholder" />
+        </label>
+
+        <button>button</button>
+      </div>
+    </form>
+  </div>
+    
+  <aside>
+    <pre class="language-markup"><code class="language-markup"  data-code-example="example-group-1"></code></pre>
+  </aside>
+</section>

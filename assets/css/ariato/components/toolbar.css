@@ -1,0 +1,29 @@
+/* Banner
+   max 1 banner / page
+   role is implicit and unnecessary for the first header at the body level */
+
+[role="toolbar"] {
+  display: inline-flex;
+  align-items: center;
+  padding: 0;
+  position: relative;
+  border-radius: 0;
+}
+
+[role="toolbar"] > * {
+  margin: 0 var(--space-2x) 0 0;
+}
+
+[role="toolbar"] > *:last-child {
+  margin: 0;
+}
+
+[role="toolbar"] nav {
+  margin: 0 0 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+[role="toolbar"] nav > * {
+  margin: 0 0 0 var(--space-2x);
+}

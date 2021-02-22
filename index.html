@@ -1,0 +1,210 @@
+---
+layout: default
+title: Ariato
+---
+<header>
+  <picture>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+      <path d="M0,0V16H2V10H14v6h2V0ZM14,8H2V2H14Z"></path>
+      <rect x="4" y="4" width="8" height="2"></rect>
+      <rect x="4" y="12" width="8" height="2"></rect>
+    </svg>
+  </picture>
+  <h1 class="is-large">ariato</h1>
+  <h2 class="is-h3">Accessible UI library</h2>
+  <p class="is-large">
+    Ariato is a starting point to build accessible websites.<br>
+    It was originaly made for <a href="https://www.rorvswild.com" target="_blank" rel="noopener">RoRvsWild</a>, our Ruby on Rails application monitoring service.<br>
+    It separates concerns and lets vanilla HTML, CSS and Javascript play their own roles.<br>
+    It provides style and interactivity, including keyboard navigation, to semantic HTML elements and components, following <acronym title="Web Content Accessibility Guidelines">WCAG</acronym> and <acronym title="Web Accessibility Initiative - Accessible Rich Internet Application">WAI-ARIA</acronym> practices.<br>
+  </p>
+  <a role="button" target="blank" rel="noopener" class="is-large is-strong" href="https://github.com/BaseSecrete/ariato">
+    {% svg "/assets/images/icons/github.svg" %}
+    <span>view on Github</span>
+  </a> 
+</header>
+
+<section>
+  <aside>
+    <h3 class="is-h2" aria-hidden="true">😱</h3>
+    <blockquote>
+      <q>No Aria is better than bad Aria</q><cite>W3C</cite>
+    </blockquote>
+    <blockquote><q>Best practices don't actually work. The truth is you’re never going to believe me until you actually try it.</q><cite>Tailwind CSS</cite></blockquote>
+  </aside>
+  <div>
+    <p class="is-large">
+      We want to believe «best practices» can work. We are trying to figure out what good Aria is. We just want to make better websites.</p>
+    <p class="is-large">
+      We are a <a href="https://basesecrete.com" target="_blank" rel="noopener">small team</a> and we need simple solutions. 
+      We're more inspired by <em>the poor man's styleguide</em> than <em>the grand unification</em>.
+    </p>
+    <p class="is-large">Ariato is young and needs to mature. You are welcome to <a href="https://github.com/BaseSecrete/ariato" target="_blank" rel="noopener">contribute</a>.</p>
+  </div>
+</section>
+
+<section class="is-demo">
+  <div>
+    <div class="menubutton">
+      <button type="button" id="menubutton-example" aria-haspopup="true" aria-controls="menubutton-example-menu">Menu button example</button>
+      <ul id="menubutton-example-menu" role="menu" aria-labelledby="menubutton-example">
+        <li role="none">
+          <a role="menuitem" href="https://github.com/basesecrete/ariato" tabindex="-1">Ariato on GitHub</a>
+        </li>
+        <li role="none">
+          <a role="menuitem" href="https://twitter.com/base_secrete" tabindex="-1">Ariato on Twitter</a>
+        </li>
+        <li role="none">
+          <a role="menuitem" href="https://basesecrete.com" tabindex="-1">Base Secrète</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div>
+    <h3 class="is-h2">HTML</h3>
+    <p class="is-large">
+      Ariato starts with the desire to write better, <strong>accessible HTML</strong>.<br>
+      HTML should contain the content of the document and describe properly its structure with <strong>semantic markup</strong> and <strong>Aria roles</strong>. 
+      With more 110 available HTML elements, there might sometimes be something more meaningful than <code>&lt;span&gt;</code> or <code>&lt;div&gt;</code>. Ariato helps choosing better options.
+    </p>
+    <div role="alert" class="is-info">
+      {% svg "/assets/images/icons/info.svg" %}
+      <p>This documentation serves as a reference of HTML snippets to copy for all elements and components.</p>
+    </div>
+  </div>
+  <aside>
+    <pre class="language-markup"><code>&lt;!-- menubutton --&gt;
+&lt;div class="menubutton"&gt;
+  &lt;button type="button" id="menubutton-example" aria-haspopup="true" aria-controls="menubutton-example-menu"&gt;Menu button&lt;/button&gt;
+  &lt;ul id="menubutton-example-menu" role="menu" aria-labelledby="menubutton-example"&gt;
+    &lt;li role="none"&gt;
+      &lt;a role="menuitem" href="https://github.com/basesecrete/ariato" tabindex="-1"&gt;Ariato on GitHub&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li role="none"&gt;
+      &lt;a role="menuitem" href="https://twitter.com/base_secrete" tabindex="-1"&gt;Ariato on Twitter&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li role="none"&gt;
+      &lt;a role="menuitem" href="https://basesecrete.com" tabindex="-1"&gt;Base Secrète&lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+    </code></pre>
+  </aside>
+</section>
+
+<section>
+  <div>
+    <h3 class="is-h2">CSS</h3>
+    <p class="is-large">
+      Ariato brings <strong>accessible and coherent style</strong> to HTML elements and components, without requiring to add dozens of CSS classes.<br>
+      Ariato cares about <strong>color</strong>, <strong>contrast</strong>, <strong>typography</strong>, <strong>spacing</strong> and <strong>rythm</strong> and sets sensible design constraints. It uses modern CSS to provide features such as <strong>dark mode</strong>.<br>
+    </p>
+    <p>CSS styles are first targeting classless HTML elements, aria roles and states.<br>
+      When nothing fits, a css class is added (ex: <code>.card</code>).<br>
+      We then use the context (ex: <code>.card > header</code>), or modifier classes (ex: <code>.is-something</code>) to style variants.
+    </p>
+
+    <div role="alert" class="is-info">
+      {% svg "/assets/images/icons/info.svg" %}
+      <p><code>stylesheets/ariato.css</code> is the css manifest file used to import all the stylesheets.</p>
+    </div>
+
+    <ul class="grid-auto">
+      <li>
+        <h4 class="is-h3">Design tokens</h4>
+        <p><acronym title="Cascading Style Sheets">CSS</acronym> custom properties for design attributes, to avoid hard-coded values and improve consistency.</p>
+      </li>
+      <li>
+        <h4 class="is-h3">Elements</h4>
+        <p>Styles for classless semantic <acronym title="Hyper Text Markup Language">HTML</acronym> 5 elements to go beyond <em>div</em> and <em>span</em>.</p>
+      </li>
+      <li>
+        <h4 class="is-h3">Components</h4>
+        <p><acronym title="Web Accessibility Initiative - Accessible Rich Internet Application">WAI-ARIA</acronym> widgets and custom elements frequently used in web applications.</p>
+      </li>
+    </ul>
+    <p class="is-large">
+      Thanks to modern properties like <code>grid</code>, <code>flex</code> or <code>clamp</code>, most page layouts can be done in just <a href="https://1linelayouts.glitch.me/" target="_blank" rel="noopener">a few lines of CSS</a>. Ariato doesn't include a complex 12 columns layout system or all variants a component could have. An external directory will provide a collection of components and templates.
+    </p>    
+  </div>
+
+  <aside>
+    <pre class="language-css"><code>/* /stylesheets/components/menubutton.scss */
+.menubutton {
+  position: relative;
+  display: inline-block;
+}
+
+/*  button in context. elements/button.scss */
+.menubutton > button,
+.menubutton > input[type="submit"],
+.menubutton > input[type="button"],
+.menubutton > input[type="reset"],
+.menubutton > [role="button"],
+.menubutton > :any-link[role="button"] {
+  position: relative;
+  margin: 0;
+}
+
+.menubutton > button:after,
+.menubutton > input[type="submit"]:after,
+.menubutton > input[type="button"]:after,
+.menubutton > input[type="reset"]:after,
+.menubutton > [role="button"]:after,
+.menubutton > :any-link[role="button"]:after {
+  content: "…";
+  margin-left: var(--space);
+}
+
+/* menu in context. components/menu.scss */
+.menubutton > [role="menu"] {
+  ...
+}
+    </code></pre>
+  </aside>
+</section>
+
+<section>
+  <div>
+    <h3 class="is-h2">Javascript</h3>
+    <p class="is-large">
+      Ariato comes with a small, <strong>dependency-free vanilla Javascript</strong> library powering the components marked with <span class="badge is-warning">JS</span>. 
+      It targets aria roles and states if available, or relies on data attributes.
+      It also supports <strong>keyboard navigation</strong>.
+    </p>
+
+    <div class="card">
+      <header><h4>menubutton keyboard navigation</h4></header>
+      <ul class="is-nobullet">
+        <li>On focus:</li>
+        <li><kbd>Space</kbd> or <kbd>&ldsh; enter</kbd> to toggle the menu.</li>
+        <li><kbd>&darr;</kbd> and <kbd>&uarr;</kbd> to select an item in the menu.</li>
+        <li><kbd>&ldsh; enter</kbd> to open the menu item.</li>
+      </ul>
+    </div>
+    <div role="alert" class="is-info">
+      {% svg "/assets/images/icons/info.svg" %}
+      <p><code>javascript/ariato.js</code> is the js manifest file used for the javascript library.</p>
+    </div>
+  </div>
+  <aside>
+    <pre class="language-javascript"><code>// javascript/ariato/menu_button.js
+Ariato.MenuButton = function(node) {
+  this.node = this.button = node
+  this.menu = document.getElementById(this.button.getAttribute("aria-controls"))
+
+  this.menu.addEventListener("keydown", this.keydown.bind(this))
+  this.button.addEventListener("keydown", this.keydown.bind(this))
+  
+  this.button.addEventListener("click", this.clicked.bind(this))
+  window.addEventListener("click", this.windowClicked.bind(this), true)
+}
+
+...
+    </code></pre>
+  </aside> 
+</section>
+

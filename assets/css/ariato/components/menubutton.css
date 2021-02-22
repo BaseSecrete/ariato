@@ -1,0 +1,91 @@
+.menubutton {
+  position: relative;
+  display: inline-block;
+}
+
+/*  button style. see elements/button.scss */
+.menubutton > button,
+.menubutton > input[type="submit"],
+.menubutton > input[type="button"],
+.menubutton > input[type="reset"],
+.menubutton > [role="button"],
+.menubutton > :any-link[role="button"] {
+  position: relative;
+  margin: 0;
+}
+
+.menubutton > button:after,
+.menubutton > input[type="submit"]:after,
+.menubutton > input[type="button"]:after,
+.menubutton > input[type="reset"]:after,
+.menubutton > [role="button"]:after,
+.menubutton > :any-link[role="button"]:after {
+  content: "…";
+  margin-left: var(--space);
+}
+
+/* menu. see components/menu.scss */
+.menubutton > [role="menu"] {
+  display: none;
+  position: absolute;
+  z-index: 1000;
+  top: var(--space-7x);
+  left: 0;
+  margin: 0;
+  padding: var(--space, 0) 0;
+  border-radius: var(--border-radius-m, 0);
+  width: auto;
+  background: rgba(var(--color-grey-00), 1);
+  box-shadow: var(--box-shadow-l);
+  border: 1px solid rgba(var(--color-grey-50), 1);
+}
+
+.menubutton > [role="menu"]:after,
+.menubutton > [role="menu"]:before {
+  bottom: 100%;
+  left: var(--space-3x);
+  border: solid transparent;
+  content: "";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+    
+.menubutton > [role="menu"]:after {
+  border-color: transparent;
+  border-bottom-color: rgba(var(--color-grey-00), 1);
+  border-width: 6px;
+  margin-left: -6px;
+}
+
+.menubutton > [role="menu"]:before {
+  border-color: transparent;
+  border-bottom-color: rgba(var(--color-grey-50), 1);
+  border-width: 8px;
+  margin-left: -8px;
+}
+
+.menubutton > [role="menu"] [role="menuitem"] {
+  display: block;
+  padding: 0px 16px;
+  background: rgba(var(--color-grey-00), 1);
+}
+
+.menubutton > [role="menu"] [role="menuitem"]:hover,
+.menubutton > [role="menu"] [role="menuitem"]:focus {
+  background: rgba(var(--color-grey-50), 1);
+  color: rgba(var(--color-grey-700), 1);
+}
+
+/* position modifiers */
+
+.menubutton > [role="menu"].is-right {
+  left: auto;
+  right: 0;
+}
+
+.menubutton > [role="menu"].is-right:before {
+  right: 24px;
+  left: auto
+}

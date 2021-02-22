@@ -1,0 +1,57 @@
+---
+layout: default
+title: Ariato
+---
+<header>
+  <h1>code</h1>
+  <pre><p><span class="badge is-success">CSS</span> elements/code.css</p></pre>
+</header>
+
+<section>
+  <header>
+    <a href="#1" id="1">Inline code</a>
+  </header>  
+  <div id="example-code">
+    <p>Type in your console: <code class="language-">
+    gem install 'rorvswild'
+    </code></p>
+  </div>
+  <aside>
+    <pre class="language-markup">
+<code data-code-example="example-code"></code>
+    </pre>
+  </aside>
+</section>
+
+<section>
+  <header>
+    <a href="#1" id="1">Code block wrapped in "pre" and "code" tags</a>
+  </header>
+  <div id="example-code-block">
+    <pre class="language-javascript">
+<code class="language-javascript">// Loop through Divs using Javascript.
+var divs = document.querySelectorAll('div'), i;
+
+for (i = 0; i < divs.length; ++i) {
+divs[i].style.color = "green";
+}
+</code>
+    </pre>
+  </div>
+  <aside>
+    <pre class="language-markup"><code data-code-example="example-code-block"></code></pre>
+  </aside>
+</section>
+
+<section>
+  <header>
+    <a href="#2" id="2">Monospace Text wrapped in "pre" tags</a>
+  </header>
+  <div id="example-mono">
+    <pre><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.</p></pre>
+  </div>
+  <aside>
+    <pre class="language-markup"><code data-code-example="example-mono"></code>
+      </pre>
+  </aside>
+</section>

@@ -1,0 +1,231 @@
+---
+layout: default
+title: Ariato
+---
+<header>
+  <h1>button</h1>
+  <pre><p><span class="badge is-success">CSS</span> elements/button.css</p></pre>
+</header>
+
+<section>
+  <header>classless native buttons</header>
+  <div id="example-button">
+    <button type="button">button</button>
+    <input type="button" value="Input type button">
+    <input type="submit" value="Input type submit" />
+  </div>
+  <aside>
+    <pre class="language-markup"><code data-code-example="example-button"></code></pre>
+  </aside>
+</section>
+
+<section>
+  <header>classless type reset</header>
+  <div id="example-button-classless-reset">
+    <!-- type="reset"  -->
+    <button type="reset">button type reset</button>
+    <input type="reset" value="Input type reset" />
+  </div>
+  <aside>
+    <pre class="language-markup"><code data-code-example="example-button-classless-reset"></code></pre>
+  </aside>
+</section>
+
+<section>
+  <header>classless role="button"</header>
+  <div id="example-button-role">
+    <!-- last choice: role="button" -->
+    <a href="#" role="button" tabindex="0">a role button</a>
+    <span role="button" tabindex="0">span role button</span>
+  </div>
+  <aside>
+    <pre class="language-markup"><code data-code-example="example-button-role"></code></pre>
+  </aside>
+</section>
+
+<h2>Aria states</h2>
+<section>
+  <header>aria-pressed="true"</header>
+  <div class="flow" id="example-button-pressed">
+    <button type="button" aria-pressed="true">button</button>
+    <input type="button" aria-pressed="true" value="Input type button">
+    <input type="reset" aria-pressed="true" value="Input type reset" />
+    <input type="submit" aria-pressed="true" value="Input type submit" />
+    <a role="button" href="#" aria-pressed="true">a role button</a>
+    <span role="button" aria-pressed="true">span role button</span>
+  </div>
+  <aside>
+    <pre class="language-markup"><code data-code-example="example-button-pressed"></code></pre>
+  </aside>
+</section>
+
+<section>
+  <header>aria-expanded="true" (menubutton)</header>
+  <div id="example-button-expanded">
+    <button type="button" aria-expanded="true">button</button>
+    <input type="button" aria-expanded="true" value="Input type button">
+    <input type="reset" aria-expanded="true" value="Input type reset" />
+    <input type="submit" aria-expanded="true" value="Input type submit" />
+    <a role="button" href="#" aria-expanded="true">a role button</a>
+    <span role="button" aria-expanded="true">span role button</span>
+  </div>
+  <aside>
+    <pre class="language-markup"><code data-code-example="example-button-expanded"></code></pre>
+  </aside>
+</section>
+
+<h2>CSS classes modifiers</h2>
+<section>
+  <header>class="is-block"</header>
+  <div id="example-button-block">
+    <button type="button" class="is-block">button</button>
+    <input class="is-block" type="button" value="Input type button">
+    <input class="is-block" type="reset" value="Input type reset" />
+    <input class="is-block" type="submit" value="Input type submit" />
+    <a role="button" href="#" class="is-block">a role button</a>
+    <span role="button" class="is-block">span role button</span>
+  </div>
+  <aside>
+    <pre class="language-markup"><code data-code-example="example-button-block"></code></pre>
+  </aside>
+</section>
+
+<section>
+  <header>type="reset" | class="is-reset"</header>
+  <div id="example-button-reset">
+    <!-- prefered choice: classless type="reset" -->
+    <button type="reset">button</button>
+    <input type="reset" value="Input type reset" />
+    <!-- last choice: class="is-reset" -->
+    <input class="is-reset" type="button" value="Input type button">
+    <input class="is-reset" type="submit" value="Input type submit" />
+    <a role="button" tabindex="0" href="#" class="is-reset">a role button</a>
+    <span role="button" tabindex="0" class="is-reset">span role button</span>
+  </div>
+  <aside>
+    <pre class="language-markup"><code data-code-example="example-button-reset"></code></pre>
+  </aside>
+</section>
+
+<section>
+  <header>class="is-strong"</header>
+  <div id="example-button-strong">
+    <button class="is-strong">button</button>
+    <input class="is-strong" type="button" value="Input type button">
+    <input class="is-strong" type="reset" value="Input type reset" />
+    <input class="is-strong" type="submit" value="Input type submit" />
+    <a role="button" tabindex="0" href="#" class="is-strong">a role button</a>
+    <span role="button" tabindex="0" class="is-strong">span role button</span>
+  </div>
+  <aside>
+    <pre class="language-markup"><code data-code-example="example-button-strong"></code></pre>
+  </aside>
+</section>
+
+<section>
+  <header>class="is-link"</header>
+  <div class="flow" id="example-button-link">
+    <button class="is-link">button</button>
+    <input class="is-link" type="button" value="Input type button">
+    <input class="is-link" type="reset" value="Input type reset" />
+    <input class="is-link" type="submit" value="Input type submit" />
+    <a role="button" tabindex="0" href="#" class="is-link">a role button</a>
+    <span role="button" tabindex="0" class="is-link">span role button</span>
+  </div>
+  <aside>
+    <pre class="language-markup"><code data-code-example="example-button-link"></code></pre>
+  </aside>
+</section>
+
+<section>
+  <header>class="is-large"</header>
+  <div id="example-button-large">
+    <button class="is-large">button</button>
+    <input class="is-large" type="button" value="Input type button">
+    <input class="is-large" type="reset" value="Input type reset" />
+    <input class="is-large" type="submit" value="Input type submit" />
+    <a href="#"  role="button" tabindex="0" class="is-large">a role button</a>
+    <span role="button" tabindex="0" class="is-large">span role button</span>
+  </div>
+  <aside>
+    <pre class="language-markup"><code data-code-example="example-button-large"></code></pre>
+  </aside>
+</section>
+
+<section>
+  <header>class="is-small"</header>
+  <div id="example-button-small">
+    <button class="is-small">button</button>
+    <input class="is-small" type="button" value="Input type button">
+    <input class="is-small" type="reset" value="Input type reset" />
+    <input class="is-small" type="submit" value="Input type submit" />
+    <a role="button" href="#" class="is-small">a role button</a>
+    <span role="button" tabindex="0" class="is-small">span role button</span>
+  </div>
+  <aside>
+    <pre class="language-markup"><code data-code-example="example-button-small"></code></pre>
+  </aside>
+</section>
+
+<h2>buttons with icons</h2>
+<section>
+  <header>.is-icon</header>
+  <div id="example-button-icon">
+    <button class="is-icon">{% svg "/assets/images/icons/play.svg" %}</button>
+    <a role="button" href="#" class="is-reset is-icon">{% svg "/assets/images/icons/x.svg" %}</a>
+    <button class="is-icon">{% svg "/assets/images/icons/play.svg" %}</button>
+    <button class="is-icon is-large">{% svg "/assets/images/icons/play.svg" %}</button>
+    <button class="is-icon is-small">{% svg "/assets/images/icons/play.svg" %}</button>
+  </div>
+  <aside>
+    <pre class="language-markup"><code data-code-example="example-button-icon"></code></pre>
+  </aside>
+</section>
+
+<section>
+  <header>.is-link.is-icon</header>
+  <div id="example-button-icon-empty">
+    <button class="is-link">{% svg "/assets/images/icons/play.svg" %}</button>
+    <a href="#" role="button" tabindex="0" class="is-reset is-link is-icon">{% svg "/assets/images/icons/x.svg" %}</a>
+    <button class="is-link is-icon">{% svg "/assets/images/icons/play.svg" %}</button>
+    <button class="is-large is-link is-icon">{% svg "/assets/images/icons/play.svg" %}</button>
+    <button class="is-small is-link is-icon">{% svg "/assets/images/icons/play.svg" %}</button>
+  </div>
+  <aside>
+    <pre class="language-markup"><code data-code-example="example-button-icon-empty"></code></pre>
+  </aside>
+</section>
+
+<section>
+  <header>classless</header>
+  <div id="example-button-icon-right">
+    <button type="button">
+      <span>button</span>
+      {% svg "/assets/images/icons/play.svg" %}
+    </button>
+    <a href="#" role="button" tabindex="0">
+      <span>a role button</span>
+      {% svg "/assets/images/icons/play.svg" %}
+    </a>
+  </div>
+  <aside>
+    <pre class="language-markup"><code data-code-example="example-button-icon-right"></code></pre>
+  </aside>
+</section>
+
+<section>
+  <header>classless</header>
+  <div id="example-button-icon-left">
+    <button>
+      {% svg "/assets/images/icons/play.svg" %}
+      <span>button</span>
+    </button>
+    <a href="#" role="button" tabindex="0" class="is-outline">
+      {% svg "/assets/images/icons/play.svg" %}
+      <span>a role button</span>
+    </a>
+  </div>
+  <aside>
+    <pre class="language-markup"><code data-code-example="example-button-icon-left"></code></pre>
+  </aside>
+</section>

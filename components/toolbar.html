@@ -1,0 +1,33 @@
+---
+layout: default
+title: Ariato
+---
+<header>
+  <h1>toolbar</h1>
+  <pre><p><span class="badge is-success">CSS</span> components/toolbar.css</p></pre>
+  <p>A toolbar is a container for grouping a set of controls, such as buttons, menubuttons, or checkboxes.</p>
+</header>
+
+<section>
+  <div id="example-toolbar">
+    <div role="toolbar" data-ariato="Application.Toolbar">
+      <div role="group">
+        <button aria-pressed="false" class="is-icon" data-theme="dark" data-event="click->changeTheme" title="Switch to dark theme">
+          {% svg "/assets/images/icons/moon.svg" %}
+        </button>
+        <button aria-pressed="false" class="is-icon" data-theme="light" data-event="click->changeTheme" title="Switch to light theme">
+          {% svg "/assets/images/icons/sun.svg" %}
+        </button>
+        <button aria-pressed="true" data-theme="auto" data-event="click->changeTheme" title="Switch automatically to light or drak theme">
+          auto
+        </button>
+      </div>
+      <button aria-pressed="true" class="switch" data-event="click->toggleGuideLines" data-role="guideLinesToggler">
+        lines<span class="slider"></span>
+      </button>
+    </div>
+  </div>
+  <aside>
+    <pre class="language-markup"><code data-code-example="example-toolbar"></code></pre>
+  </aside>
+</section>

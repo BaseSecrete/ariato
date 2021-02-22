@@ -1,0 +1,61 @@
+---
+---
+/*******************************************/
+/*  ariato css                             */
+/*  version 0.1                            */
+/*  https://github.com/BaseSecrete/ariato  */
+/*******************************************/
+
+/*  design_tokens */
+
+{% include_relative ariato/design_tokens/color.css %}
+{% include_relative ariato/design_tokens/font.css %}
+{% include_relative ariato/design_tokens/gradient.css %}
+{% include_relative ariato/design_tokens/shadow.css %}
+{% include_relative ariato/design_tokens/shape.css %}
+{% include_relative ariato/design_tokens/space.css %}
+{% include_relative ariato/design_tokens/motion.css %}
+
+/* elements */
+
+{% include_relative ariato/elements/text.css %}
+{% include_relative ariato/elements/button.css %}
+{% include_relative ariato/elements/code.css %}
+{% include_relative ariato/elements/form.css %}
+{% include_relative ariato/elements/form/checkbox.css %}
+{% include_relative ariato/elements/form/select.css %}
+{% include_relative ariato/elements/form/progress.css %}
+{% include_relative ariato/elements/form/range.css %}
+{% include_relative ariato/elements/form/meter.css %}
+{% include_relative ariato/elements/icon.css %}
+{% include_relative ariato/elements/image.css %}
+{% include_relative ariato/elements/icon.css %}
+{% include_relative ariato/elements/link.css %}
+{% include_relative ariato/elements/icon.css %}
+{% include_relative ariato/elements/image.css %}
+{% include_relative ariato/elements/link.css %}
+{% include_relative ariato/elements/list.css %}
+{% include_relative ariato/elements/media.css %}
+{% include_relative ariato/elements/table.css %}
+
+/*  components   */
+
+{% include_relative ariato/components/accordion.css %}
+{% include_relative ariato/components/alert.css %}
+{% include_relative ariato/components/avatar.css %}
+{% include_relative ariato/components/badge.css %}
+{% include_relative ariato/components/breadcrumb.css %}
+{% include_relative ariato/components/carousel.css %}
+{% include_relative ariato/components/dialog.css %}
+{% include_relative ariato/components/grid_auto.css %}
+{% include_relative ariato/components/group.css %}
+{% include_relative ariato/components/card.css %}
+{% include_relative ariato/components/menu.css %}
+{% include_relative ariato/components/menubutton.css %}
+{% include_relative ariato/components/menubar.css %}
+{% include_relative ariato/components/switch.css %}
+{% include_relative ariato/components/tab.css %}
+{% include_relative ariato/components/toolbar.css %}
+
+/* Aria states last loaded  */
+{% include_relative ariato/design_tokens/states.css %}

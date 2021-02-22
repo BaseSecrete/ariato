@@ -1,0 +1,15 @@
+svg {
+  vertical-align: middle;
+}
+
+/* use feathers icons as inline svg for icons */
+
+.is-icon svg,
+svg.is-icon {
+  display: inline-block;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2; 
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}

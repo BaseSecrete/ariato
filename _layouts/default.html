@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Ariato</title>
+    <meta name=viewport content="width=device-width, initial-scale=1">
+
+    <link rel="icon" href="/assets/images/favicon.ico"><!-- 32×32 -->
+    <link rel="icon" href="/assets/images/ariato.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png"><!-- 180×180 -->
+    <link rel="manifest" href="/assets/images/site.webmanifest">
+
+    <link rel="stylesheet" href="/assets/css/ariato.css" type="text/css">
+    <link rel="stylesheet" href="/assets/css/site.css" type="text/css">
+
+    
+    <script src="/assets/javascript/ariato.js"></script>
+    <script src="/assets/javascript/application.js"></script>
+    <script src="/assets/javascript/prism.js"></script>
+  </head>
+  <body id="styleguide" class="guidelines">
+    {% include header.html %}
+    <main aria-label="Content">
+      {{ content }}
+    </main>
+    {% include aside.html %}
+    {% include footer.html %}
+  </body>
+</html>

@@ -1,0 +1,58 @@
+table {
+  width: 100%;
+  padding: 0;
+	border-spacing: 0;
+}
+
+thead {
+  box-shadow: 0 -1px 0 0 rgba(var(--color-grey-50), 1) inset;
+}
+
+tfoot {
+  box-shadow: 0 -1px 0 0 rgba(var(--color-grey-50), 1);
+}
+
+caption {
+  color: rgba(var(--color-grey-500), 1);
+  padding: 6px 0 18px;
+}
+
+th {
+  text-transform: uppercase;
+  font-weight: var(--font-weight-700);
+  font-size: calc(var(--base-font-size) / var(--ratio) / var(--ratio));
+  letter-spacing: 0.03em;
+  transform: translateY(2px);
+  padding: 12px 24px;
+  text-align: left;
+  color: rgba(var(--color-grey-500), 1);
+}
+
+tbody tr {
+  box-shadow: 0 -1px 0 0 rgba(var(--color-grey-50), 1) inset;
+}
+
+tbody tr:hover {
+  background: rgba(var(--color-grey-50), 1);
+}
+
+/*
+alternate row bg
+tbody tr:nth-child(even) {
+  background: rgba(var(--color-grey-35), 1);
+}
+
+tbody tr:nth-child(even):hover {
+  background: rgba(var(--color-grey-50), 1);
+}
+*/
+
+td {
+  color: rgba(var(--color-grey-500), 1);
+  padding: 12px 24px;
+}
+
+th.is-right,
+td.is-right {
+  text-align: right;
+}
