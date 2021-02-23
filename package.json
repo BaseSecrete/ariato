@@ -2,11 +2,11 @@
   "name": "ariato",
   "version": "1.0.0",
   "description": "UI library",
-  "main": "_site/assets/css/ariato.css",
+  "main": "dist/ariato.min.css",
   "files": [
-    "_site/assets/css/ariato.css",
-    "_site/assets/javascript/ariato.js"
-  ] ,
+    "dist/ariato.min.css",
+    "dist/ariato.min.js"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,10 +15,16 @@
     "url": "git+https://github.com/BaseSecrete/ariato.git"
   },
   "author": "basesecrete",
-  "homepage": "https://ariato.org/",
+  "homepage": "https://github.com/BaseSecrete/ariato#readme",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/BaseSecrete/ariato/issues"
   },
-  "homepage": "https://github.com/BaseSecrete/ariato#readme"
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-if": "^3.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-uglify": "^3.0.2"
+  }
 }
