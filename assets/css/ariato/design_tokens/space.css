@@ -1,4 +1,4 @@
-/* space */
+/* design_tokens/space.css */
 
 *,
 *::before,
@@ -31,6 +31,6 @@
   --screen-l: 1400px;
 }
 
-is-flow > * + * {
+.is-flowing > * + * {
   margin-top: var(--space-3x);
 }

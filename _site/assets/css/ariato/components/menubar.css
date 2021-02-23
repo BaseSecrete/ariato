@@ -1,7 +1,4 @@
-/* MENUBAR
-   Horizontal navigation menu
-   for links, links with submenu, ocasional buttons (see toolbar)
-*/ 
+/* components/menubar.css */
 
 ul[role="menubar"] {
   display: flex;

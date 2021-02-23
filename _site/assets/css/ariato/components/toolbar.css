@@ -1,6 +1,4 @@
-/* Banner
-   max 1 banner / page
-   role is implicit and unnecessary for the first header at the body level */
+/* components/toolbar.css */
 
 [role="toolbar"] {
   display: inline-flex;

@@ -6,7 +6,7 @@
 
 /*  design_tokens */
 
-/* Colors */
+/* design_tokens/color.css */
 
 :root,
 .theme-light {
@@ -252,6 +252,8 @@ body {
   outline: 2px solid rgba(var(--color-blue-200), 1);
 }
 
+/* design_tokens/font.css */
+
 :root {
   --font-sans:  system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif; 
   --font-serif: Athelas, Cambria, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
@@ -300,7 +302,7 @@ body {
   font-weight: var(--font-weight-400);
   line-height: var(--space-3x);
 }
-/* gradient */
+/* design_tokens/gradient.css */
 
 :root,
 :root.theme-light {
@@ -357,6 +359,8 @@ body {
     --gradient-top-primary-60: linear-gradient(180deg, rgba(var(--color-blue-600), 1), rgba(var(--color-blue-500), 1));
   }
 }
+/* design_tokens/shadow.css */
+
 :root {
 /* box-shadow */
   --box-shadow-s: 
@@ -374,6 +378,7 @@ body {
     0 4px 8px -2px rgba(var(--color-black), 0.05),
     0 8px 16px -4px rgba(var(--color-black), 0.05),
     0 16px 32px -8px rgba(var(--color-black), 0.05);
+
 /* inset box shadow */
   --box-inset-shadow-s: 0 1px 1px 0 rgba(var(--color-black), 0.05) inset;  
   --box-inset-shadow-m: 0 1px 1px 0px rgba(var(--color-black), 0.05) inset,
@@ -381,6 +386,7 @@ body {
   --box-inset-shadow-l: 0 1px 1px 0px rgba(var(--color-black), 0.05) inset,
         0 2px 2px 1px rgba(var(--color-black), 0.05) inset,
       0 2px 8px 2px rgba(var(--color-black), 0.05) inset;
+      
 /* text shadow */
   --text-shadow-s: 0 1px 1px rgba(var(--color-black), 0.05);
   --text-shadow-m: 0 1px 1px rgba(var(--color-black), 0.05),
@@ -389,15 +395,17 @@ body {
       0 2px 2px rgba(var(--color-black), 0.05),
       0 4px 4px rgba(var(--color-black), 0.05);
 }
-/* shape */
+/* design_tokens/shape.css */
 
 :root {
   /* border radius */
   --border-radius-s: calc(var(--space) * 0.25);
   --border-radius-m: var(--space-1-2);
   --border-radius-l: calc(var(--space) * 1);
+
+  /* aspect ratio */
 }
-/* space */
+/* design_tokens/space.css */
 
 *,
 *::before,
@@ -430,12 +438,10 @@ body {
   --screen-l: 1400px;
 }
 
-is-flow > * + * {
+.is-flowing > * + * {
   margin-top: var(--space-3x);
 }
-/* time */
-
-/* use for animations */
+/* design_tokens/motion.css */
 
 html:focus-within {
   scroll-behavior: smooth;
@@ -2481,6 +2487,8 @@ td.is-right {
 
 /*  components   */
 
+/* components/accordion.css */
+
 .accordion {
   margin: 0;
   padding: 0;
@@ -2559,6 +2567,7 @@ td.is-right {
   padding: 1em 1.5em;
 }
 
+/* components/alert.css */
 [role="alert"] {
   display: flex;
   align-items: center;
@@ -2677,6 +2686,7 @@ td.is-right {
 * + [role="alert"] {
   margin-top: var(--space-3x);
 }
+/* components/avatar.css */
 .avatar,
 a.avatar {
   display: block;
@@ -2739,6 +2749,7 @@ a.avatar {
   width: var(--space-9x);
   line-height: var(--space-9x);
 }
+/* components/badge.css */
 .badge {
   display: inline-block;
   height: var(--space-2x);
@@ -2785,6 +2796,8 @@ a.avatar {
   color: rgba(var(--color-yellow-700), 1);
 }
 
+/* components/breadcrumb.css */
+
 .breadcrumb ol {
   margin: 0;
   padding-left: 0;
@@ -2809,7 +2822,7 @@ a.avatar {
   font-weight: var(--font-weight-700);
 }
 
-/* .carousel */
+/* components/carousel.css */
 
 .carousel {
   display: static;
@@ -2895,6 +2908,8 @@ a.avatar {
 .slide__body p {
   max-width: 100%;
 }
+/* components/dialog.css */
+
 /* Backdrop */
 
 .dialog-backdrop {
@@ -2992,6 +3007,8 @@ a.avatar {
     opacity: 1;
   }
 }
+/* components/grid_auto.css */
+
 .grid-auto {
   --gap: var(--space-3x);
   --col-min-width: calc(var(--space) * 30);
@@ -3016,6 +3033,8 @@ a.avatar {
 .grid-auto + * {
   margin-top: var(--space-3x);
 }
+
+/* components/group.css */
 
 [role="group"] {
   display: flex;
@@ -3076,6 +3095,7 @@ a.avatar {
   flex: 1;
 }
 
+/* components/card.css */
 .card {
   background: rgba(var(--color-grey-20), 1);
   border: 0;
@@ -3126,6 +3146,8 @@ a.avatar {
   min-width: 300px;
   padding: var(--space-3x);
 }
+/* components/menu.css */
+
 [role="menu"] {
   text-align: left;
   color: rgba(var(--color-grey-500), 1);
@@ -3176,6 +3198,8 @@ a[role="menuitem"]:not(.button)[aria-current="true"] {
   background: rgba(var(--color-grey-100), 1);
   color: rgba(var(--color-blue-700), 1);
 }
+/* components/menubutton.css */
+
 .menubutton {
   position: relative;
   display: inline-block;
@@ -3268,10 +3292,7 @@ a[role="menuitem"]:not(.button)[aria-current="true"] {
   left: auto
 }
 
-/* MENUBAR
-   Horizontal navigation menu
-   for links, links with submenu, ocasional buttons (see toolbar)
-*/ 
+/* components/menubar.css */
 
 ul[role="menubar"] {
   display: flex;
@@ -3366,7 +3387,8 @@ ul[role="menubar"] ul[role="menu"]:hover {
   display: block;
 }
 
-/* The switch - the box around the slider */
+/* components/switch.css */
+
 .switch {
   position: relative;
   display: flex;
@@ -3376,18 +3398,14 @@ ul[role="menubar"] ul[role="menu"]:hover {
   padding: 0 24px 0 24px;
 }
 
-
-
 .switch[aria-pressed="true"] {
   background: transparent;
   color: rgba(var(--color-grey-700), 1);
   box-shadow: 0 0 0 1px rgba(var(--color-grey-200), 1) inset;
- 
 }
 
 .switch:hover {
   box-shadow: 0 0 0 1px rgba(var(--color-grey-300), 1) inset, var(--box-shadow-s);
-
 }
 
 .switch:focus {
@@ -3437,6 +3455,8 @@ ul[role="menubar"] ul[role="menu"]:hover {
   transition: .4s;
 }
 
+/* components/tab.css */
+
 [role="tablist"] {
   display: flex;
   box-shadow: 0 1px 0 0 rgba(var(--color-grey-100), 1);
@@ -3478,9 +3498,7 @@ ul[role="menubar"] ul[role="menu"]:hover {
 [role="tabpanel"][aria-hidden="true"] {
   display: none;
 }
-/* Banner
-   max 1 banner / page
-   role is implicit and unnecessary for the first header at the body level */
+/* components/toolbar.css */
 
 [role="toolbar"] {
   display: inline-flex;
@@ -3510,6 +3528,8 @@ ul[role="menubar"] ul[role="menu"]:hover {
 
 
 /* Aria states last loaded  */
+/* design_tokens/states.css */
+
 *[hidden=true] { 
   display: none; 
 }

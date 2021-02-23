@@ -1,3 +1,5 @@
+/* components/menu.css */
+
 [role="menu"] {
   text-align: left;
   color: rgba(var(--color-grey-500), 1);

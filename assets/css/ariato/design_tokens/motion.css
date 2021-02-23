@@ -1,6 +1,4 @@
-/* time */
-
-/* use for animations */
+/* design_tokens/motion.css */
 
 html:focus-within {
   scroll-behavior: smooth;

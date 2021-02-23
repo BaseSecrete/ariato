@@ -224,6 +224,9 @@ main {
   padding: 0 var(--space-3x);
 }
 
+main p {
+  max-width: 65ch;
+}
 /* main header */ 
 main > header {
   position: relative;

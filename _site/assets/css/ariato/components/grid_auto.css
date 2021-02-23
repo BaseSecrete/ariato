@@ -1,3 +1,5 @@
+/* components/grid_auto.css */
+
 .grid-auto {
   --gap: var(--space-3x);
   --col-min-width: calc(var(--space) * 30);
