@@ -1,13 +1,13 @@
 # Ariato
 
-<img align="right" width="120px" src="assets/images/ariato.png" style="margin: 0 0 48px 48px;" />
+<img align="right" width="120px" src="assets/images/ariato.jpg" style="margin: 0 0 48px 48px;" />
 
 Ariato is a vanilla CSS and Javascript web UI framework that encourages writing better html markup. It was initially made for https://www.rorvswild.com, the Ruby on Rails monitoring tool.
 
 ## Documentation
 https://ariato.org
 
-This repository contains a Jekyll website that serves as a documentation and a styleguide to edit and preview separated css and javascript files modifications, and to generate concatenated files.
+This repository contains a Jekyll website that serves as a documentation and a styleguide to preview separated css and javascript files modifications, and to generate concatenated files.
 
 ## ariato.css
 *ariato.css* brings **coherent style** to HTML elements and components, without requiring to add dozens of CSS classes.
