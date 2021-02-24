@@ -2,17 +2,17 @@
 
 <header> <!-- body level <header> has an implicit role="banner" -->
   <a href="/" class="logo">
-    {% svg "/assets/images/ariato.svg" %}
+    {% include svg/ariato.svg %}
     <span>ariato</span>
   </a>
   <nav aria-label="site"> <!-- implicit role="navigation", aria label "site" is announced = "site navigation" -->
     <div role="toolbar" data-ariato="Application.Toolbar">
       <div role="group">
         <button aria-pressed="false" class="is-icon" data-ariato="ThemeSwitcher" data-theme="dark" data-event="click->changeTheme" title="Switch to dark theme">
-          {% svg "/assets/images/icons/moon.svg" %}
+          {% include svg/icons/moon.svg %}
         </button>
         <button aria-pressed="false" class="is-icon" data-ariato="ThemeSwitcher" data-theme="light" data-event="click->changeTheme" title="Switch to light theme">
-          {% svg "/assets/images/icons/sun.svg" %}
+          {% include svg/icons/sun.svg %}
         </button>
         <button aria-pressed="true" data-ariato="ThemeSwitcher" data-theme="auto" data-event="click->changeTheme" title="Switch automatically to light or dark theme">
           auto
@@ -24,7 +24,7 @@
     </div>
   </nav>
   <nav aria-label="links">
-    <a href="https://twitter.com/base_secrete" role="button" class="is-icon is-link" title="Twitter">{% svg "/assets/images/icons/twitter.svg" %}</a>
-    <a href="https://github.com/BaseSecrete/ariato" role="button" class="is-icon is-link" title="Git repository">{% svg "/assets/images/icons/github.svg" %}</a>
+    <a href="https://twitter.com/base_secrete" role="button" class="is-icon is-link" title="Twitter">{% include svg/icons/twitter.svg %}</a>
+    <a href="https://github.com/BaseSecrete/ariato" role="button" class="is-icon is-link" title="Git repository">{% include svg/icons/github.svg %}</a>
   </nav>
 </header>

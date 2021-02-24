@@ -171,11 +171,11 @@ title: Ariato
 <section>
   <header>.is-icon</header>
   <div id="example-button-icon">
-    <button class="is-icon">{% svg "/assets/images/icons/play.svg" %}</button>
-    <a role="button" href="#" class="is-reset is-icon">{% svg "/assets/images/icons/x.svg" %}</a>
-    <button class="is-icon">{% svg "/assets/images/icons/play.svg" %}</button>
-    <button class="is-icon is-large">{% svg "/assets/images/icons/play.svg" %}</button>
-    <button class="is-icon is-small">{% svg "/assets/images/icons/play.svg" %}</button>
+    <button class="is-icon">{% include svg/icons/play.svg %}</button>
+    <a role="button" href="#" class="is-reset is-icon">{% include svg/icons/x.svg %}</a>
+    <button class="is-icon">{% include svg/icons/play.svg %}</button>
+    <button class="is-icon is-large">{% include svg/icons/play.svg %}</button>
+    <button class="is-icon is-small">{% include svg/icons/play.svg %}</button>
   </div>
   <aside>
     <pre class="language-markup"><code data-code-example="example-button-icon"></code></pre>
@@ -185,11 +185,11 @@ title: Ariato
 <section>
   <header>.is-link.is-icon</header>
   <div id="example-button-icon-empty">
-    <button class="is-link">{% svg "/assets/images/icons/play.svg" %}</button>
-    <a href="#" role="button" tabindex="0" class="is-reset is-link is-icon">{% svg "/assets/images/icons/x.svg" %}</a>
-    <button class="is-link is-icon">{% svg "/assets/images/icons/play.svg" %}</button>
-    <button class="is-large is-link is-icon">{% svg "/assets/images/icons/play.svg" %}</button>
-    <button class="is-small is-link is-icon">{% svg "/assets/images/icons/play.svg" %}</button>
+    <button class="is-link">{% include svg/icons/play.svg %}</button>
+    <a href="#" role="button" tabindex="0" class="is-reset is-link is-icon">{% include svg/icons/x.svg %}</a>
+    <button class="is-link is-icon">{% include svg/icons/play.svg %}</button>
+    <button class="is-large is-link is-icon">{% include svg/icons/play.svg %}</button>
+    <button class="is-small is-link is-icon">{% include svg/icons/play.svg %}</button>
   </div>
   <aside>
     <pre class="language-markup"><code data-code-example="example-button-icon-empty"></code></pre>
@@ -201,11 +201,11 @@ title: Ariato
   <div id="example-button-icon-right">
     <button type="button">
       <span>button</span>
-      {% svg "/assets/images/icons/play.svg" %}
+      {% include svg/icons/play.svg %}
     </button>
     <a href="#" role="button" tabindex="0">
       <span>a role button</span>
-      {% svg "/assets/images/icons/play.svg" %}
+      {% include svg/icons/play.svg %}
     </a>
   </div>
   <aside>
@@ -217,11 +217,11 @@ title: Ariato
   <header>classless</header>
   <div id="example-button-icon-left">
     <button>
-      {% svg "/assets/images/icons/play.svg" %}
+      {% include svg/icons/play.svg %}
       <span>button</span>
     </button>
     <a href="#" role="button" tabindex="0" class="is-outline">
-      {% svg "/assets/images/icons/play.svg" %}
+      {% include svg/icons/play.svg %}
       <span>a role button</span>
     </a>
   </div>
