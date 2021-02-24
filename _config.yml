@@ -28,8 +28,6 @@ twitter_username: base_secrete
 github_username:  BaseSecrete
 
 # Build settings
-plugins:
-  - jekyll-inline-svg
 
 # Exclude from processing.
 # The following items will not be processed, by default.
