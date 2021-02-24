@@ -1,6 +1,6 @@
 # Ariato
 
-<img align="right" width="120px" src="assets/images/ariato.jpg" style="margin: 0 0 48px 48px;" />
+<img align="right" width="300px" src="assets/images/ariato.jpg" style="margin: 0 0 72px 48px;" />
 
 Ariato is a vanilla CSS and Javascript web UI framework that encourages writing better html markup. It was initially made for https://www.rorvswild.com, the Ruby on Rails monitoring tool.
 
