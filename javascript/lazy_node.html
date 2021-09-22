@@ -1,0 +1,29 @@
+---
+layout: default
+title: Ariato
+---
+<header>
+  <h1>lazy node</h1>
+  <pre><p><span class="badge is-warning">JS</span> ariato/lazy_node.js</p></pre>
+</header>
+
+<section>
+  <header>Ariato.LazyNode</header>
+  <div>
+    <p>
+      The <code>Ariato.LazyNode</code> controller allows to defer the loading of a DOM element when it becomes visible.
+      That is very convenient to speedup the initial loading page. For example that sound smart to lazy load heavy parts of the page or content at the bottom.
+    </p>
+
+    <p>The div below is a lazy node. Open the network tab to see the XHR request.</p>
+
+    <div id="javascript-lazy-node">
+      <div data-ariato="Ariato.LazyNode" data-url="/javascript/lazy_node_content">
+        Loading ...
+      </div>
+    </div>
+  </div>
+  <aside>
+    <pre class="language-markup"><code data-code-example="javascript-lazy-node"></code></pre>
+  </aside>
+</section>

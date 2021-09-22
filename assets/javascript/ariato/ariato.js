@@ -2,9 +2,9 @@ Ariato = {}
 
 Ariato.launchWhenDomIsReady = function(root) {
   if (document.readyState != "loading") {
-    Ariato.launch()
-    Ariato.launch(document, "aria-roledescription")
-    Ariato.launch(document, "data-ariato")
+    Ariato.launch(root)
+    Ariato.launch(root, "aria-roledescription")
+    Ariato.launch(root, "data-ariato")
   }
   else
     document.addEventListener("DOMContentLoaded", function() { Ariato.launchWhenDomIsReady(root) } )

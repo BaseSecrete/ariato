@@ -10,3 +10,4 @@
 {% include_relative ariato/region.js %}
 {% include_relative ariato/tablist.js %}
 {% include_relative ariato/theme_switcher.js %}
+{% include_relative ariato/lazy_node.js %}

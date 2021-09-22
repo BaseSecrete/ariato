@@ -120,19 +120,9 @@ title: Ariato
     </p>
 
     <div id="javascript-roles">
-      <form data-ariato="Ariato.RolesExample">
-        <input type="text" data-role="textFields"/>
-        <input type="text" data-role="textFields"/>
-        <input type="submit" value="Button" data-role="saveButton"/>
+      <div data-ariato="Ariato.LazyNode" data-url="">
+        Loading ...
       </form>
-      
-      <script>
-        Ariato.RolesExample = function() {
-          this.saveButton // => <input type=submit/>
-          this.roles.saveButton // => [<input type=submit/>]
-          this.roles.textFields // => [<input type=text/> <input type=text/>]
-        }      
-      </script>
     </div>
   </div>
   <aside>
