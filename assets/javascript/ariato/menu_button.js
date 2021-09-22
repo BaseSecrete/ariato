@@ -20,12 +20,10 @@ Ariato.MenuButton.prototype.windowClicked = function() {
 
 Ariato.MenuButton.prototype.open = function() {
   this.button.setAttribute("aria-expanded", "true")
-  this.menu.style.display = "block"
 }
 
 Ariato.MenuButton.prototype.close = function() {
   this.button.setAttribute("aria-expanded", "false")
-  this.menu.style.display = null
 }
 
 Ariato.MenuButton.prototype.keydown = function(event) {

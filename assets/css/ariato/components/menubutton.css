@@ -28,7 +28,6 @@
 
 /* menu. see components/menu.scss */
 .menubutton > [role="menu"] {
-  display: none;
   position: absolute;
   z-index: 1000;
   top: var(--space-7x);
@@ -40,6 +39,20 @@
   background: rgba(var(--color-grey-00), 1);
   box-shadow: var(--box-shadow-l);
   border: 1px solid rgba(var(--color-grey-50), 1);
+  visibility: hidden;
+  opacity: 0;
+  transition: all .2s cubic-bezier(0,0.1,0.5,1);
+  transform: scaleY(0.833) skewX(2deg);
+  transform-origin: 100% 0%;
+}
+
+.menubutton [aria-expanded="true"]  + [role="menu"],
+.menubutton > [role="menu"]:focus-within {
+  visibility: visible;
+  opacity: 1;
+  top: var(--space-6x);
+  top: var(--space-7x);
+  transform: scaleY(1) skewX(0deg);
 }
 
 .menubutton > [role="menu"]:after,

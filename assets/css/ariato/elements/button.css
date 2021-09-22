@@ -135,7 +135,7 @@ input[type="button"][aria-expanded="true"],
 input[type="reset"][aria-expanded="true"],
 [role="button"][aria-expanded="true"],
 :any-link[role="button"][aria-expanded="true"] {
-  background: rgba(var(--color-grey-100), 1);
+  background: rgba(var(--color-grey-00), 1);
   color: rgba(var(--color-grey-600), 1);
   box-shadow: 0 0 0 1px rgba(var(--color-grey-200), 1) inset,
     var(--box-inset-shadow-m);
