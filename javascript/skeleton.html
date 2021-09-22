@@ -5,15 +5,17 @@ title: Ariato
 <header>
   <h1>skeleton</h1>
   <pre><p><span class="badge is-warning">JS</span> ariato.js</p></pre>
+  <p class="is-large">
+    Ariato comes with a tiny JavaScript skeleton which runs its components. 
+    It is ultra lightweight since there are less than 100 lines of JavaScript with no dependencies. 
+    Of course you can use it for your own application if you want to avoid other heavy JavaScript frameworks. 
+    It works with simple plain old JavaScript and standard HTML.
+  </p>
 </header>
 
 <section>
   <header>Hello world example</header>
   <div>
-    <p>
-      Ariato comes with a tiny JavaScript skeleton which runs its components. It is ultra lightweight since there are less than 100 lines of JavaScript with no dependencies. Of course you can use it for your own application if you want to avoid other heavy JavaScript frameworks. It works with simple plain old JavaScript and standard HTML. Here is a simple hello world example to give you a quick introduction.
-    </p>
-
     <div id="javascript-hello-world">
       <div data-ariato="HelloWorld">
         <input type="text" data-role="nameInput" value="world !" />
@@ -33,15 +35,16 @@ title: Ariato
         }
       </script>
     </div>
-    <p>
-      There are only 3 things to know that will be detailed below : controllers, events and roles.
-    </p>
   </div>
   <aside>
     <pre class="language-markup"><code data-code-example="javascript-hello-world"></code></pre>
   </aside>
 </section>
-
+<header>
+  <p class="is-large">
+    There are only 3 things to know that will be detailed below : controllers, events and roles.
+  </p>
+</header>
 <section>
   <header>Controllers</header>
   <div>
@@ -120,9 +123,9 @@ title: Ariato
     </p>
 
     <div id="javascript-roles">
-      <div data-ariato="Ariato.LazyNode" data-url="">
+      <div data-ariato="Ariato.LazyNode" data-url="/javascript/lazy_node_content">
         Loading ...
-      </form>
+      </div>
     </div>
   </div>
   <aside>
