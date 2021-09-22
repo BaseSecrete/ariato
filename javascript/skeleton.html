@@ -1,0 +1,141 @@
+---
+layout: default
+title: Ariato
+---
+<header>
+  <h1>skeleton</h1>
+  <pre><p><span class="badge is-warning">JS</span> ariato.js</p></pre>
+</header>
+
+<section>
+  <header>Hello world example</header>
+  <div>
+    <p>
+      Ariato comes with a tiny JavaScript skeleton which runs its components. It is ultra lightweight since there are less than 100 lines of JavaScript with no dependencies. Of course you can use it for your own application if you want to avoid other heavy JavaScript frameworks. It works with simple plain old JavaScript and standard HTML. Here is a simple hello world example to give you a quick introduction.
+    </p>
+
+    <div id="javascript-hello-world">
+      <div data-ariato="HelloWorld">
+        <input type="text" data-role="nameInput" value="world !" />
+        <button data-event="click->sayHi">Say hi</button>
+        <p data-role="hiLabel"></p>
+      </div>
+
+      <script>
+        // This function is called for each node with a data-ariato="HelloWorld" attribute
+        HelloWorld = function(node) {
+        }
+
+        // This function is called each time the button
+        // with the attribute data-event="click->sayHi" is clicked
+        HelloWorld.prototype.sayHi = function(event) {
+          this.hiLabel.textContent = "Hello " + this.nameInput.value
+        }
+      </script>
+    </div>
+    <p>
+      There are only 3 things to know that will be detailed below : controllers, events and roles.
+    </p>
+  </div>
+  <aside>
+    <pre class="language-markup"><code data-code-example="javascript-hello-world"></code></pre>
+  </aside>
+</section>
+
+<section>
+  <header>Controllers</header>
+  <div>
+    <p>
+      A controller is a JavaScript function connected to a DOM element. Ariato looks for all the <code>data-ariato="ControllerName"</code> attributes and instanciates the relevant controller.
+      It handles nested names such as <code>data-ariato="Account.Form"</code>. In that case a new object <code>Account.Form</code> is created and receives the DOM element as an argument.
+    </p>
+    <p>
+      The controller is automatically initialized with events and roles that we will discuss in the next sections. Moreover you can access directly to the container element with <code>this.node</code> from the controller.
+    </p>
+    <div id="javascript-controllers">
+      <div data-ariato="Account.User.Form">
+        <!-- ... -->
+      </div>
+
+      <script>
+        Ariato.ControllerExample.Form = function() {
+          console.log("Ariato.ControllerExample is initialized")
+          console.log(this.node) // Output <div data-ariato="Account.User.Form">
+        }
+      </script>
+    </div>
+  </div>
+  <aside>
+    <pre class="language-markup"><code data-code-example="javascript-controllers"></code></pre>
+  </aside>
+</section>
+
+<section>
+  <header>Events</header>
+  <div>
+    <p>
+      Ariato helps you to listen to DOM events via the <code>data-event</code> attribute. It must contain the event name following by an arrow and the function name of the controller. The function is called with the event as the only argument. It's possible to specify as many event/function combinations you need.
+    </p>
+
+    <div id="javascript-events">
+      <div data-ariato="Ariato.EventsExample">
+        <button data-event="click->buttonClicked mouseenter->mouseOverButton mouseleave->mouseOutButton">Button</button>
+      </div>
+
+      <script>
+        Ariato.EventsExample = function() {
+        }
+
+        Ariato.EventsExample.prototype.buttonClicked = function(event) {
+          event.currentTarget.innerText = "Button clicked"
+        }
+
+        Ariato.EventsExample.prototype.mouseOverButton = function(event) {
+          event.currentTarget.innerText = "Mouse enter"
+        }
+
+        Ariato.EventsExample.prototype.mouseOutButton = function(event) {
+          event.currentTarget.innerText = "Mouse leave"
+        }
+      </script>
+    </div>
+  </div>
+  <aside>
+    <pre class="language-markup"><code data-code-example="javascript-events"></code></pre>
+  </aside>
+</section>
+
+<section>
+  <header>Roles</header>
+  <div>
+    <p>
+      Roles help you to access easily to DOM elements from your controller with a nice name instead of a CSS selector.
+      Roles are defined via the <code>data-role="roleName"</code> attribute.
+    </p>
+
+    <p>
+      All roles are stored in arrays into <code>this.roles.roleName</code>.
+      However if there is only 1 occurence of the role, there is the following shortcut to access it : <code>this.roleName</code>.
+      In this example that is the case for saveButton but not for textFields
+    </p>
+
+    <div id="javascript-roles">
+      <form data-ariato="Ariato.RolesExample">
+        <input type="text" data-role="textFields"/>
+        <input type="text" data-role="textFields"/>
+        <input type="submit" value="Button" data-role="saveButton"/>
+      </form>
+      
+      <script>
+        Ariato.RolesExample = function() {
+          this.saveButton // => <input type=submit/>
+          this.roles.saveButton // => [<input type=submit/>]
+          this.roles.textFields // => [<input type=text/> <input type=text/>]
+        }      
+      </script>
+    </div>
+  </div>
+  <aside>
+    <pre class="language-markup"><code data-code-example="javascript-roles"></code></pre>
+  </aside>
+</section>
