@@ -18,7 +18,27 @@ title: Ariato
     <p>The div below is a lazy node. Open the network tab to see the XHR request.</p>
 
     <div id="javascript-lazy-node">
-      <div data-ariato="Ariato.LazyNode" data-url="/javascript/lazy_node_content">
+      <div data-ariato="Ariato.LazyNode" data-url="/javascript/lazy_node_child">
+        Loading ...
+      </div>
+    </div>
+  </div>
+  <aside>
+    <pre class="language-markup"><code data-code-example="javascript-lazy-node"></code></pre>
+  </aside>
+</section>
+
+<section>
+  <header>Lazy node are recursive</header>
+  <div>
+    <p>
+      Once the content of a lazy node is injected into the DOM, Ariato initializes the new elements.
+      That means the lazy node content can contain other Ariato controllers.
+      For the fun, let's nest 2 lazy nodes !
+    </p>
+
+    <div id="javascript-lazy-node">
+      <div data-ariato="Ariato.LazyNode" data-url="/javascript/lazy_node_parent">
         Loading ...
       </div>
     </div>
