@@ -61,10 +61,10 @@ Ariato.Carousel.prototype.keydown = function(event) {
 
 Ariato.Carousel.prototype.clicked = function(event) {
   switch(event.currentTarget.getAttribute("data-carousel")) {
-    case "next":
+    case "previous":
       this.showSlide(this.previousOrLastSlide())
       break
-    case "previous":
+    case "next":
       this.showSlide(this.nextOrFirstSlide())
       break
   }
