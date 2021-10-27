@@ -1,11 +1,13 @@
 /* text selection */
 ::-moz-selection {
   background: rgba(var(--color-blue-100), 1);
+  color: rgba(var(--color-blue-700), 1);
   text-shadow: none;
 }
 
 ::selection {
   background: rgba(var(--color-blue-100), 1);
+  color: rgba(var(--color-blue-700), 1);
   text-shadow: none;
 }
 
