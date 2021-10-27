@@ -22,8 +22,26 @@
 .menubutton > input[type="reset"]:after,
 .menubutton > [role="button"]:after,
 .menubutton > :any-link[role="button"]:after {
-  content: "…";
-  margin-left: var(--space);
+  content: '';
+  margin-left: var(--space-2x);
+  display: block;
+  box-sizing: border-box;
+  width: 0.5em;
+  height: 0.5em;
+  border-bottom: 2px solid;
+  border-right: 2px solid;
+  transform: translateY(-0.1em) rotate(45deg);
+  transition: all 0.2s ease-in-out;
+}
+
+.menubutton > button[aria-expanded="true"]:after,
+.menubutton > button[type="reset"][aria-expanded="true"]:after,
+.menubutton > input[type="submit"][aria-expanded="true"]:after,
+.menubutton > input[type="button"][aria-expanded="true"]:after,
+.menubutton > input[type="reset"][aria-expanded="true"]:after,
+.menubutton > [role="button"][aria-expanded="true"]:after,
+.menubutton > :any-link[role="button"][aria-expanded="true"]:after {
+  transform: translateY(0.1em) rotate(-135deg);
 }
 
 /* menu. see components/menu.scss */

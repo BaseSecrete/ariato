@@ -112,6 +112,20 @@ input[type="reset"] svg,
 
 /* ARIA STATES */
 
+/* menubutton button menu expanded */
+button[aria-expanded="true"],
+button[type="reset"][aria-expanded="true"],
+input[type="submit"][aria-expanded="true"],
+input[type="button"][aria-expanded="true"],
+input[type="reset"][aria-expanded="true"],
+[role="button"][aria-expanded="true"],
+:any-link[role="button"][aria-expanded="true"] {
+  background: rgba(var(--color-grey-00), 1);
+  color: rgba(var(--color-grey-600), 1);
+  box-shadow: 0 0 0 1px rgba(var(--color-grey-200), 1) inset,
+    var(--box-inset-shadow-m);
+}
+
   /* toggle */
 
 button[aria-pressed="true"],
@@ -125,20 +139,6 @@ input[type="reset"][aria-pressed="true"],
   color: rgba(var(--color-blue-600), 1);
   box-shadow: 0 0 0 1px rgba(var(--color-grey-200), 1) inset,
   var(--box-inset-shadow-m);
-}
-
-/* menubutton */
-button[aria-expanded="true"],
-button[type="reset"][aria-expanded="true"],
-input[type="submit"][aria-expanded="true"],
-input[type="button"][aria-expanded="true"],
-input[type="reset"][aria-expanded="true"],
-[role="button"][aria-expanded="true"],
-:any-link[role="button"][aria-expanded="true"] {
-  background: rgba(var(--color-grey-00), 1);
-  color: rgba(var(--color-grey-600), 1);
-  box-shadow: 0 0 0 1px rgba(var(--color-grey-200), 1) inset,
-    var(--box-inset-shadow-m);
 }
 
 /* DISPLAY MODIFIERS */
@@ -164,14 +164,14 @@ input[type="reset"].is-strong,
 [role="button"].is-strong,
 :any-link[role="button"].is-strong {
   background: rgba(var(--color-grey-700), 1);
-  background: var(--gradient-top-grey-50);
+  background: var(--gradient-top-grey-60);
   color: rgba(var(--color-bg), 1);
   box-shadow: 
     0 -1px 1px 0 rgba(var(--color-black), 0.04) inset,
     0 1px 1px 0 rgba(255,255,255, .04) inset,
     var(--box-shadow-m);
 }
- 
+
 button.is-strong:hover,
 button[type="reset"].is-strong:hover,
 input[type="submit"].is-strong:hover,
@@ -186,7 +186,7 @@ input[type="button"].is-strong:active,
 input[type="reset"].is-strong:active,
 [role="button"].is-strong:active {
   background: rgba(var(--color-grey-800), 1);
-  background: var(--gradient-top-grey-60);
+  background: var(--gradient-top-grey-70);
   color: rgba(var(--color-bg), 1);
   box-shadow: 0 -1px 1px 0 rgba(var(--color-black), 0.04) inset,
       0 1px 1px 0 rgba(255,255,255, .04) inset,
