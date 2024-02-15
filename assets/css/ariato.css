@@ -54,3 +54,6 @@
 
 /* Aria states last loaded  */
 {% include_relative ariato/design_tokens/states.css %}
+
+/* vendors */
+{% include_relative ariato/vendors/code-prism.css %}
