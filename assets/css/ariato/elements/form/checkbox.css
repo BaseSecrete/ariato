@@ -10,21 +10,21 @@ fieldset.is-checkbox {
 }
 
 fieldset.is-checkbox legend {
-    display: block;
-    transform: translateY(0);
+  display: block;
+  transform: translateY(0);
 
-    line-height: var(--space-3x);
-    padding: 0;
-    margin: 0;
-    text-align: left;
-    text-transform: uppercase;
-    font-size: var(--font-size-30);
-    font-weight: 400;
-    letter-spacing: 0.1rem;
-    color: rgba(var(--color-grey-500), 1);
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
+  line-height: var(--space-3x);
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  text-transform: uppercase;
+  font-size: var(--font-size-30);
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  color: rgba(var(--color-grey-500), 1);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
 }
 
 fieldset.is-checkbox label,

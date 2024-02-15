@@ -5,17 +5,12 @@
   --font-serif: Athelas, Cambria, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
   --font-mono: SF Mono, Menlo, Consolas, DejaVu Sans Mono, monospace;
 
-  --base-font-size: var(--space-2x);
+  --base-font-size: 1rem;
 
   /****************/ 
   /* font-weight */
 
-  /*--font-weight-100: 100; */
-  /*--font-weight-200: 200; */
-  /*--font-weight-300: 300; */
   --font-weight-400: 400;
-  /*--font-weight-500: 500; */
-  /*--font-weight-600: 600; */
   --font-weight-700: 700;
 
   /****************/

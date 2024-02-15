@@ -5,7 +5,7 @@ input[type="submit"],
 input[type="button"],
 input[type="reset"],
 [role="button"],
-:any-link[role="button"]  {
+:any-link[role="button"] {
   /* Display */
   display: inline-flex;
   width: auto;
@@ -13,7 +13,6 @@ input[type="reset"],
   align-items: center;
   justify-content: center;
   align-self: start;
-  transition: 0.2s all ease-in-out;
   
   /*  shape */
   background-color: transparent;
@@ -57,6 +56,7 @@ input[type="reset"]:active,
   color: rgba(var(--color-grey-800), 1);
   box-shadow: 0 0 0 1px rgba(var(--color-grey-300), 1) inset, 
     var(--box-shadow-s);
+  transition: 0.2s all ease-in-out;
 }
 
 button:focus,
