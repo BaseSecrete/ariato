@@ -36,17 +36,6 @@ tbody tr:hover {
   background: rgba(var(--color-grey-50), 1);
 }
 
-/*
-alternate row bg
-tbody tr:nth-child(even) {
-  background: rgba(var(--color-grey-35), 1);
-}
-
-tbody tr:nth-child(even):hover {
-  background: rgba(var(--color-grey-50), 1);
-}
-*/
-
 td {
   color: rgba(var(--color-grey-500), 1);
   padding: 12px 24px;

@@ -48,9 +48,10 @@
 {% include_relative ariato/components/menu.css %}
 {% include_relative ariato/components/menubutton.css %}
 {% include_relative ariato/components/menubar.css %}
-{% include_relative ariato/components/switch.css %}
+{% include_relative ariato/components/button-switch.css %}
 {% include_relative ariato/components/tab.css %}
 {% include_relative ariato/components/toolbar.css %}
+{% include_relative ariato/components/checkbox-switch.css %}
 
 /* Aria states last loaded  */
 {% include_relative ariato/design_tokens/states.css %}
