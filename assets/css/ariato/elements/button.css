@@ -67,12 +67,12 @@ input[type="reset"],
     &:hover,
     &:active {
       background: rgba(var(--color-danger-500), 1);
-      color: rgba(var(--color-danger-20), 1);
+      color: rgba(var(--color-grey-20), 1);
       box-shadow: 0 0 0 1px rgba(var(--color-danger-600), 1) inset, var(--box-shadow-s);
     }
     &:focus {
       background: rgba(var(--color-danger-500), 1);
-      color: rgba(var(--color-danger-20), 1);
+      color: rgba(var(--color-grey-20), 1);
       outline: 2px solid rgba(var(--color-danger-200), 1);
     }
   }
