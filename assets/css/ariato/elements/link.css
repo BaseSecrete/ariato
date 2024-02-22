@@ -8,11 +8,6 @@ a:any-link:hover {
   color: rgba(var(--color-blue-600), 1);
 }
 
-a:any-link > * + * {
-  margin-left: var(--space);
-  text-decoration: none;
-}
-
 /* external links */
 a:any-link[target="_blank"] { 
   padding-right: 16px;
