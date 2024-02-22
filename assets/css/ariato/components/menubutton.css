@@ -1,124 +1,94 @@
-/* components/menubutton.css */
-
 .menubutton {
   position: relative;
   display: inline-block;
-}
 
-/*  button style. see elements/button.scss */
-.menubutton > button,
-.menubutton > input[type="submit"],
-.menubutton > input[type="button"],
-.menubutton > input[type="reset"],
-.menubutton > [role="button"],
-.menubutton > :any-link[role="button"] {
-  position: relative;
-  margin: 0;
-}
-
-.menubutton > button:after,
-.menubutton > input[type="submit"]:after,
-.menubutton > input[type="button"]:after,
-.menubutton > input[type="reset"]:after,
-.menubutton > [role="button"]:after,
-.menubutton > :any-link[role="button"]:after {
-  content: '';
-  margin-left: var(--space-2x);
-  display: block;
-  box-sizing: border-box;
-  width: 0.5em;
-  height: 0.5em;
-  border-bottom: 2px solid;
-  border-right: 2px solid;
-  transform: translateY(-0.1em) rotate(45deg);
-  transition: all 0.2s ease-in-out;
-}
-
-.menubutton > button[aria-expanded="true"]:after,
-.menubutton > button[type="reset"][aria-expanded="true"]:after,
-.menubutton > input[type="submit"][aria-expanded="true"]:after,
-.menubutton > input[type="button"][aria-expanded="true"]:after,
-.menubutton > input[type="reset"][aria-expanded="true"]:after,
-.menubutton > [role="button"][aria-expanded="true"]:after,
-.menubutton > :any-link[role="button"][aria-expanded="true"]:after {
-  transform: translateY(0.1em) rotate(-135deg);
-}
-
-/* menu. see components/menu.scss */
-.menubutton > [role="menu"] {
-  position: absolute;
-  z-index: 1000;
-  top: var(--space-7x);
-  left: 0;
-  margin: 0;
-  padding: var(--space, 0) 0;
-  border-radius: var(--border-radius-m, 0);
-  width: auto;
-  background: rgba(var(--color-grey-00), 1);
-  box-shadow: var(--box-shadow-l);
-  border: 1px solid rgba(var(--color-grey-50), 1);
-  visibility: hidden;
-  opacity: 0;
-  transition: all .2s cubic-bezier(0,0.1,0.5,1);
-  transform: scaleY(0.833) skewX(2deg);
-  transform-origin: 100% 0%;
-}
-
-.menubutton [aria-expanded="true"]  + [role="menu"],
-.menubutton > [role="menu"]:focus-within {
-  visibility: visible;
-  opacity: 1;
-  top: var(--space-6x);
-  top: var(--space-7x);
-  transform: scaleY(1) skewX(0deg);
-}
-
-.menubutton > [role="menu"]:after,
-.menubutton > [role="menu"]:before {
-  bottom: 100%;
-  left: var(--space-3x);
-  border: solid transparent;
-  content: "";
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
-}
-    
-.menubutton > [role="menu"]:after {
-  border-color: transparent;
-  border-bottom-color: rgba(var(--color-grey-00), 1);
-  border-width: 6px;
-  margin-left: -6px;
-}
-
-.menubutton > [role="menu"]:before {
-  border-color: transparent;
-  border-bottom-color: rgba(var(--color-grey-50), 1);
-  border-width: 8px;
-  margin-left: -8px;
-}
-
-.menubutton > [role="menu"] [role="menuitem"] {
-  display: block;
-  padding: 0px 16px;
-  background: rgba(var(--color-grey-00), 1);
-}
-
-.menubutton > [role="menu"] [role="menuitem"]:hover,
-.menubutton > [role="menu"] [role="menuitem"]:focus {
-  background: rgba(var(--color-grey-50), 1);
-  color: rgba(var(--color-grey-700), 1);
-}
-
-/* position modifiers */
-
-.menubutton > [role="menu"].is-right {
-  left: auto;
-  right: 0;
-}
-
-.menubutton > [role="menu"].is-right:before {
-  right: 24px;
-  left: auto
+  & > button,
+  & > input[type="submit"],
+  & > input[type="button"],
+  & > input[type="reset"],
+  & > [role="button"],
+  & > :any-link[role="button"] {
+    position: relative;
+    margin: 0;
+    &:after {
+      content: '';
+      margin-left: var(--space-2x);
+      display: block;
+      box-sizing: border-box;
+      width: 0.5em;
+      height: 0.5em;
+      border-bottom: 2px solid;
+      border-right: 2px solid;
+      transform: translateY(-0.1em) rotate(45deg);
+      transition: all 0.2s ease-in-out;
+    }
+    &[aria-expanded="true"]:after { transform: translateY(0.1em) rotate(-135deg); }
+  }
+  & > [role="menu"] {
+    position: absolute;
+    z-index: 1000;
+    top: var(--space-7x);
+    left: 0;
+    margin: 0;
+    padding: var(--space, 0) 0;
+    border-radius: var(--border-radius-m, 0);
+    width: auto;
+    background: rgba(var(--color-grey-00), 1);
+    box-shadow: var(--box-shadow-l);
+    border: 1px solid rgba(var(--color-grey-50), 1);
+    visibility: hidden;
+    opacity: 0;
+    transition: all .2s cubic-bezier(0,0.1,0.5,1);
+    transform: scaleY(0.833) skewX(2deg);
+    transform-origin: 100% 0%;
+    &:after,
+    &:before {
+      bottom: 100%;
+      left: var(--space-3x);
+      border: solid transparent;
+      content: "";
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none;
+    }
+    &:after {
+      border-color: transparent;
+      border-bottom-color: rgba(var(--color-grey-00), 1);
+      border-width: 6px;
+      margin-left: -6px;
+    }
+    &:before {
+      border-color: transparent;
+      border-bottom-color: rgba(var(--color-grey-50), 1);
+      border-width: 8px;
+      margin-left: -8px;
+    }
+    & [role="menuitem"] {
+      display: block;
+      padding: 0px 16px;
+      background: rgba(var(--color-grey-00), 1);
+      &:hover,
+      &:focus {
+        background: rgba(var(--color-grey-50), 1);
+        color: rgba(var(--color-grey-700), 1);
+      }
+    }
+    &.is-right {
+      left: auto;
+      right: 0;
+      &:before {
+        right: 24px;
+        left: auto
+      }
+    }
+  }
+  & [aria-expanded="true"]  + [role="menu"],
+  & > [role="menu"]:focus-within {
+    visibility: visible;
+    opacity: 1;
+    top: var(--space-6x);
+    top: var(--space-7x);
+    transform: scaleY(1) skewX(0deg);
+  }
 }

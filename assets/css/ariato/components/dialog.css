@@ -1,7 +1,3 @@
-/* components/dialog.css */
-
-/* Backdrop */
-
 .dialog-backdrop {
   height: 100vh;
   width: 100%;
@@ -11,21 +7,13 @@
   background: rgba(var(--color-grey-300), .7);
   z-index: var(--z-40, 90);
   animation: backdrop 0.1s cubic-bezier(0.165, 0.840, 0.440, 1.000);
-
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  background: rgba(var(--color-grey-300), .7);
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
-@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
-  .dialog-backdrop {
-    -webkit-backdrop-filter: blur(4px);
-    backdrop-filter: blur(4px);
-    background: rgba(var(--color-grey-300), .7);
-  }
-}
-
-/* Modale */
 
 [role="dialog"],
 [role="alertdialog"] {
@@ -39,38 +27,30 @@
   max-height: 100vh;
   overflow-y: auto;
   animation: modale 0.5s cubic-bezier(0.165, 0.840, 0.440, 1.000);
-}
-  
-[role="dialog"] > header,
-[role="alertdialog"] > header {
-  width: calc(100% + var(--space-6x));
-  display: flex;
-  align-items: center;
-  border-radius: var(--border-radius-m, 0) var(--border-radius-m, 0) 0 0;
-  margin: calc(var(--space-3x) * -1) calc(var(--space-3x) * -1) calc(var(--space-3x) * 1);
-  padding: calc(var(--space) * 1.5 - 1px) calc(var(--space-3x)  - 1px) calc(var(--space) * 1.5 - 1px);
-  border-bottom: 1px solid rgba(var(--color-grey-50), 1);
-  color: rgba(var(--color-grey-500), 1);
-}
 
-[role="dialog"] > header button,
-[role="alertdialog"] > header button {
-  margin-left: auto;
-}
+  & > header {
+    width: calc(100% + var(--space-6x));
+    display: flex;
+    align-items: center;
+    border-radius: var(--border-radius-m, 0) var(--border-radius-m, 0) 0 0;
+    margin: calc(var(--space-3x) * -1) calc(var(--space-3x) * -1) calc(var(--space-3x) * 1);
+    padding: calc(var(--space) * 1.5 - 1px) calc(var(--space-3x)  - 1px) calc(var(--space) * 1.5 - 1px);
+    border-bottom: 1px solid rgba(var(--color-grey-50), 1);
+    color: rgba(var(--color-grey-500), 1);
 
-[role="dialog"] > footer,
-[role="alertdialog"] > footer {
-  background: rgba(var(--color-grey-50), 1);
-  width: calc(100% + var(--space-6x));
-  border-radius: 0 0 var(--border-radius-m, 0) var(--border-radius-m, 0);
-  margin: var(--space-3x) calc(var(--space-3x) * -1) calc(var(--space-3x) * -1);
-  padding: calc(var(--space) * 1.5 - 1px) calc(var(--space-3x)  - 1px) calc(var(--space) * 1.5 - 1px);
-  border-top: 1px solid rgba(var(--color-grey-50), 1);
-}
+    & button { margin-left: auto; }
+  }
 
-@media screen and (min-width: 640px) {
-  [role="dialog"],
-  [role="alertdialog"] {
+  > footer {
+    background: rgba(var(--color-grey-50), 1);
+    width: calc(100% + var(--space-6x));
+    border-radius: 0 0 var(--border-radius-m, 0) var(--border-radius-m, 0);
+    margin: var(--space-3x) calc(var(--space-3x) * -1) calc(var(--space-3x) * -1);
+    padding: calc(var(--space) * 1.5 - 1px) calc(var(--space-3x)  - 1px) calc(var(--space) * 1.5 - 1px);
+    border-top: 1px solid rgba(var(--color-grey-50), 1);
+  }
+
+  @media screen and (min-width: 640px) {
     min-width: 640px;
     min-height: auto;
     box-shadow: var(--box-shadow-l);

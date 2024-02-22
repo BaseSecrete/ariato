@@ -1,77 +1,55 @@
-/* components/carousel.css */
-
 .carousel {
   display: static;
+
+  & nav {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    height: calc(var(--space) * 6);
+    display: block;
+    & [role="group"] {
+      display: inline-flex;
+      flex-direction: row;
+      margin: 0 auto;
+      width: auto;
+      &  > * {
+        border-radius: 0;
+        margin: auto 0 0;
+      }
+      & > *:first-child { border-radius: var(--border-radius-m, 0) 0 0 var(--border-radius-m, 0); }
+      & > *:last-child { border-radius: 0 var(--border-radius-m, 0) var(--border-radius-m, 0) 0; }
+    }
+  }
 }
-
-/* navigation */
-
-.carousel nav {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  text-align: center;
-  height: calc(var(--space) * 6);
-  display: block;
-}
-
-.carousel nav [role="group"] {
-  display: inline-flex;
-  flex-direction: row;
-  margin: 0 auto;
-  width: auto;
-}
-
-.carousel nav [role="group"] > * {
-  border-radius: 0;
-  margin: auto 0 0;
-}
-
-.carousel nav [role="group"] > *:first-child {
-  border-radius: var(--border-radius-m, 0) 0 0 var(--border-radius-m, 0);
-}
-
-.carousel nav [role="group"] > *:last-child {
-  border-radius: 0 var(--border-radius-m, 0) var(--border-radius-m, 0) 0;
-}
-
-
-/* slides container */
 
 .carousel__body {
   width: 100%;
   border-radius: 0 0 var(--border-radius-m, 0) var(--border-radius-m, 0);
 }
 
-/* slide */
-
 [role="group"][aria-roledescription="slide"] {
   display: none;
   width: 100%;
-}
-
-[role="group"][aria-roledescription="slide"][aria-current="slide"] {
-  display: block;
+  &[aria-current="slide"] { display: block; }
 }
 
 .slide__image {
   margin: 0;
   padding: 0;
   width: 100%;
-}
-
-.slide__image a {
+  & a {
     margin: 0;
     padding: 0;
-}
-
-.slide__image a img {
-  margin: 0;
-  padding: 0;
-  display: block;
-  overflow: hidden;
-  max-height: 100%;
-  max-width: 100%;
+    & img {
+      margin: 0;
+      padding: 0;
+      display: block;
+      overflow: hidden;
+      max-height: 100%;
+      max-width: 100%;
+    }
+  }
 }
 
 .slide__body {
@@ -79,8 +57,5 @@
   padding: var(--space-2x);
   width: 100%; 
   text-align: center;
-}
-
-.slide__body p {
-  max-width: 100%;
+  & p { max-width: 100%; }
 }

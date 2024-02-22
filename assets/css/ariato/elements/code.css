@@ -18,10 +18,10 @@ code {
 
 pre {
   padding: calc(var(--space) * 1 - 1px) 0 calc(var(--space) * 2 + 1px);
-}
-  
-pre p { 
-  padding: 0 0 var(--space-3x);
-  font-family: inherit;
-  font-size: inherit;
+
+  & p { 
+    padding: 0 0 var(--space-3x);
+    font-family: inherit;
+    font-size: inherit;
+  }
 }

@@ -30,7 +30,6 @@
 {% include_relative ariato/elements/image.css %}
 {% include_relative ariato/elements/link.css %}
 {% include_relative ariato/elements/list.css %}
-{% include_relative ariato/elements/media.css %}
 {% include_relative ariato/elements/table.css %}
 
 /*  components   */

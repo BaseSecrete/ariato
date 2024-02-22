@@ -1,17 +1,8 @@
-/* FORMS */
 form {
   overflow: visible;
+  & > * + * { margin-top: var(--space-3x, 1em); }
+  & *[hidden] { margin: 0; }
 }
-
-form > * + * {
-  margin-top: var(--space-3x, 1em);
-}
-
-form *[hidden] {
-  margin: 0;
-}
-
-/* FIELDSET */
 
 fieldset {
   padding: 0 var(--space-3x) var(--space-3x);
@@ -20,10 +11,7 @@ fieldset {
   min-width: auto;
   display: block;
   overflow: visible;
-}
-
-fieldset > * + * {
-  margin-top: var(--space-3x, 1em);
+  & > * + * { margin-top: var(--space-3x, 1em); }
 }
 
 legend {
@@ -42,14 +30,12 @@ label {
   letter-spacing: 0.1rem;
   color: rgba(var(--color-grey-500), 1);
   -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-}
 
-label .badge,
-label small {
-  text-transform: none;
-  letter-spacing: 0;
+  & .badge,
+  & small {
+    text-transform: none;
+    letter-spacing: 0; 
+  }
 }
 
 input,
@@ -62,113 +48,67 @@ output {
   min-height: var(--space-5x);
   padding: calc(var(--space) - 1px) calc(var(--space-2x) - 1px);
   margin: 0;
-  
-  /* border */
   border: 1px solid rgba(var(--color-grey-50), 1);
   border-radius: var(--border-radius-s, 0);
   outline: 0 none;
   box-shadow: var(--box-inset-shadow-s);
-
-  /* text */
   color: rgba(var(--color-grey-600), 1);
   font-family: inherit;
   font-size: var(--base-font-size);
   line-height: var(--space-3x);
+
+  &:focus {
+    outline: 0 none;
+    border-color: rgba(var(--color-blue-400), 1);
+    box-shadow: 0 0 0 2px rgba(var(--color-blue-200), 1), var(--box-shadow-s);
+    &:not(:focus-visible) { outline: none; }
+  }
+
+  &[disabled] {
+    border-color: rgba(var(--color-grey-100), 1);
+    color: rgba(var(--color-bg), 1);
+    background-color: rgba(var(--color-grey-100), 1);
+    box-shadow: none;
+    cursor: not-allowed;
+    opacity: 1;
+  }
+
+  &[readonly] {
+    border: 1px dashed rgba(var(--color-grey-200), 1);
+    cursor: not-allowed;
+    color: rgba(var(--color-grey-500), 1);
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  &:-internal-autofill-selected {
+    font-size: var(--base-font-size);
+    background-color: rgba(var(--color-green-100), 1) !important;
+  }
+
+  &:-webkit-autofill {  
+    &:focus,
+    &:hover {
+      border-color:rgba(var(--color-blue-200), 1);
+      font-size: var(--base-font-size);
+      -webkit-text-fill-color:rgba(var(--color-blue-700), 1);
+      -webkit-box-shadow: 0 0 0px 1000px rgba(var(--color-blue-100), 1) inset;
+      box-shadow: 0 0 0px 1000px rgba(var(--color-blue-100), 1) inset;
+      transition: background-color 5000s ease-in-out 0s;
+    }
+  }
+
+  label + & { margin-top: 0; }
 }
 
-input:focus,
-select:focus,
-textarea:focus,
-output:focus {
-  outline: 0 none;
-  border-color: rgba(var(--color-blue-400), 1);
-  box-shadow: 
-    0 0 0 2px rgba(var(--color-blue-200), 1),
-    var(--box-shadow-s);
-}
-
-input:focus:not(:focus-visible),
-select:focus:not(:focus-visible),
-textarea:focus:not(:focus-visible),
-output:focus:not(:focus-visible) { 
-  outline: none;
-}
-
-input[disabled],
-select[disabled],
-textarea[disabled],
-output[disabled] {
-  border-color: rgba(var(--color-grey-100), 1);
-  color: rgba(var(--color-bg), 1);
-  background-color: rgba(var(--color-grey-100), 1);
-  box-shadow: none;
-  cursor: not-allowed;
-  opacity: 1;
-}
-
-input[readonly],
-select[readonly],
-textarea[readonly],
-output[readonly] {
-  border: 1px dashed rgba(var(--color-grey-200), 1);
-  cursor: not-allowed;
-  color: rgba(var(--color-grey-500), 1);
-  background-color: transparent;
-  box-shadow: 0 0 0 0;
-}
-
-input:-internal-autofill-selected,
-select:-internal-autofill-selected,
-textarea:-internal-autofill-selected,
-output:-internal-autofill-selected {
-  font-size: var(--base-font-size);
-  background-color: rgba(var(--color-green-100), 1) !important;
-}
-
-label + input,
-label + textarea,
-label + select,
-label + output {
-  margin-top: 0;
-}
-
-
-/* Change Autocomplete styles in Chrome*/
-input:-webkit-autofill,
-input:-webkit-autofill:hover, 
-input:-webkit-autofill:focus,
-textarea:-webkit-autofill,
-textarea:-webkit-autofill:hover,
-textarea:-webkit-autofill:focus,
-select:-webkit-autofill,
-select:-webkit-autofill:hover,
-select:-webkit-autofill:focus {
-  border-color:rgba(var(--color-blue-200), 1);
-  font-size: var(--base-font-size);
-  -webkit-text-fill-color:rgba(var(--color-blue-700), 1);
-  -webkit-box-shadow: 0 0 0px 1000px rgba(var(--color-blue-100), 1) inset;
-  box-shadow: 0 0 0px 1000px rgba(var(--color-blue-100), 1) inset;
-  transition: background-color 5000s ease-in-out 0s;
-}
-
-::placeholder {
-  color: rgba(var(--color-grey-300), 1);
-}
-
-/**************************************************/
-/* textarea */
-/**************************************************/
+::placeholder { color: rgba(var(--color-grey-300), 1); }
 
 textarea,
 select[multiple] {
   min-height: calc(var(--space) * 11);
 }
 
-textarea {
-  resize: vertical;
-}
-
-/* special inputs */
+textarea { resize: vertical; }
 
 input[type="file"],
 input[type="date"],
@@ -186,21 +126,11 @@ input[type="number"] {
 input[type="date"]::-webkit-calendar-picker-indicator,
 input[type="time"]::-webkit-calendar-picker-indicator {
   opacity: .8;
-}
-
-.theme-dark {
-  input[type="date"]::-webkit-calendar-picker-indicator,
-  input[type="time"]::-webkit-calendar-picker-indicator {
-    filter: invert(0.5);
- }
+  .theme-dark & { filter: invert(0.5); }
 }
 
 input[type="color"] {
   max-width: var(--space-5x);
   padding: 0;
   position: relative;
-}
-
-input[type="search"] {
-  -webkit-appearance: none;
 }

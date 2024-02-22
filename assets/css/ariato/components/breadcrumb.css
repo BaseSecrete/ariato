@@ -1,25 +1,22 @@
-/* components/breadcrumb.css */
-
-.breadcrumb ol {
-  margin: 0;
-  padding-left: 0;
-  list-style: none;
-}
-
-.breadcrumb li {
-  display: inline;
-}
-
-.breadcrumb li + li::before {
-  content: '';
-  display: inline-block;
-  margin: 0 var(--space);
-  transform: rotate(20deg);
-  border-right: 1px solid rgba(var(--color-grey-400), 1);
-  height: 0.75em;
-}
-
-.breadcrumb li:last-child {
-  color: rgba(var(--color-grey-700), 1);
-  font-weight: var(--font-weight-700);
+.breadcrumb {
+  & ol {
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+  }
+  & li { 
+    display: inline;
+    & + li::before {
+      content: '';
+      display: inline-block;
+      margin: 0 var(--space);
+      transform: rotate(20deg);
+      border-right: 1px solid rgba(var(--color-grey-400), 1);
+      height: 0.75em;
+    }
+    &:last-child {
+      color: rgba(var(--color-grey-700), 1);
+      font-weight: var(--font-weight-700);
+    }
+  }
 }

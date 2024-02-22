@@ -1,94 +1,81 @@
-/* components/menubar.css */
-
 ul[role="menubar"] {
   display: flex;
   align-items: center;
   margin: 0;
   padding: 0;
   list-style: none;
+  & > li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+  }
+  & [role="separator"] {
+    padding-top: 0.15em;
+    background-position: center;
+    background-repeat: repeat-x;
+  }
+  & :any-link[role="menuitem"]{
+    &:not(.button) {
+      display: block;
+      padding: var(--space);
+      white-space: nowrap;
+    }
+    &[aria-haspopup="true"] { 
+      padding-right: 24px;
+      &:after {
+        grid-area: select; 
+        content: "";
+        width: var(--space);
+        height: var(--space-1-2);
+        position: absolute;
+        right: var(--space);
+        top: 20px;
+        background-color: rgba(var(--color-grey-400), 1);
+        clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+      }
+    }
+  }
+  & ul[role="menu"] {
+    display: none;
+    position: absolute;
+    z-index: 1000;
+    top: var(--space-5x);
+    left: var(--space);
+    margin: 0;
+    min-width: 180px;
+    padding: var(--space) 0;
+    border-radius: var(--border-radius-m, 0);
+    width: auto;
+    background: rgba(var(--color-grey-20), 1);
+    box-shadow: var(--box-shadow-m, none);
+    border: 1px solid rgba(var(--color-grey-50), 1);
+  
+    &:before {
+      content: "";
+      position: absolute;
+      bottom: 100%;
+      left: var(--space-3x);
+      margin-left: -6px;
+      border-width: 6px;
+      border-style: solid;
+      border-color: transparent transparent rgba(var(--color-grey-50), 1) transparent;
+    }
+    & li :any-link[role="menuitem"] {
+      display: block;
+      padding: 0 var(--space-2x);
+      background: rgba(var(--color-grey-20), 1);
+      &:hover,
+      &:focus {
+        background: rgba(var(--color-grey-50), 1);
+      }
+    }
+  }
+  & :any-link[role="menuitem"][aria-haspopup="true"]:hover ~ ul[role="menu"],
+  & ul[role="menu"]:hover {
+    display: block;
+  }
 }
 
-/* 1s level list item */
-ul[role="menubar"] > li {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  position: relative;
-}
 
-/* 1st level separator */
-ul[role="menubar"] [role="separator"] {
-  padding-top: 0.15em;
-  background-position: center;
-  background-repeat: repeat-x;
-}
 
-ul[role="menubar"] :any-link[role="menuitem"]:not(.button) {
-  display: block;
-  padding: var(--space);
-  white-space: nowrap;
-}
-
-/* 1st level menuitem link with submenu */
-ul[role="menubar"] :any-link[role="menuitem"][aria-haspopup="true"] { 
-  padding-right: 24px;
-}
-
-ul[role="menubar"] :any-link[role="menuitem"][aria-haspopup="true"]:after {
-  grid-area: select; 
-  content: "";
-  width: var(--space);
-  height: var(--space-1-2);
-  position: absolute;
-  right: var(--space);
-  top: 20px;
-  background-color: rgba(var(--color-grey-400), 1);
-  clip-path: polygon(100% 0%, 0 0%, 50% 100%);
-}
-
-/* SUBMENU
-  menu.scss
-
-  hidden submenu */
-ul[role="menubar"] ul[role="menu"] {
-  display: none;
-  position: absolute;
-  z-index: 1000;
-  top: var(--space-5x);
-  left: var(--space);
-  margin: 0;
-  min-width: 180px;
-  padding: var(--space) 0;
-  border-radius: var(--border-radius-m, 0);
-  width: auto;
-  background: rgba(var(--color-grey-20), 1);
-  box-shadow: var(--box-shadow-m, none);
-  border: 1px solid rgba(var(--color-grey-50), 1);
-}
-
-ul[role="menubar"] ul[role="menu"]:before {
-  content: "";
-  position: absolute;
-  bottom: 100%;
-  left: var(--space-3x);
-  margin-left: -6px;
-  border-width: 6px;
-  border-style: solid;
-  border-color: transparent transparent rgba(var(--color-grey-50), 1) transparent;
-}
-
-ul[role="menubar"] ul[role="menu"] li :any-link[role="menuitem"] {
-  display: block;
-  padding: 0 var(--space-2x);
-  background: rgba(var(--color-grey-20), 1);
-}
-
-ul[role="menubar"] ul[role="menu"] li :any-link[role="menuitem"] :hover,
-ul[role="menubar"] ul[role="menu"] li :any-link[role="menuitem"] :focus {
-  background: rgba(var(--color-grey-50), 1);
-}
-
-ul[role="menubar"] :any-link[role="menuitem"][aria-haspopup="true"]:hover ~ ul[role="menu"],
-ul[role="menubar"] ul[role="menu"]:hover {
-  display: block;
-}

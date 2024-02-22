@@ -3,8 +3,8 @@ input[type="submit"],
 input[type="button"],
 input[type="reset"],
 [role="button"],
-:any-link[role="button"] {
-  /* Display */
+:any-link[role="button"],
+.button {
   display: inline-flex;
   gap: var(--space);
   width: auto;
@@ -12,20 +12,14 @@ input[type="reset"],
   align-items: center;
   justify-content: center;
   align-self: start;
-  
-  /*  shape */
   background-color: transparent;
   min-height: var(--space-5x);
   margin: 0;
   padding: var(--space) calc(var(--space) * 2);
-
-  /*  border */
   border: none;
   border-radius: var(--border-radius-s, 0);
   box-shadow: 0 0 0 1px rgba(var(--color-grey-200), 1) inset, var(--box-shadow-s);
   outline: 0;
-
-  /* text */
   color: rgba(var(--color-grey-700), 1);
   font: inherit;
   font-family: inherit;

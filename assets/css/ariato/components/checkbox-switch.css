@@ -1,31 +1,25 @@
-/* switch style checkbox */
 input[type='checkbox'].is-switch {
   width: 32px;
   border-radius: 11px;
   background: rgba(var(--color-bg), 1);
-}
 
-input[type='checkbox'].is-switch:after {
-  opacity: 1;
-  left: 2px;
-  top: 2px;
-  border-radius: 50%;
-  width: 10px;
-  height: 10px;
-  background: rgba(var(--color-grey-300), 1);
-  transform: translateX(var(--x, 0));
-  border: 0;
-}
-
-input[type='checkbox'].is-switch:checked {
-  background: rgba(var(--color-blue-500), 1);
-  --x: var(--space-2x);
-}
-
-input[type='checkbox'].is-switch:checked:after {
-  background: rgba(var(--color-blue-20), 1);
-}
-
-input[type='checkbox'].is-switch:disabled:not(:checked) {
-  background: rgba(var(--color-grey-200), 1);
+  &::after {
+    opacity: 1;
+    left: 2px;
+    top: 2px;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    background: rgba(var(--color-grey-300), 1);
+    transform: translateX(var(--x, 0));
+    border: 0;
+  }
+  &:checked {
+    background: rgba(var(--color-blue-500), 1);
+    --x: var(--space-2x);
+    &::after {
+      background: rgba(var(--color-blue-20), 1);
+    }
+  }
+  &:disabled:not(:checked) { background: rgba(var(--color-grey-200), 1); }
 }
