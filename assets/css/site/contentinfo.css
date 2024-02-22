@@ -1,5 +1,3 @@
-/* site footer only one per page max 
-   implicit role contentinfo */
 body > footer { 
   display: flex;
   align-items: center;

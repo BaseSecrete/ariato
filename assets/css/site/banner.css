@@ -1,4 +1,4 @@
-body > header { /* role is implicit and unnecessary for <header> at the <body> level */
+body > header {
   box-shadow: 0 1px 0 0 rgba(var(--color-grey-50), 1), var(--box-shadow-s);
   display: grid;
   place-items: stretch;
@@ -13,19 +13,18 @@ body > header { /* role is implicit and unnecessary for <header> at the <body> l
   & .logo {
     display: flex;
     align-items: center;
+    gap: var(--space);
     color: rgba(var(--color-grey-500), 1);
     font-family: var(--font-sans);
     font-size: var(--font-size-50);
     font-weight: 700;
     text-decoration: none;
-
     & svg {
       height: var(--space-3x);
       width: var(--space-3x);
       fill: currentColor;
       stroke-width: 0;
     }
-
     &:hover { color: rgba(var(--color-blue-500), 1); }
   }
   & nav[aria-label="site"] {
