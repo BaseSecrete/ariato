@@ -81,7 +81,7 @@ body {
 .guidelines {
   background-color: rgba(var(--color-bg), 1);
   background-image: linear-gradient(
-    rgba(var(--color-red-50), 1) 1px,
+    rgba(var(--color-danger-50), 1) 1px,
     transparent 1px
   );
   background-size: 100% var(--space);

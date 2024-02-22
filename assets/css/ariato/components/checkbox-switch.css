@@ -15,10 +15,10 @@ input[type='checkbox'].is-switch {
     border: 0;
   }
   &:checked {
-    background: rgba(var(--color-blue-500), 1);
+    background: rgba(var(--color-info-500), 1);
     --x: var(--space-2x);
     &::after {
-      background: rgba(var(--color-blue-20), 1);
+      background: rgba(var(--color-info-100), 1);
     }
   }
   &:disabled:not(:checked) { background: rgba(var(--color-grey-200), 1); }

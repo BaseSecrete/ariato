@@ -39,43 +39,43 @@
   }
 
   &.is-info {
-    background: rgba(var(--color-blue-50), 1);
-    color: rgba(var(--color-blue-600), 1);
-    border-color: rgba(var(--color-blue-100), 1);
-    border-left-color: rgba(var(--color-blue-400), 1);
+    background: rgba(var(--color-info-50), 1);
+    color: rgba(var(--color-info-600), 1);
+    border-color: rgba(var(--color-info-100), 1);
+    border-left-color: rgba(var(--color-info-400), 1);
 
-    & :any-link:hover { color: rgba(var(--color-blue-700), 1); }
-    & > svg { stroke: rgba(var(--color-blue-500), 1); }
+    & :any-link:hover { color: rgba(var(--color-info-700), 1); }
+    & > svg { stroke: rgba(var(--color-info-500), 1); }
   }
 
   &.is-success {
-    background: rgba(var(--color-green-50), 1);
-    color: rgba(var(--color-green-600), 1);
-    border-color: rgba(var(--color-green-100), 1);
-    border-left-color: rgba(var(--color-green-400), 1);
+    background: rgba(var(--color-success-50), 1);
+    color: rgba(var(--color-success-600), 1);
+    border-color: rgba(var(--color-success-100), 1);
+    border-left-color: rgba(var(--color-success-400), 1);
 
-    & :any-link:hover { color: rgba(var(--color-green-700), 1); }
-    & > svg { stroke: rgba(var(--color-green-500), 1); }
+    & :any-link:hover { color: rgba(var(--color-success-700), 1); }
+    & > svg { stroke: rgba(var(--color-success-500), 1); }
   }
 
   &.is-error {
-    background: rgba(var(--color-red-50), 1);
-    color: rgba(var(--color-red-600), 1);
-    border-color: rgba(var(--color-red-100), 1);
-    border-left-color: rgba(var(--color-red-400), 1);
+    background: rgba(var(--color-danger-50), 1);
+    color: rgba(var(--color-danger-600), 1);
+    border-color: rgba(var(--color-danger-100), 1);
+    border-left-color: rgba(var(--color-danger-400), 1);
 
-    & :any-link:hover { color: rgba(var(--color-red-700), 1); }
-    & > svg { stroke: rgba(var(--color-red-500), 1); }
+    & :any-link:hover { color: rgba(var(--color-danger-700), 1); }
+    & > svg { stroke: rgba(var(--color-danger-500), 1); }
   }
 
   &.is-warning {
-    background: rgba(var(--color-yellow-50), 1);
-    color: rgba(var(--color-yellow-600), 1);
-    border-color: rgba(var(--color-yellow-100), 1);
-    border-left-color: rgba(var(--color-yellow-400), 1);
+    background: rgba(var(--color-warning-50), 1);
+    color: rgba(var(--color-warning-600), 1);
+    border-color: rgba(var(--color-warning-100), 1);
+    border-left-color: rgba(var(--color-warning-400), 1);
 
-    & :any-link:hover { color: rgba(var(--color-yellow-700), 1); }
-    & > svg { stroke: rgba(var(--color-yellow-500), 1); }
+    & :any-link:hover { color: rgba(var(--color-warning-700), 1); }
+    & > svg { stroke: rgba(var(--color-warning-500), 1); }
   }
 
   * + & { margin-top: var(--space-3x); }

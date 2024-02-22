@@ -9,17 +9,17 @@
   &:hover { box-shadow: 0 0 0 1px rgba(var(--color-grey-300), 1) inset, var(--box-shadow-s); }
   &:focus {
     color: rgba(var(--color-grey-700), 1);
-    outline: 2px solid rgba(var(--color-blue-200), 1);
+    outline: 2px solid rgba(var(--color-info-200), 1);
   }
 
   &[aria-pressed="true"] {
     & .slider {
-      background: rgba(var(--color-blue-100), 1);
-      box-shadow: 0 0 0 1px rgba(var(--color-blue-300), 1);
+      background: rgba(var(--color-info-100), 1);
+      box-shadow: 0 0 0 1px rgba(var(--color-info-300), 1);
 
       &::before {
         transform: translateX(var(--space-2x));
-        background-color: rgba(var(--color-blue-600), 1);
+        background-color: rgba(var(--color-info-600), 1);
       }
     }
   }

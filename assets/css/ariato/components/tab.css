@@ -18,7 +18,7 @@
   &[aria-selected="true"]:hover {
     cursor: default;
     background: rgba(var(--color-bg), 1);
-    color: rgba(var(--color-blue-600), 1);
+    color: rgba(var(--color-info-600), 1);
     box-shadow:
       0 2px 0 0 rgba(var(--color-bg), 1),
       0 0 0 1px rgba(var(--color-grey-100), 1);

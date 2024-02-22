@@ -21,7 +21,7 @@ pre[class*="language-"] {
   &::-moz-selection,
   &::selection {
     text-shadow: none;
-    background: rgba(var(--color-blue-100), 1);
+    background: rgba(var(--color-info-100), 1);
   }
 
   @media print { text-shadow: none; }
@@ -66,10 +66,10 @@ pre[class*="language-"] {
   &.constant,
   &.symbol,
   &.deleted {
-    color: rgba(var(--color-red-500), 1);
+    color: rgba(var(--color-danger-500), 1);
   }
 
-  &.constant { color: rgba(var(--color-yellow-500), 1); }
+  &.constant { color: rgba(var(--color-warning-500), 1); }
  
   &.selector,
   &.attr-name,
@@ -80,7 +80,7 @@ pre[class*="language-"] {
     color: rgba(var(--color-cyan-500), 1);
   }
 
-  &.attr-name { color: rgba(var(--color-blue-500), 1); }
+  &.attr-name { color: rgba(var(--color-info-500), 1); }
  
   &.operator,
   &.entity,
@@ -104,13 +104,13 @@ pre[class*="language-"] {
  
   &.function,
   &.class-name {
-    color: rgba(var(--color-blue-500), 1);
+    color: rgba(var(--color-info-500), 1);
   }
  
   &.regex,
   &.important,
   &.variable {
-    color: rgba(var(--color-yellow-500), 1);
+    color: rgba(var(--color-warning-500), 1);
   }
  
   &.important,

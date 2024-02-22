@@ -1,7 +1,7 @@
 ::-moz-selection,
 ::selection {
-  background: rgba(var(--color-blue-100), 1);
-  color: rgba(var(--color-blue-700), 1);
+  background: rgba(var(--color-info-100), 1);
+  color: rgba(var(--color-info-700), 1);
   text-shadow: none;
 }
 
@@ -116,7 +116,7 @@ blockquote {
   & q,
   & p {
     display: block;
-    color: rgba(var(--color-red-500), 1); 
+    color: rgba(var(--color-danger-500), 1); 
   }
   & * + *,
   & + * { margin-top: var(--space-3x); }
@@ -158,8 +158,8 @@ kbd {
 q { font-style: italic; }
 
 mark {
-  background-color: rgba(var(--color-yellow-200), 1);
-  color: rgba(var(--color-yellow-600), 1);
+  background-color: rgba(var(--color-warning-200), 1);
+  color: rgba(var(--color-warning-600), 1);
 }
 
 details {

@@ -8,8 +8,7 @@ meter {
   border: 1px solid rgba(var(--color-grey-200), 1);
   box-shadow: var(--box-inset-shadow-s);
   border-radius: var(--border-radius-s);
-  -moz-appearance: none;
-  -webkit-appearance: none; /* Reset appearance */
+  appearance: none;
   margin: calc(var(--space-2x) - 4px) 0 2px;
   position: relative;
   display: block;
@@ -35,35 +34,35 @@ meter::-webkit-meter-bar {
 
 meter::-webkit-meter-optimum-value {
   -webkit-transition: width .5s;
-  background: rgba(var(--color-green-500), 1);
+  background: rgba(var(--color-success-500), 1);
   border-radius: var(--border-radius-s);
 }
 
 meter::-webkit-meter-suboptimum-value {
   -webkit-transition: width .5s;
-  background: rgba(var(--color-yellow-500), 1);
+  background: rgba(var(--color-warning-500), 1);
   border-radius: var(--border-radius-s);
 }
 
 meter::-webkit-meter-even-less-good-value {
   -webkit-transition: width .5s;
-  background: rgba(var(--color-red-500), 1);
+  background: rgba(var(--color-danger-500), 1);
   border-radius: var(--border-radius-s);
 }
 
 meter::-moz-meter-bar {
   border-radius: var(--border-radius-s);
-  background: rgba(var(--color-green-500), 1);
+  background: rgba(var(--color-success-500), 1);
 }
 
 meter::-moz-meter-optimum {
-  background: rgba(var(--color-green-500), 1);
+  background: rgba(var(--color-success-500), 1);
 }
 
 meter::-moz-meter-sub-optimum {
-  background: rgba(var(--color-yellow-500), 1);
+  background: rgba(var(--color-warning-500), 1);
 }
 
 meter::-moz-meter-sub-sub-optimum {
-  background: rgba(var(--color-red-500), 1);
+  background: rgba(var(--color-danger-500), 1);
 }

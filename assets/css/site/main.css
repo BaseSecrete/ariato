@@ -33,11 +33,11 @@ main > header picture:before {
   height: 100%;
   width: 100%;
   background-image: conic-gradient(
-    rgba(var(--color-blue-500), 1),
-    rgba(var(--color-green-500), 1),
-    rgba(var(--color-yellow-500), 1),
-    rgba(var(--color-red-500), 1),
-    rgba(var(--color-blue-500), 1)
+    rgba(var(--color-info-500), 1),
+    rgba(var(--color-success-500), 1),
+    rgba(var(--color-warning-500), 1),
+    rgba(var(--color-danger-500), 1),
+    rgba(var(--color-info-500), 1)
   );
   -webkit-filter: blur(var(--space-6x));
   filter: blur(var(--space-6x));

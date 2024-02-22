@@ -42,7 +42,7 @@ input[type="reset"],
   }
 
   &:focus {
-    outline: 2px solid rgba(var(--color-blue-200), 1);
+    outline: 2px solid rgba(var(--color-info-200), 1);
     border: 0;
     color: rgba(var(--color-grey-900), 1);
     z-index: 1;
@@ -62,18 +62,18 @@ input[type="reset"],
 
   &[type="reset"],
   &.is-reset {
-    color: rgba(var(--color-red-500), 1);
+    color: rgba(var(--color-danger-500), 1);
 
     &:hover,
     &:active {
-      background: rgba(var(--color-red-500), 1);
-      color: rgba(var(--color-red-20), 1);
-      box-shadow: 0 0 0 1px rgba(var(--color-red-600), 1) inset, var(--box-shadow-s);
+      background: rgba(var(--color-danger-500), 1);
+      color: rgba(var(--color-danger-20), 1);
+      box-shadow: 0 0 0 1px rgba(var(--color-danger-600), 1) inset, var(--box-shadow-s);
     }
     &:focus {
-      background: rgba(var(--color-red-500), 1);
-      color: rgba(var(--color-red-20), 1);
-      outline: 2px solid rgba(var(--color-red-200), 1);
+      background: rgba(var(--color-danger-500), 1);
+      color: rgba(var(--color-danger-20), 1);
+      outline: 2px solid rgba(var(--color-danger-200), 1);
     }
   }
 
@@ -85,7 +85,7 @@ input[type="reset"],
 
   &[aria-pressed="true"] {
     background: rgba(var(--color-grey-100), 1);
-    color: rgba(var(--color-blue-600), 1);
+    color: rgba(var(--color-info-600), 1);
     box-shadow: 0 0 0 1px rgba(var(--color-grey-200), 1) inset, var(--box-inset-shadow-m);
   }
 

@@ -21,22 +21,22 @@
   }
 
   &.is-info {
-    background: rgba(var(--color-blue-50), 1);
-    color: rgba(var(--color-blue-700), 1);
+    background: rgba(var(--color-info-50), 1);
+    color: rgba(var(--color-info-700), 1);
   }
 
   &.is-success {
-    background: rgba(var(--color-green-50), 1);
-    color: rgba(var(--color-green-700), 1);
+    background: rgba(var(--color-success-50), 1);
+    color: rgba(var(--color-success-700), 1);
   }
 
   &.is-error {
-    background: rgba(var(--color-red-50), 1);
-    color: rgba(var(--color-red-700), 1);
+    background: rgba(var(--color-danger-50), 1);
+    color: rgba(var(--color-danger-700), 1);
   }
 
   &.is-warning {
-    background: rgba(var(--color-yellow-50), 1);
-    color: rgba(var(--color-yellow-700), 1);
+    background: rgba(var(--color-warning-50), 1);
+    color: rgba(var(--color-warning-700), 1);
   }
 }
