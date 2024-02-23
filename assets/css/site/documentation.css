@@ -37,10 +37,6 @@ body {
   }
 }
 
-.colors-bg-container + * {
-  margin-top: var(--space-3x);
-}
-
 .colors-bg-container > div {
   display: flex;
   flex-wrap: wrap;

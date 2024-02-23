@@ -67,15 +67,12 @@ main > section {
 }
 
 main > section > header {
+  background-color: var(--color-grey-20);
   margin: 0;
   width: 100%;
   padding: var(--space-6x) 0;
   color: var(--color-grey-600);
   font-weight: 700;
-
-  display: flex;
-  align-items: center;
-  min-height: var(--space-6x);
   width: calc(100% + var(--space-6x));
   padding: var(--space) var(--space-3x);
   box-shadow: 0 1px 0 0 var(--color-grey-50);
