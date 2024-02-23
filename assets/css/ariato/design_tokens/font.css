@@ -5,32 +5,21 @@
   --font-serif: Athelas, Cambria, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
   --font-mono: SF Mono, Menlo, Consolas, DejaVu Sans Mono, monospace;
 
-  --base-font-size: 1rem;
-
-  /****************/ 
-  /* font-weight */
-
-  --font-weight-400: 400;
-  --font-weight-700: 700;
-
-  /****************/
-  /* modular scale */ 
-  
-  --ratio: 1.2;
-  --font-size-10: calc(var(--base-font-size) / var(--ratio) / var(--ratio) / var(--ratio) / var(--ratio)); /* -4 */
-  --font-size-20: calc(var(--base-font-size) / var(--ratio) / var(--ratio) / var(--ratio)); /* -3 */
-  --font-size-30: calc(var(--base-font-size) / var(--ratio) / var(--ratio)); /* -2 */
-  --font-size-40: calc(var(--base-font-size) / var(--ratio)); /* -1 */
-  --font-size-50: var(--base-font-size);
-  --font-size-60: calc(var(--base-font-size) * var(--ratio)); /* +1 */
-  --font-size-70: calc(var(--base-font-size) * var(--ratio) * var(--ratio)); /* +2 */
-  --font-size-80: calc(var(--base-font-size) * var(--ratio) * var(--ratio) * var(--ratio)); /* +4 */
-  --font-size-90: calc(var(--base-font-size) * var(--ratio) * var(--ratio) * var(--ratio) * var(--ratio)); /* +5 */
-  --font-size-100: calc(var(--base-font-size) * var(--ratio) * var(--ratio) * var(--ratio) * var(--ratio) * var(--ratio)); /* +6 */
-  --font-size-110: calc(var(--base-font-size) * var(--ratio) * var(--ratio) * var(--ratio) * var(--ratio) * var(--ratio) * var(--ratio)); /* +7 */
-  --font-size-120: calc(var(--base-font-size) * var(--ratio) * var(--ratio) * var(--ratio) * var(--ratio) * var(--ratio) * var(--ratio) * var(--ratio)); /* +8 */
-  --font-size-130: calc(var(--base-font-size) * var(--ratio) * var(--ratio) * var(--ratio) * var(--ratio) * var(--ratio) * var(--ratio) * var(--ratio) * var(--ratio)); /* +9 */
-  --font-size-140: calc(var(--base-font-size) * var(--ratio) * var(--ratio) * var(--ratio) * var(--ratio) * var(--ratio) * var(--ratio) * var(--ratio) * var(--ratio) * var(--ratio)); /* +10 */
+  --base-font-size: 16px;
+  --font-size-10: 0.482rem;
+  --font-size-20: 0.579rem;
+  --font-size-30: 0.694rem;
+  --font-size-40: 0.833rem;
+  --font-size-50: 1rem;
+  --font-size-60: 1.2rem;
+  --font-size-70: 1.4rem;
+  --font-size-80: 1.728rem;
+  --font-size-90: 2.074rem;
+  --font-size-100: 2.488rem;
+  --font-size-110: 2.986rem;
+  --font-size-120: 3.583rem;
+  --font-size-130: 4.3rem;
+  --font-size-140: 5.16rem;
 }
 
 html,
@@ -38,8 +27,4 @@ body {
   font-size: var(--base-font-size);
 }
 
-body {
-  font-family: var(--font-sans);
-  font-weight: var(--font-weight-400);
-  line-height: var(--space-3x);
-}
+body { font: 400 var(--font-size-50)/var(--space-3x) var(--font-sans); }

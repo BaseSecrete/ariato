@@ -91,7 +91,7 @@ main > section > aside {
 main > section > aside code[class*="language-"],
 main > section > aside pre[class*="language-"] {
   background: transparent;
-  font-size: calc(var(--base-font-size) / var(--ratio));
+  font-size: var(--font-size-40);
   padding: 8px 0 16px;
 }
 

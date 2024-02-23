@@ -19,8 +19,8 @@ caption {
 
 th {
   text-transform: uppercase;
-  font-weight: var(--font-weight-700);
-  font-size: calc(var(--base-font-size) / var(--ratio) / var(--ratio));
+  font-weight: 700;
+  font-size: var(--font-size-30);
   letter-spacing: 0.03em;
   transform: translateY(2px);
   padding: 12px 24px;

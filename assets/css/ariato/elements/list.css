@@ -21,7 +21,7 @@ dl {
 }
 
 dt {
-  font-weight: var(--font-weight-700);
+  font-weight: 700;
   color: var(--color-grey-700);
 }
 

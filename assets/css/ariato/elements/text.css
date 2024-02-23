@@ -131,7 +131,7 @@ cite {
   font-size: var(--font-size-50);
   font-style: normal;
   line-height: 0;
-  font-weight: var(--font-weight-700);
+  font-weight: 700;
 }
 
 sub,

@@ -15,7 +15,7 @@
     box-shadow: 0 1px 0 0 var(--color-grey-300) inset;
     color: var(--color-grey-700);
     font-size: 1rem;
-    font-weight: var(--font-weight-400);
+    font-weight: 400;
     text-align: left;
 
     &::after {

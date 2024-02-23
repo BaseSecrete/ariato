@@ -11,7 +11,7 @@
   font-size: var(--font-size-50);
   letter-spacing: 0.03em;
   & .menu__title {
-    font-weight: var(--font-weight-700);
+    font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.1em;
     font-size: var(--font-size-30);

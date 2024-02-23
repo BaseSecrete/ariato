@@ -8,7 +8,7 @@
   box-shadow: var(--box-shadow-s);
   color: var(--color-grey-700);
   font-size: var(--font-size-30);
-  font-weight: var(--font-weight-400);
+  font-weight: 400;
   line-height: var(--space-2x);
   text-decoration: none;
 

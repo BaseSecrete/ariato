@@ -115,7 +115,7 @@ pre[class*="language-"] {
  
   &.important,
   &.bold {
-    font-weight: var(--font-weight-700);
+    font-weight: 700;
   }
 
   &.italic { font-style: italic; }
