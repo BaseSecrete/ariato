@@ -1,8 +1,8 @@
 /* PRISM JS */
 code[class*="language-"],
 pre[class*="language-"] {
-  color: rgba(var(--color-grey-500), 1);
-  background: rgba(var(--color-grey-50), 1);
+  color: var(--color-grey-500);
+  background: var(--color-grey-50);
   text-shadow: none;
   font-family: var(--font-mono);
   font-size: 1rem;
@@ -21,7 +21,7 @@ pre[class*="language-"] {
   &::-moz-selection,
   &::selection {
     text-shadow: none;
-    background: rgba(var(--color-info-100), 1);
+    background: var(--color-info-100);
   }
 
   @media print { text-shadow: none; }
@@ -35,7 +35,7 @@ pre[class*="language-"] {
  
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
-  background: rgba(var(--color-grey-50), 1);
+  background: var(--color-grey-50);
   padding: var(--space-3x);
 }
  
@@ -50,12 +50,12 @@ pre[class*="language-"] {
   &.prolog,
   &.doctype,
   &.cdata {
-    color: rgba(var(--color-grey-300), 1);
+    color: var(--color-grey-300);
     font-style: italic;
     opacity: 1;
   }
   
-  &.punctuation { color: rgba(var(--color-grey-400), 1); }
+  &.punctuation { color: var(--color-grey-400); }
  
   &.namespace { opacity: .7; }
  
@@ -66,10 +66,10 @@ pre[class*="language-"] {
   &.constant,
   &.symbol,
   &.deleted {
-    color: rgba(var(--color-danger-500), 1);
+    color: var(--color-danger-500);
   }
 
-  &.constant { color: rgba(var(--color-warning-500), 1); }
+  &.constant { color: var(--color-warning-500); }
  
   &.selector,
   &.attr-name,
@@ -77,40 +77,40 @@ pre[class*="language-"] {
   &.char,
   &.builtin,
   &.inserted {
-    color: rgba(var(--color-cyan-500), 1);
+    color: var(--color-cyan-500);
   }
 
-  &.attr-name { color: rgba(var(--color-info-500), 1); }
+  &.attr-name { color: var(--color-info-500); }
  
   &.operator,
   &.entity,
   &.url,
   .language-css &.string,
   .style &.string {
-    color: rgba(var(--color-grey-500), 1);
+    color: var(--color-grey-500);
     background: transparent;
   }
 
-  &.operator { color: rgba(var(--color-purple-500), 1); }
+  &.operator { color: var(--color-purple-500); }
  
   &.atrule,
   &.keyword {
-    color: rgba(var(--color-fushia-500), 1);
+    color: var(--color-fuschia-500);
   }
 
   &.attr-value {
-    color: rgba(var(--color-cyan-500), 1);
+    color: var(--color-cyan-500);
   }
  
   &.function,
   &.class-name {
-    color: rgba(var(--color-info-500), 1);
+    color: var(--color-info-500);
   }
  
   &.regex,
   &.important,
   &.variable {
-    color: rgba(var(--color-warning-500), 1);
+    color: var(--color-warning-500);
   }
  
   &.important,

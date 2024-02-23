@@ -1,8 +1,8 @@
 a:any-link {
-  color: rgba(var(--color-info-500, inherit), 1);
+  color: var(--color-info-500);
   text-decoration: underline;
 
-  &:hover { color: rgba(var(--color-info-600), 1); }
+  &:hover { color: var(--color-info-600); }
 
   &[target="_blank"] { 
     padding-right: 16px;

@@ -7,7 +7,7 @@ title: Ariato
   <pre><p><span class="badge is-success">CSS</span> design_tokens/color.css</p></pre>
   <p class="is-large">
     <strong><acronym title="Lightness Chroma Hue">LCH</acronym> colors</strong><br>
-    <span style="color: rgba(var(--color-info-500), 1);">All colors</span> <span style="color: rgba(var(--color-danger-500), 1);">with the same value</span> <span style="color: rgba(var(--color-warning-500), 1);">have the same</span> <span style="color: rgba(var(--color-success-500), 1);">perceived contrast</span>.<br/>
+    <span style="color: var(--color-info-500);">All colors</span> <span style="color: var(--color-danger-500);">with the same value</span> <span style="color: var(--color-warning-500);">have the same</span> <span style="color: var(--color-success-500);">perceived contrast</span>.<br/>
     This helps ensuring contrast is WCAG compliant. Any color with value 500 (and more) meets AA guidelines for text, with a contrast > 4.5:1.
   </p>
   <p  class="is-large">
@@ -25,96 +25,92 @@ title: Ariato
 
 <section class="colors-bg-container">
   <div>
-    <div style="background: rgba(var(--color-bg), 1); color:rgba(var(--color-bg), 1);"><header style="background: rgba(var(--color-grey-500), 1);">bg = grey-20</header></div>
-    <div style="background: rgba(var(--color-body), 1); color:rgba(var(--color-body), 1);"><header>body = grey-500</header></div>
-    <div style="background: rgba(var(--color-black), 1); color:rgba(var(--color-black), 1);"><header style="background: rgba(var(--color-grey-500), 1);">black</header></div>
+    <div style="background: var(--color-grey-20); color:var(--color-grey-20);"><header style="background: var(--color-grey-500);">bg = grey-20</header></div>
+    <div style="background: var(--color-grey-500); color:var(--color-grey-500);"><header>body = grey-500</header></div>
+    <div style="background: var(--color-shadow); color:var(--color-shadow);"><header style="background: var(--color-grey-500);">black</header></div>
   </div>
 </section>
 
 <section class="colors-bg-container">
-  <header style="color:rgba(var(--color-grey-500), 1);">colors -500</header>
+  <header style="color:var(--color-grey-500);">colors -500</header>
   <div>
-    <div style="background: rgba(var(--color-info-500), 1); color:rgba(var(--color-info-500), 1);"><header style="background: rgba(var(--color-grey-20), 1);">info <span class="badge is-success">AA</span></div>
-    <div style="background: rgba(var(--color-cyan-500), 1); color:rgba(var(--color-cyan-500), 1);"><header style="background: rgba(var(--color-grey-20), 1);">cyan <span class="badge is-success">AA</span></div>
-    <div style="background: rgba(var(--color-success-500), 1); color:rgba(var(--color-success-500), 1);"><header style="background: rgba(var(--color-grey-20), 1);">success <span class="badge is-success">AA</span></div>
-    <div style="background: rgba(var(--color-warning-500), 1); color:rgba(var(--color-warning-500), 1);"><header style="background: rgba(var(--color-grey-20), 1);">warning <span class="badge is-success">AA</span></div>
-    <div style="background: rgba(var(--color-orange-500), 1); color:rgba(var(--color-orange-500), 1);"><header style="background: rgba(var(--color-grey-20), 1);">orange <span class="badge is-success">AA</span></div>
-    <div style="background: rgba(var(--color-danger-500), 1); color:rgba(var(--color-danger-500), 1);"><header style="background: rgba(var(--color-grey-20), 1);">danger <span class="badge is-success">AA</span></div>
-    <div style="background: rgba(var(--color-fushia-500), 1); color:rgba(var(--color-fushia-500), 1);"><header style="background: rgba(var(--color-grey-20), 1);">fushia <span class="badge is-success">AA</span></div>
-    <div style="background: rgba(var(--color-purple-500), 1); color:rgba(var(--color-purple-500), 1);"><header style="background: rgba(var(--color-grey-20), 1);">purple <span class="badge is-success">AA</span></div>
-    <div style="background: rgba(var(--color-grey-500), 1); color:rgba(var(--color-grey-500), 1);"><header style="background: rgba(var(--color-grey-20), 1);">grey <span class="badge is-success">AA</span></div>
+    <div style="background: var(--color-info-500); color:var(--color-info-500);"><header style="background: var(--color-grey-20);">info <span class="badge is-success">AA</span></div>
+    <div style="background: var(--color-cyan-500); color:var(--color-cyan-500);"><header style="background: var(--color-grey-20);">cyan <span class="badge is-success">AA</span></div>
+    <div style="background: var(--color-success-500); color:var(--color-success-500);"><header style="background: var(--color-grey-20);">success <span class="badge is-success">AA</span></div>
+    <div style="background: var(--color-warning-500); color:var(--color-warning-500);"><header style="background: var(--color-grey-20);">warning <span class="badge is-success">AA</span></div>
+    <div style="background: var(--color-orange-500); color:var(--color-orange-500);"><header style="background: var(--color-grey-20);">orange <span class="badge is-success">AA</span></div>
+    <div style="background: var(--color-danger-500); color:var(--color-danger-500);"><header style="background: var(--color-grey-20);">danger <span class="badge is-success">AA</span></div>
+    <div style="background: var(--color-fuschia-500); color:var(--color-fuschia-500);"><header style="background: var(--color-grey-20);">fushia <span class="badge is-success">AA</span></div>
+    <div style="background: var(--color-purple-500); color:var(--color-purple-500);"><header style="background: var(--color-grey-20);">purple <span class="badge is-success">AA</span></div>
+    <div style="background: var(--color-grey-500); color:var(--color-grey-500);"><header style="background: var(--color-grey-20);">grey <span class="badge is-success">AA</span></div>
  
   </div>
 </section>
 
 <section class="colors-bg-container">
-  <header style="color:rgba(var(--color-grey-500), 1);">grey</header>
+  <header style="color:var(--color-grey-500);">grey</header>
   <div>
-    <div style="background: rgba(var(--color-grey-00), 1); color:rgba(var(--color-grey-00), 1);"><header style="background: rgba(var(--color-grey-500), 1);">00</header></div>
-    <div style="background: rgba(var(--color-grey-20), 1); color:rgba(var(--color-grey-20), 1);"><header style="background: rgba(var(--color-grey-500), 1);">20</header></div>
-    <div style="background: rgba(var(--color-grey-35), 1); color:rgba(var(--color-grey-35), 1);"><header style="background: rgba(var(--color-grey-500), 1);">35</header></div>
-    <div style="background: rgba(var(--color-grey-50), 1); color:rgba(var(--color-grey-50), 1);"><header style="background: rgba(var(--color-grey-500), 1);">50</header></div>
-    <div style="background: rgba(var(--color-grey-100), 1); color:rgba(var(--color-grey-100), 1);"><header style="background: rgba(var(--color-grey-500), 1);">100</header></div>
-    <div style="background: rgba(var(--color-grey-200), 1); color:rgba(var(--color-grey-200), 1);"><header style="background: rgba(var(--color-grey-500), 1);">200</header></div>
-    <div style="background: rgba(var(--color-grey-300), 1); color:rgba(var(--color-grey-300), 1);"><header style="background: rgba(var(--color-grey-500), 1);">300</header></div>
-    <div style="background: rgba(var(--color-grey-400), 1); color:rgba(var(--color-grey-400), 1);"><header>400</header></div>
-    <div style="background: rgba(var(--color-grey-500), 1); color:rgba(var(--color-grey-500), 1);"><header>500 <span class="badge is-success">AA</span></header></div>
-    <div style="background: rgba(var(--color-grey-600), 1); color:rgba(var(--color-grey-600), 1);"><header>600 <span class="badge is-success">AA</span></header></div>
-    <div style="background: rgba(var(--color-grey-700), 1); color:rgba(var(--color-grey-700), 1);"><header>700 <span class="badge is-success">AAA</span></header></div>
-    <div style="background: rgba(var(--color-grey-800), 1); color:rgba(var(--color-grey-800), 1);"><header>800 <span class="badge is-success">AAA</span></header></div>
-    <div style="background: rgba(var(--color-grey-900), 1); color:rgba(var(--color-grey-900), 1);"><header>900 <span class="badge is-success">AAA</span></header></div>
+    <div style="background: var(--color-grey-00); color:var(--color-grey-00);"><header style="background: var(--color-grey-500);">00</header></div>
+    <div style="background: var(--color-grey-20); color:var(--color-grey-20);"><header style="background: var(--color-grey-500);">20</header></div>
+    <div style="background: var(--color-grey-35); color:var(--color-grey-35);"><header style="background: var(--color-grey-500);">35</header></div>
+    <div style="background: var(--color-grey-50); color:var(--color-grey-50);"><header style="background: var(--color-grey-500);">50</header></div>
+    <div style="background: var(--color-grey-100); color:var(--color-grey-100);"><header style="background: var(--color-grey-500);">100</header></div>
+    <div style="background: var(--color-grey-200); color:var(--color-grey-200);"><header style="background: var(--color-grey-500);">200</header></div>
+    <div style="background: var(--color-grey-300); color:var(--color-grey-300);"><header style="background: var(--color-grey-500);">300</header></div>
+    <div style="background: var(--color-grey-400); color:var(--color-grey-400);"><header>400</header></div>
+    <div style="background: var(--color-grey-500); color:var(--color-grey-500);"><header>500 <span class="badge is-success">AA</span></header></div>
+    <div style="background: var(--color-grey-600); color:var(--color-grey-600);"><header>600 <span class="badge is-success">AA</span></header></div>
+    <div style="background: var(--color-grey-700); color:var(--color-grey-700);"><header>700 <span class="badge is-success">AAA</span></header></div>
+    <div style="background: var(--color-grey-800); color:var(--color-grey-800);"><header>800 <span class="badge is-success">AAA</span></header></div>
+    <div style="background: var(--color-grey-900); color:var(--color-grey-900);"><header>900 <span class="badge is-success">AAA</span></header></div>
   </div>
 </section>
 <section class="colors-bg-container">
-  <header style="color:rgba(var(--color-info-500), 1);">info</header>
+  <header style="color:var(--color-info-500);">info</header>
   <div>
-    <div style="background: rgba(var(--color-info-50), 1); color:rgba(var(--color-info-50), 1);"><header style="background: rgba(var(--color-info-500), 1);">50</header></div>
-    <div style="background: rgba(var(--color-info-100), 1); color:rgba(var(--color-info-100), 1);"><header style="background: rgba(var(--color-info-500), 1);">100</header></div>
-    <div style="background: rgba(var(--color-info-200), 1); color:rgba(var(--color-info-200), 1);"><header style="background: rgba(var(--color-info-500), 1);">200</header></div>
-    <div style="background: rgba(var(--color-info-300), 1); color:rgba(var(--color-info-300), 1);"><header style="background: rgba(var(--color-info-500), 1);">300</header></div>
-    <div style="background: rgba(var(--color-info-400), 1); color:rgba(var(--color-info-400), 1);"><header style="background: rgba(var(--color-grey-20), 1);">400</header></div>
-    <div style="background: rgba(var(--color-info-500), 1); color:rgba(var(--color-info-500), 1);"><header style="background: rgba(var(--color-grey-20), 1);">500 <span class="badge is-success">AA</span></header></div>
-    <div style="background: rgba(var(--color-info-600), 1); color:rgba(var(--color-info-600), 1);"><header style="background: rgba(var(--color-grey-20), 1);">600 <span class="badge is-success">AA</span></header></div>
-    <div style="background: rgba(var(--color-info-700), 1); color:rgba(var(--color-info-700), 1);"><header style="background: rgba(var(--color-grey-20), 1);">700 <span class="badge is-success">AAA</span></header></div>
+    <div style="background: var(--color-info-50); color:var(--color-info-50);"><header style="background: var(--color-info-500);">50</header></div>
+    <div style="background: var(--color-info-100); color:var(--color-info-100);"><header style="background: var(--color-info-500);">100</header></div>
+    <div style="background: var(--color-info-200); color:var(--color-info-200);"><header style="background: var(--color-info-500);">200</header></div>
+    <div style="background: var(--color-info-400); color:var(--color-info-400);"><header style="background: var(--color-grey-20);">400</header></div>
+    <div style="background: var(--color-info-500); color:var(--color-info-500);"><header style="background: var(--color-grey-20);">500 <span class="badge is-success">AA</span></header></div>
+    <div style="background: var(--color-info-600); color:var(--color-info-600);"><header style="background: var(--color-grey-20);">600 <span class="badge is-success">AA</span></header></div>
+    <div style="background: var(--color-info-700); color:var(--color-info-700);"><header style="background: var(--color-grey-20);">700 <span class="badge is-success">AAA</span></header></div>
   </div>
 </section>
 <section class="colors-bg-container">
-  <header style="color:rgba(var(--color-success-500), 1);">success</header>
+  <header style="color:var(--color-success-500);">success</header>
   <div>
-    <div style="background: rgba(var(--color-success-50), 1); color:rgba(var(--color-success-50), 1);"><header style="background: rgba(var(--color-success-500), 1);">50</header></div>
-    <div style="background: rgba(var(--color-success-100), 1); color:rgba(var(--color-success-100), 1);"><header style="background: rgba(var(--color-success-500), 1);">100</header></div>
-    <div style="background: rgba(var(--color-success-200), 1); color:rgba(var(--color-success-200), 1);"><header style="background: rgba(var(--color-success-500), 1);">200</header></div>
-    <div style="background: rgba(var(--color-success-300), 1); color:rgba(var(--color-success-300), 1);"><header style="background: rgba(var(--color-success-500), 1);">300</header></div>
-    <div style="background: rgba(var(--color-success-400), 1); color:rgba(var(--color-success-400), 1);"><header style="background: rgba(var(--color-grey-20), 1);">400</header></div>
-    <div style="background: rgba(var(--color-success-500), 1); color:rgba(var(--color-success-500), 1);"><header style="background: rgba(var(--color-grey-20), 1);">500 <span class="badge is-success">AA</span></header></div>
-    <div style="background: rgba(var(--color-success-600), 1); color:rgba(var(--color-success-600), 1);"><header style="background: rgba(var(--color-grey-20), 1);">600 <span class="badge is-success">AA</span></header></div>
-    <div style="background: rgba(var(--color-success-700), 1); color:rgba(var(--color-success-700), 1);"><header style="background: rgba(var(--color-grey-20), 1);">700 <span class="badge is-success">AAA</span></header></div>
+    <div style="background: var(--color-success-50); color:var(--color-success-50);"><header style="background: var(--color-success-500);">50</header></div>
+    <div style="background: var(--color-success-100); color:var(--color-success-100);"><header style="background: var(--color-success-500);">100</header></div>
+    <div style="background: var(--color-success-200); color:var(--color-success-200);"><header style="background: var(--color-success-500);">200</header></div>
+    <div style="background: var(--color-success-400); color:var(--color-success-400);"><header style="background: var(--color-grey-20);">400</header></div>
+    <div style="background: var(--color-success-500); color:var(--color-success-500);"><header style="background: var(--color-grey-20);">500 <span class="badge is-success">AA</span></header></div>
+    <div style="background: var(--color-success-600); color:var(--color-success-600);"><header style="background: var(--color-grey-20);">600 <span class="badge is-success">AA</span></header></div>
+    <div style="background: var(--color-success-700); color:var(--color-success-700);"><header style="background: var(--color-grey-20);">700 <span class="badge is-success">AAA</span></header></div>
   </div>
 </section>
 <section class="colors-bg-container">
-  <header style="color:rgba(var(--color-danger-500), 1);">danger</header>
+  <header style="color:var(--color-danger-500);">danger</header>
   <div>
-    <div style="background: rgba(var(--color-danger-50), 1); color:rgba(var(--color-danger-50), 1);"><header style="background: rgba(var(--color-danger-500), 1);">50</header></div>
-    <div style="background: rgba(var(--color-danger-100), 1); color:rgba(var(--color-danger-100), 1);"><header style="background: rgba(var(--color-danger-500), 1);">100</header></div>
-    <div style="background: rgba(var(--color-danger-200), 1); color:rgba(var(--color-danger-200), 1);"><header style="background: rgba(var(--color-danger-500), 1);">200</header></div>
-    <div style="background: rgba(var(--color-danger-300), 1); color:rgba(var(--color-danger-300), 1);"><header style="background: rgba(var(--color-danger-500), 1);">300</header></div>
-    <div style="background: rgba(var(--color-danger-400), 1); color:rgba(var(--color-danger-400), 1);"><header style="background: rgba(var(--color-grey-20), 1);">400</header></div>
-    <div style="background: rgba(var(--color-danger-500), 1); color:rgba(var(--color-danger-500), 1);"><header style="background: rgba(var(--color-grey-20), 1);">500 <span class="badge is-success">AA</span></header></div>
-    <div style="background: rgba(var(--color-danger-600), 1); color:rgba(var(--color-danger-600), 1);"><header style="background: rgba(var(--color-grey-20), 1);">600 <span class="badge is-success">AA</span></header></div>
-    <div style="background: rgba(var(--color-danger-700), 1); color:rgba(var(--color-danger-700), 1);"><header style="background: rgba(var(--color-grey-20), 1);">700 <span class="badge is-success">AAA</span></header></div>
+    <div style="background: var(--color-danger-50); color:var(--color-danger-50);"><header style="background: var(--color-danger-500);">50</header></div>
+    <div style="background: var(--color-danger-100); color:var(--color-danger-100);"><header style="background: var(--color-danger-500);">100</header></div>
+    <div style="background: var(--color-danger-200); color:var(--color-danger-200);"><header style="background: var(--color-danger-500);">200</header></div>
+    <div style="background: var(--color-danger-400); color:var(--color-danger-400);"><header style="background: var(--color-grey-20);">400</header></div>
+    <div style="background: var(--color-danger-500); color:var(--color-danger-500);"><header style="background: var(--color-grey-20);">500 <span class="badge is-success">AA</span></header></div>
+    <div style="background: var(--color-danger-600); color:var(--color-danger-600);"><header style="background: var(--color-grey-20);">600 <span class="badge is-success">AA</span></header></div>
+    <div style="background: var(--color-danger-700); color:var(--color-danger-700);"><header style="background: var(--color-grey-20);">700 <span class="badge is-success">AAA</span></header></div>
   </div>
 </section>
 <section class="colors-bg-container">
-  <header style="color:rgba(var(--color-warning-500), 1);">warning</header>
+  <header style="color:var(--color-warning-500);">warning</header>
   <div>
-    <div style="background: rgba(var(--color-warning-50), 1); color:rgba(var(--color-warning-50), 1);"><header style="background: rgba(var(--color-warning-500), 1);">50</div>
-    <div style="background: rgba(var(--color-warning-100), 1); color:rgba(var(--color-warning-100), 1);"><header style="background: rgba(var(--color-warning-500), 1);">100</div>
-    <div style="background: rgba(var(--color-warning-200), 1); color:rgba(var(--color-warning-200), 1);"><header style="background: rgba(var(--color-warning-500), 1);">200</div>
-    <div style="background: rgba(var(--color-warning-300), 1); color:rgba(var(--color-warning-300), 1);"><header style="background: rgba(var(--color-warning-500), 1);">300</div>
-    <div style="background: rgba(var(--color-warning-400), 1); color:rgba(var(--color-warning-400), 1);"><header style="background: rgba(var(--color-grey-20), 1);">400</div>
-    <div style="background: rgba(var(--color-warning-500), 1); color:rgba(var(--color-warning-500), 1);"><header style="background: rgba(var(--color-grey-20), 1);">500 <span class="badge is-success">AA</span></div>
-    <div style="background: rgba(var(--color-warning-600), 1); color:rgba(var(--color-warning-600), 1);"><header style="background: rgba(var(--color-grey-20), 1);">600 <span class="badge is-success">AA</span></div>
-    <div style="background: rgba(var(--color-warning-700), 1); color:rgba(var(--color-warning-700), 1);"><header style="background: rgba(var(--color-grey-20), 1);">700 <span class="badge is-success">AAA</span></div>
+    <div style="background: var(--color-warning-50); color:var(--color-warning-50);"><header style="background: var(--color-warning-500);">50</div>
+    <div style="background: var(--color-warning-100); color:var(--color-warning-100);"><header style="background: var(--color-warning-500);">100</div>
+    <div style="background: var(--color-warning-200); color:var(--color-warning-200);"><header style="background: var(--color-warning-500);">200</div>
+    <div style="background: var(--color-warning-400); color:var(--color-warning-400);"><header style="background: var(--color-grey-20);">400</div>
+    <div style="background: var(--color-warning-500); color:var(--color-warning-500);"><header style="background: var(--color-grey-20);">500 <span class="badge is-success">AA</span></div>
+    <div style="background: var(--color-warning-600); color:var(--color-warning-600);"><header style="background: var(--color-grey-20);">600 <span class="badge is-success">AA</span></div>
+    <div style="background: var(--color-warning-700); color:var(--color-warning-700);"><header style="background: var(--color-grey-20);">700 <span class="badge is-success">AAA</span></div>
   </div>
 </section>
 

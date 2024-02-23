@@ -5,9 +5,9 @@ a.avatar {
   position: relative;
   height: var(--space-5x);
   width: var(--space-5x);
-  background: rgba(var(--color-grey-50), 1);
+  background: var(--color-grey-50);
   border-radius: 50%;
-  box-shadow: 0 0 0 var(--space-1-4) rgba(var(--color-bg), 1);
+  box-shadow: 0 0 0 var(--space-1-4) var(--color-bg);
   overflow: hidden;
   text-decoration: none;
   text-align: center;
@@ -19,7 +19,7 @@ a.avatar {
     height: 100%;
     width: 100%;
     border-radius: 50%;
-    box-shadow: 0 1px 2px 0 rgba(var(--color-black), 0.1) inset;
+    box-shadow: 0 1px 2px 0 var(--color-shadow) inset;
   }
 
   & img {

@@ -1,7 +1,7 @@
 code,
 pre {
   font-family: var(--font-mono);
-  color: rgba(var(--color-grey-500), 1);
+  color: var(--color-grey-500);
   font-size: inherit;
   line-height: inherit;
   overflow-y: auto;
@@ -13,7 +13,7 @@ pre {
 }
 
 code {
-  background: rgba(var(--color-grey-50), 1);
+  background: var(--color-grey-50);
 }
 
 pre {

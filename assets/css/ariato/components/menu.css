@@ -2,7 +2,7 @@
 
 [role="menu"] {
   text-align: left;
-  color: rgba(var(--color-grey-500), 1);
+  color: var(--color-grey-500);
   position: relative;
   list-style-type: none;
   margin: 0;
@@ -35,12 +35,12 @@ a[role="menuitem"]:not(.button) {
   margin: 0;
   font-size: inherit;
   text-decoration: none;
-  color: rgba(var(--color-grey-700), 1);
+  color: var(--color-grey-700);
   display: flex;
   align-items: center;
-  &:hover { color: rgba(var(--color-grey-800), 1); }
+  &:hover { color: var(--color-grey-800); }
   &[aria-current="true"] {
-    background: rgba(var(--color-grey-100), 1);
-    color: rgba(var(--color-info-700), 1);
+    background: var(--color-grey-100);
+    color: var(--color-info-700);
   }
 }

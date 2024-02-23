@@ -7,7 +7,7 @@ form {
 fieldset {
   padding: 0 var(--space-3x) var(--space-3x);
   margin-inline: 0;
-  border: 1px solid rgba(var(--color-grey-50), 1);
+  border: 1px solid var(--color-grey-50);
   display: block;
   overflow: visible;
   & > * + * { margin-top: var(--space-3x); }
@@ -27,7 +27,7 @@ label {
   font-size: var(--font-size-30);
   font-weight: 400;
   letter-spacing: 0.1rem;
-  color: rgba(var(--color-grey-500), 1);
+  color: var(--color-grey-500);
   -webkit-user-select: none;
 
   & .badge,
@@ -43,56 +43,56 @@ textarea,
 output {
   display: block;
   width: 100%;
-  background-color: rgba(var(--color-grey-00), 1);
+  background-color: var(--color-grey-00);
   min-height: var(--space-5x);
   padding: calc(var(--space) - 1px) calc(var(--space-2x) - 1px);
   margin: 0;
-  border: 1px solid rgba(var(--color-grey-50), 1);
+  border: 1px solid var(--color-grey-50);
   border-radius: var(--border-radius-s, 0);
   outline: 0 none;
   box-shadow: var(--box-inset-shadow-s);
-  color: rgba(var(--color-grey-600), 1);
+  color: var(--color-grey-600);
   font-family: inherit;
   font-size: var(--base-font-size);
   line-height: var(--space-3x);
 
   &:focus {
     outline: 0 none;
-    border-color: rgba(var(--color-info-400), 1);
-    box-shadow: 0 0 0 2px rgba(var(--color-info-200), 1), var(--box-shadow-s);
+    border-color: var(--color-info-400);
+    box-shadow: 0 0 0 2px var(--color-info-200), var(--box-shadow-s);
     &:not(:focus-visible) { outline: none; }
   }
 
   &[disabled] {
-    border-color: rgba(var(--color-grey-100), 1);
-    color: rgba(var(--color-bg), 1);
-    background-color: rgba(var(--color-grey-100), 1);
+    border-color: var(--color-grey-100);
+    color: var(--color-grey-20);
+    background-color: var(--color-grey-100);
     box-shadow: none;
     cursor: not-allowed;
     opacity: 1;
   }
 
   &[readonly] {
-    border: 1px dashed rgba(var(--color-grey-200), 1);
+    border: 1px dashed var(--color-grey-200);
     cursor: not-allowed;
-    color: rgba(var(--color-grey-500), 1);
+    color: var(--color-grey-500);
     background-color: transparent;
     box-shadow: none;
   }
 
   &:-internal-autofill-selected {
     font-size: var(--base-font-size);
-    background-color: rgba(var(--color-success-100), 1) !important;
+    background-color: var(--color-success-100) !important;
   }
 
   &:-webkit-autofill {  
     &:focus,
     &:hover {
-      border-color:rgba(var(--color-info-200), 1);
+      border-color:var(--color-info-200);
       font-size: var(--base-font-size);
-      -webkit-text-fill-color:rgba(var(--color-info-700), 1);
-      -webkit-box-shadow: 0 0 0px 1000px rgba(var(--color-info-100), 1) inset;
-      box-shadow: 0 0 0px 1000px rgba(var(--color-info-100), 1) inset;
+      -webkit-text-fill-color:var(--color-info-700);
+      -webkit-box-shadow: 0 0 0px 1000px var(--color-info-100) inset;
+      box-shadow: 0 0 0px 1000px var(--color-info-100) inset;
       transition: background-color 5000s ease-in-out 0s;
     }
   }
@@ -100,7 +100,7 @@ output {
   label + & { margin-top: 0; }
 }
 
-::placeholder { color: rgba(var(--color-grey-300), 1); }
+::placeholder { color: var(--color-grey-300); }
 
 textarea,
 select[multiple] {

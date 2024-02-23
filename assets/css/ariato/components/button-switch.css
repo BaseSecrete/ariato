@@ -4,8 +4,8 @@
   display: inline-block;
   width: calc(var(--space-4x) - 2px);
   height: calc(var(--space-2x) - 2px);
-  background-color: rgba(var(--color-grey-00), 0);
-  box-shadow: 0 0 0 1px rgba(var(--color-grey-200), 1),
+  background-color: var(--color-grey-00);
+  box-shadow: 0 0 0 1px var(--color-grey-200),
     var(--box-inset-shadow-s);
   border-radius: var(--space);
   margin-left: var(--space);
@@ -19,7 +19,7 @@
     border-radius: 4px;
     left: 3px;
     bottom: 3px;
-    background-color: rgba(var(--color-grey-300), 1);
+    background-color: var(--color-grey-300);
     box-shadow: var(--box-shadow-m);
     transition: .3s;
   }
@@ -34,18 +34,18 @@
   padding: 0 24px 0 24px;
 
   &:focus {
-    color: rgba(var(--color-grey-700), 1);
-    outline: 2px solid rgba(var(--color-info-200), 1);
+    color: var(--color-grey-700);
+    outline: 2px solid var(--color-info-200);
   }
 
   &[aria-pressed="true"] {
     & .slider {
-      background: rgba(var(--color-info-100), 1);
-      box-shadow: 0 0 0 1px rgba(var(--color-info-200), 1);
+      background: var(--color-info-100);
+      box-shadow: 0 0 0 1px var(--color-info-400);
 
       &::before {
         transform: translateX(var(--space-2x));
-        background-color: rgba(var(--color-info-500), 1);
+        background-color: var(--color-info-500);
       }
     }
   }

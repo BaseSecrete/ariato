@@ -2,56 +2,53 @@
 
 :root,
 :root.theme-light {
-  --gradient-bottom-grey-40: linear-gradient(0deg, rgba(var(--color-grey-300), 1), rgba(var(--color-grey-400), 1));
-  --gradient-bottom-green-40: linear-gradient(0deg, rgba(var(--color-success-300), 1), rgba(var(--color-success-400), 1));
- 
-  --gradient-top-grey-10: linear-gradient(180deg, rgba(var(--color-grey-35), 1), rgba(var(--color-grey-50), 1));
-  --gradient-top-grey-20: linear-gradient(180deg, rgba(var(--color-grey-50), 1), rgba(var(--color-grey-100), 1));
-  --gradient-top-grey-30: linear-gradient(180deg, rgba(var(--color-grey-100), 1), rgba(var(--color-grey-200), 1));
-  
-  --gradient-top-grey-50: linear-gradient(180deg, rgba(var(--color-grey-500), 1), rgba(var(--color-grey-600), 1));
-  --gradient-top-grey-60: linear-gradient(180deg, rgba(var(--color-grey-600), 1), rgba(var(--color-grey-700), 1));
-  --gradient-top-grey-70: linear-gradient(180deg, rgba(var(--color-grey-700), 1), rgba(var(--color-grey-800), 1));
-  --gradient-top-grey-80: linear-gradient(180deg, rgba(var(--color-grey-800), 1), rgba(var(--color-grey-900), 1));
+  --gradient-bottom-grey-40: linear-gradient(0deg, var(--color-grey-300), var(--color-grey-400));
 
-  --gradient-top-primary-50: linear-gradient(180deg, rgba(var(--color-info-500), 1), rgba(var(--color-info-600), 1));
-  --gradient-top-primary-60: linear-gradient(180deg, rgba(var(--color-info-600), 1), rgba(var(--color-info-700), 1));
+  --gradient-top-grey-10: linear-gradient(180deg, var(--color-grey-35), var(--color-grey-50));
+  --gradient-top-grey-20: linear-gradient(180deg, var(--color-grey-50), var(--color-grey-100));
+  --gradient-top-grey-30: linear-gradient(180deg, var(--color-grey-100), var(--color-grey-200));
+  
+  --gradient-top-grey-50: linear-gradient(180deg, var(--color-grey-500), var(--color-grey-600));
+  --gradient-top-grey-60: linear-gradient(180deg, var(--color-grey-600), var(--color-grey-700));
+  --gradient-top-grey-70: linear-gradient(180deg, var(--color-grey-700), var(--color-grey-800));
+  --gradient-top-grey-80: linear-gradient(180deg, var(--color-grey-800), var(--color-grey-900));
+
+  --gradient-top-primary-50: linear-gradient(180deg, var(--color-info-500), var(--color-info-600));
+  --gradient-top-primary-60: linear-gradient(180deg, var(--color-info-600), var(--color-info-700));
 }
 
 :root.theme-dark {
   /* invert angle */
-  --gradient-bottom-grey-40: linear-gradient(0deg, rgba(var(--color-grey-400), 1), rgba(var(--color-grey-300), 1));
-  --gradient-bottom-green-40: linear-gradient(0deg, rgba(var(--color-success-400), 1), rgba(var(--color-success-300), 1));
-  
-  --gradient-top-grey-10: linear-gradient(180deg, rgba(var(--color-grey-50), 1), rgba(var(--color-grey-35), 1));
-  --gradient-top-grey-20: linear-gradient(180deg, rgba(var(--color-grey-100), 1), rgba(var(--color-grey-50), 1));
-  --gradient-top-grey-30: linear-gradient(180deg, rgba(var(--color-grey-200), 1), rgba(var(--color-grey-100), 1));
+  --gradient-bottom-grey-40: linear-gradient(0deg, var(--color-grey-400), var(--color-grey-300));
 
-  --gradient-top-grey-50: linear-gradient(180deg, rgba(var(--color-grey-500), 1), rgba(var(--color-grey-400), 1));
-  --gradient-top-grey-60: linear-gradient(180deg, rgba(var(--color-grey-600), 1), rgba(var(--color-grey-500), 1));
-  --gradient-top-grey-70: linear-gradient(180deg, rgba(var(--color-grey-800), 1), rgba(var(--color-grey-700), 1));
-  --gradient-top-grey-80: linear-gradient(180deg, rgba(var(--color-grey-900), 1), rgba(var(--color-grey-800), 1));
+  --gradient-top-grey-10: linear-gradient(180deg, var(--color-grey-50), var(--color-grey-35));
+  --gradient-top-grey-20: linear-gradient(180deg, var(--color-grey-100), var(--color-grey-50));
+  --gradient-top-grey-30: linear-gradient(180deg, var(--color-grey-200), var(--color-grey-100));
 
-  --gradient-top-primary-50: linear-gradient(180deg, rgba(var(--color-info-500), 1), rgba(var(--color-info-400), 1));
-  --gradient-top-primary-60: linear-gradient(180deg, rgba(var(--color-info-600), 1), rgba(var(--color-info-500), 1));
+  --gradient-top-grey-50: linear-gradient(180deg, var(--color-grey-500), var(--color-grey-400));
+  --gradient-top-grey-60: linear-gradient(180deg, var(--color-grey-600), var(--color-grey-500));
+  --gradient-top-grey-70: linear-gradient(180deg, var(--color-grey-800), var(--color-grey-700));
+  --gradient-top-grey-80: linear-gradient(180deg, var(--color-grey-900), var(--color-grey-800));
+
+  --gradient-top-primary-50: linear-gradient(180deg, var(--color-info-500), var(--color-info-400));
+  --gradient-top-primary-60: linear-gradient(180deg, var(--color-info-600), var(--color-info-500));
 }
 
 @media (prefers-color-scheme: dark) {
   :root:not(.theme-light) {
     /* dark */
-    --gradient-bottom-grey-40: linear-gradient(0deg, rgba(var(--color-grey-400), 1), rgba(var(--color-grey-300), 1));
-    --gradient-bottom-green-40: linear-gradient(0deg, rgba(var(--color-success-400), 1), rgba(var(--color-success-300), 1));
-    
-    --gradient-top-grey-10: linear-gradient(180deg, rgba(var(--color-grey-50), 1), rgba(var(--color-grey-35), 1));
-    --gradient-top-grey-20: linear-gradient(180deg, rgba(var(--color-grey-100), 1), rgba(var(--color-grey-50), 1));
-    --gradient-top-grey-30: linear-gradient(180deg, rgba(var(--color-grey-200), 1), rgba(var(--color-grey-100), 1));
+    --gradient-bottom-grey-40: linear-gradient(0deg, var(--color-grey-400), var(--color-grey-300));
+ 
+    --gradient-top-grey-10: linear-gradient(180deg, var(--color-grey-50), var(--color-grey-35));
+    --gradient-top-grey-20: linear-gradient(180deg, var(--color-grey-100), var(--color-grey-50));
+    --gradient-top-grey-30: linear-gradient(180deg, var(--color-grey-200), var(--color-grey-100));
   
-    --gradient-top-grey-50: linear-gradient(180deg, rgba(var(--color-grey-500), 1), rgba(var(--color-grey-400), 1));
-    --gradient-top-grey-60: linear-gradient(180deg, rgba(var(--color-grey-600), 1), rgba(var(--color-grey-500), 1));
-    --gradient-top-grey-70: linear-gradient(180deg, rgba(var(--color-grey-800), 1), rgba(var(--color-grey-700), 1));
-    --gradient-top-grey-80: linear-gradient(180deg, rgba(var(--color-grey-900), 1), rgba(var(--color-grey-800), 1));
+    --gradient-top-grey-50: linear-gradient(180deg, var(--color-grey-500), var(--color-grey-400));
+    --gradient-top-grey-60: linear-gradient(180deg, var(--color-grey-600), var(--color-grey-500));
+    --gradient-top-grey-70: linear-gradient(180deg, var(--color-grey-800), var(--color-grey-700));
+    --gradient-top-grey-80: linear-gradient(180deg, var(--color-grey-900), var(--color-grey-800));
   
-    --gradient-top-primary-50: linear-gradient(180deg, rgba(var(--color-info-500), 1), rgba(var(--color-info-400), 1));
-    --gradient-top-primary-60: linear-gradient(180deg, rgba(var(--color-info-600), 1), rgba(var(--color-info-500), 1));
+    --gradient-top-primary-50: linear-gradient(180deg, var(--color-info-500), var(--color-info-400));
+    --gradient-top-primary-60: linear-gradient(180deg, var(--color-info-600), var(--color-info-500));
   }
 }

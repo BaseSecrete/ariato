@@ -22,7 +22,7 @@ dl {
 
 dt {
   font-weight: var(--font-weight-700);
-  color: rgba(var(--color-grey-700), 1);
+  color: var(--color-grey-700);
 }
 
 dd {

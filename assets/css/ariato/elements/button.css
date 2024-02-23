@@ -18,9 +18,9 @@ input[type="reset"],
   padding: var(--space) calc(var(--space) * 2);
   border: none;
   border-radius: var(--border-radius-s, 0);
-  box-shadow: 0 0 0 1px rgba(var(--color-grey-200), 1) inset, var(--box-shadow-s);
+  box-shadow: 0 0 0 1px var(--color-grey-200) inset, var(--box-shadow-s);
   outline: 0;
-  color: rgba(var(--color-grey-700), 1);
+  color: var(--color-grey-700);
   font: inherit;
   font-family: inherit;
   font-size: var(--font-size-40);
@@ -36,15 +36,15 @@ input[type="reset"],
 
   &:hover,
   &:active {
-    color: rgba(var(--color-grey-800), 1);
-    box-shadow: 0 0 0 1px rgba(var(--color-grey-300), 1) inset, var(--box-shadow-s);
+    color: var(--color-grey-800);
+    box-shadow: 0 0 0 1px var(--color-grey-300) inset, var(--box-shadow-s);
     transition: 0.2s all ease-in-out;
   }
 
   &:focus {
-    outline: 2px solid rgba(var(--color-info-200), 1);
+    outline: 2px solid var(--color-info-200);
     border: 0;
-    color: rgba(var(--color-grey-900), 1);
+    color: var(--color-grey-900);
     z-index: 1;
     &:not(:focus-visible) { outline: none; }
   }
@@ -62,59 +62,59 @@ input[type="reset"],
 
   &[type="reset"],
   &.is-reset {
-    color: rgba(var(--color-danger-500), 1);
+    color: var(--color-danger-500);
 
     &:hover,
     &:active {
-      background: rgba(var(--color-danger-500), 1);
-      color: rgba(var(--color-grey-20), 1);
-      box-shadow: 0 0 0 1px rgba(var(--color-danger-600), 1) inset, var(--box-shadow-s);
+      background: var(--color-danger-500);
+      color: var(--color-grey-20);
+      box-shadow: 0 0 0 1px var(--color-danger-600) inset, var(--box-shadow-s);
     }
     &:focus {
-      background: rgba(var(--color-danger-500), 1);
-      color: rgba(var(--color-grey-20), 1);
-      outline: 2px solid rgba(var(--color-danger-200), 1);
+      background: var(--color-danger-500);
+      color: var(--color-grey-20);
+      outline: 2px solid var(--color-danger-200);
     }
   }
 
   &[aria-expanded="true"] {
-    background: rgba(var(--color-grey-00), 1);
-    color: rgba(var(--color-grey-600), 1);
-    box-shadow: 0 0 0 1px rgba(var(--color-grey-200), 1) inset, var(--box-inset-shadow-m);
+    background: var(--color-grey-00);
+    color: var(--color-grey-600);
+    box-shadow: 0 0 0 1px var(--color-grey-200) inset, var(--box-inset-shadow-m);
   }
 
   &[aria-pressed="true"] {
-    background: rgba(var(--color-grey-100), 1);
-    color: rgba(var(--color-info-600), 1);
-    box-shadow: 0 0 0 1px rgba(var(--color-grey-200), 1) inset, var(--box-inset-shadow-m);
+    background: var(--color-grey-100);
+    color: var(--color-info-600);
+    box-shadow: 0 0 0 1px var(--color-grey-200) inset, var(--box-inset-shadow-m);
   }
 
   &.is-block { width: 100%; }
 
   &.is-strong {
-    background: rgba(var(--color-grey-700), 1);
+    background: var(--color-grey-700);
     background: var(--gradient-top-grey-60);
-    color: rgba(var(--color-bg), 1);
+    color: var(--color-grey-20);
     box-shadow: 
-      0 -1px 1px 0 rgba(var(--color-black), 0.04) inset,
-      0 1px 1px 0 rgba(255,255,255, .04) inset,
+      0 -1px 1px 0 var(--color-shadow) inset,
+      0 1px 2px 0 var(--color-light) inset,
       var(--box-shadow-m);
 
     &:hover,
     &:active {
-      background: rgba(var(--color-grey-800), 1);
+      background: var(--color-grey-800);
       background: var(--gradient-top-grey-70);
-      color: rgba(var(--color-bg), 1);
-      box-shadow: 0 -1px 1px 0 rgba(var(--color-black), 0.04) inset,
-          0 1px 1px 0 rgba(255,255,255, .04) inset,
+      color: var(--color-grey-20);
+      box-shadow: 0 -1px 1px 0 var(--color-shadow) inset,
+          0 1px 2px 0 var(--color-light) inset,
           var(--box-shadow-m);
     }
-    &:focus { color: rgba(var(--color-bg), 1); }
+    &:focus { color: var(--color-grey-20); }
   }
 
   &.is-link {
     background: transparent;
-    color: rgba(var(--color-grey-500), 1);
+    color: var(--color-grey-500);
     text-decoration: underline;
     border-color: transparent;
     box-shadow: none;
@@ -122,10 +122,10 @@ input[type="reset"],
     &:hover,
     &:active {
       background: transparent;
-      color: rgba(var(--color-grey-700), 1);
+      color: var(--color-grey-700);
       box-shadow: none;
     }
-    &:focus { color: rgba(var(--color-grey-700), 1); }
+    &:focus { color: var(--color-grey-700); }
   }
 
   &.is-icon svg { margin: var(--space-1-2) calc(var(--space) * -0.5); }

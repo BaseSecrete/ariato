@@ -3,7 +3,7 @@ select {
   background-color: transparent;
   margin: 0;
   z-index: 1;
-  box-shadow: 0 0 0 1px rgba(var(--color-grey-200), 1) inset,
+  box-shadow: 0 0 0 1px var(--color-grey-200) inset,
   var(--box-shadow-s);
 
   &::-ms-expand { display: none; }
@@ -13,8 +13,8 @@ select {
     left: -1px;
     right: -1px;
     bottom: -1px;
-    border: 1px solid rgba(var(--color-info-200), 1);
-    box-shadow: 0 0 0 1px rgba(var(--color-info-200), 1) inset,
+    border: 1px solid var(--color-info-200);
+    box-shadow: 0 0 0 1px var(--color-info-200) inset,
     var(--box-shadow-s);
     border-radius: inherit;
   }
@@ -59,5 +59,5 @@ select {
 
 .select--disabled {
   cursor: not-allowed;
-  background-color: rgba(var(--color-grey-200), 1);
+  background-color: var(--color-grey-200);
 }

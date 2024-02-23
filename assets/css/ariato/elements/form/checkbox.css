@@ -15,7 +15,7 @@ fieldset.is-checkbox {
     font-size: var(--font-size-30);
     font-weight: 400;
     letter-spacing: 0.1rem;
-    color: rgba(var(--color-grey-500), 1);
+    color: var(--color-grey-500);
     user-select: none;
   }
 
@@ -49,13 +49,13 @@ input[type="radio"] {
   margin: var(--space-1-2) 0 0;
   padding: 0;
   cursor: pointer;
-  border: 1px solid rgba(var(--color-grey-200), 1);
-  background: rgba(var(--color-bg), 1);
+  border: 1px solid var(--color-grey-200);
+  background: var(--color-grey-20);
   transition: background .3s, border-color .3s, box-shadow .2s;
 
   &[disabled] {
     & + span {
-      color: rgba(var(--color-grey-300), 1);
+      color: var(--color-grey-300);
       display: inline-block;
     }
   }
@@ -71,32 +71,32 @@ input[type="radio"] {
   }
 
   &:checked {
-    background: rgba(var(--color-info-500), 1);
-    border-color: rgba(var(--color-info-200), 1);
+    background: var(--color-info-500);
+    border-color: var(--color-info-200);
     --d-o: .3s;
     --d-t: .6s;
     --d-t-e: cubic-bezier(.2, .85, .32, 1.2);
   }
 
   &:disabled {
-    background: rgba(var(--color-grey-200), 1);
+    background: var(--color-grey-200);
     cursor: not-allowed;
 
     & + label { cursor: not-allowed; }
-    &:checked { border-color: rgba(var(--color-grey-200), 1); }
+    &:checked { border-color: var(--color-grey-200); }
   }
 
   &:hover {
     &:not(:checked) {
       &:not(:disabled) {
-        border-color: rgba(var(--color-grey-300), 1);
+        border-color: var(--color-grey-300);
       }
     }
   }
 
   &:focus {
-    border-color: rgba(var(--color-info-300), 1);
-    box-shadow: 0 0 0 2px rgba(var(--color-info-200), 1);
+    border-color: var(--color-info-200);
+    box-shadow: 0 0 0 2px var(--color-info-200);
   }
 
 }
@@ -108,7 +108,7 @@ input[type='checkbox'] {
   &:after {
     width: 6px;
     height: 10px;
-    border: 2px solid rgba(var(--color-grey-00), 1);
+    border: 2px solid var(--color-grey-00);
     border-top: 0;
     border-left: 0;
     left: 5px;
@@ -130,7 +130,7 @@ input[type='radio'] {
     width: var(--space-2x);
     height: var(--space-2x);
     border-radius: 50%;
-    background: rgba(var(--color-grey-20), 1);
+    background: var(--color-grey-20);
     opacity: 0;
     left: -1px;
     top: -1px;

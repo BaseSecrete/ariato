@@ -33,9 +33,9 @@
     padding: var(--space, 0) 0;
     border-radius: var(--border-radius-m, 0);
     width: auto;
-    background: rgba(var(--color-grey-00), 1);
+    background: var(--color-grey-00);
     box-shadow: var(--box-shadow-l);
-    border: 1px solid rgba(var(--color-grey-50), 1);
+    border: 1px solid var(--color-grey-50);
     visibility: hidden;
     opacity: 0;
     transition: all .2s cubic-bezier(0,0.1,0.5,1);
@@ -54,24 +54,24 @@
     }
     &:after {
       border-color: transparent;
-      border-bottom-color: rgba(var(--color-grey-00), 1);
+      border-bottom-color: var(--color-grey-00);
       border-width: 6px;
       margin-left: -6px;
     }
     &:before {
       border-color: transparent;
-      border-bottom-color: rgba(var(--color-grey-50), 1);
+      border-bottom-color: var(--color-grey-50);
       border-width: 8px;
       margin-left: -8px;
     }
     & [role="menuitem"] {
       display: block;
       padding: 0px 16px;
-      background: rgba(var(--color-grey-00), 1);
+      background: var(--color-grey-00);
       &:hover,
       &:focus {
-        background: rgba(var(--color-grey-50), 1);
-        color: rgba(var(--color-grey-700), 1);
+        background: var(--color-grey-50);
+        color: var(--color-grey-700);
       }
     }
     &.is-right {

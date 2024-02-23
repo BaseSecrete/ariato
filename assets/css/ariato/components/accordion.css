@@ -3,7 +3,7 @@
   padding: 0;
   transition: all ease-in-out 0.3s;
 
-  & > * + * { box-shadow: 0 -1px 0 0 rgba(var(--color-grey-50), 1); }
+  & > * + * { box-shadow: 0 -1px 0 0 var(--color-grey-50); }
 
   & > button:has(+ [role="region"]) {
     display: block;
@@ -12,8 +12,8 @@
     margin: 0;
     background: none;
     border-radius: 0;
-    box-shadow: 0 1px 0 0 rgba(var(--color-grey-300), 1) inset;
-    color: rgba(var(--color-grey-700), 1);
+    box-shadow: 0 1px 0 0 var(--color-grey-300) inset;
+    color: var(--color-grey-700);
     font-size: 1rem;
     font-weight: var(--font-weight-400);
     text-align: left;
@@ -25,7 +25,7 @@
       top: 50%;
       width: 0.5rem;
       height: 0.5rem; 
-      border: solid rgba(var(--color-grey-300), 1);
+      border: solid var(--color-grey-300);
       border-width: 0 2px 2px 0;
       transform: translateY(-60%) rotate(45deg);
       pointer-events: none;
@@ -34,10 +34,10 @@
 
     &:hover,
     &:focus {
-      box-shadow: 0 1px 0 0 rgba(var(--color-grey-300), 1) inset;
+      box-shadow: 0 1px 0 0 var(--color-grey-300) inset;
       background: none;
-      color: rgba(var(--color-grey-900), 1);
-      &::after { border-color: rgba(var(--color-grey-500), 1); }
+      color: var(--color-grey-900);
+      &::after { border-color: var(--color-grey-500); }
     }
 
     &[aria-expanded="false"] {
@@ -47,11 +47,11 @@
 
     &[aria-expanded="true"] {
       background: transparent;
-      box-shadow: 0 1px 0 0 rgba(var(--color-grey-300), 1) inset;
+      box-shadow: 0 1px 0 0 var(--color-grey-300) inset;
       color: inherit;
       &::after {
         transform: translateY(-50%) rotate(-135deg);
-        border-color: rgba(var(--color-grey-500), 1);
+        border-color: var(--color-grey-500);
       }
     }
   }

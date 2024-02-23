@@ -4,12 +4,11 @@
   position: fixed;
   top: 0;
   left: 0;
-  background: rgba(var(--color-grey-300), .7);
+  background: var(--color-backdrop);
   z-index: var(--z-40, 90);
   animation: backdrop 0.1s cubic-bezier(0.165, 0.840, 0.440, 1.000);
   -webkit-backdrop-filter: blur(4px);
   backdrop-filter: blur(4px);
-  background: rgba(var(--color-grey-300), .7);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -19,8 +18,8 @@
 [role="alertdialog"] {
   position: relative;
   padding: var(--space-3x);
-  background-color: rgba(var(--color-bg), 1);
-  border: 1px solid rgba(var(--color-grey-35), 1);
+  background-color: var(--color-grey-20);
+  border: 1px solid var(--color-grey-35);
   border-radius: var(--border-radius-m, 0);
   min-width: 480px;
   max-width: 100%;
@@ -35,26 +34,26 @@
     border-radius: var(--border-radius-m, 0) var(--border-radius-m, 0) 0 0;
     margin: calc(var(--space-3x) * -1) calc(var(--space-3x) * -1) calc(var(--space-3x) * 1);
     padding: calc(var(--space) * 1.5 - 1px) calc(var(--space-3x)  - 1px) calc(var(--space) * 1.5 - 1px);
-    border-bottom: 1px solid rgba(var(--color-grey-50), 1);
-    color: rgba(var(--color-grey-500), 1);
+    border-bottom: 1px solid var(--color-grey-50);
+    color: var(--color-grey-500);
 
     & button { margin-left: auto; }
   }
 
   > footer {
-    background: rgba(var(--color-grey-50), 1);
+    background: var(--color-grey-50);
     width: calc(100% + var(--space-6x));
     border-radius: 0 0 var(--border-radius-m, 0) var(--border-radius-m, 0);
     margin: var(--space-3x) calc(var(--space-3x) * -1) calc(var(--space-3x) * -1);
     padding: calc(var(--space) * 1.5 - 1px) calc(var(--space-3x)  - 1px) calc(var(--space) * 1.5 - 1px);
-    border-top: 1px solid rgba(var(--color-grey-50), 1);
+    border-top: 1px solid var(--color-grey-50);
   }
 
   @media screen and (min-width: 640px) {
     min-width: 640px;
     min-height: auto;
     box-shadow: var(--box-shadow-l);
-    background-color: rgba(var(--color-bg), 1);
+    background-color: var(--color-grey-20);
   }
 }
 

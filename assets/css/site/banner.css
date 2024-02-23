@@ -1,5 +1,5 @@
 body > header {
-  box-shadow: 0 1px 0 0 rgba(var(--color-grey-50), 1), var(--box-shadow-s);
+  box-shadow: 0 1px 0 0 var(--color-grey-50), var(--box-shadow-s);
   display: grid;
   place-items: stretch;
   align-content: start;
@@ -14,7 +14,7 @@ body > header {
     display: flex;
     align-items: center;
     gap: var(--space);
-    color: rgba(var(--color-grey-500), 1);
+    color: var(--color-grey-500);
     font-family: var(--font-sans);
     font-size: var(--font-size-50);
     font-weight: 700;
@@ -25,7 +25,7 @@ body > header {
       fill: currentColor;
       stroke-width: 0;
     }
-    &:hover { color: rgba(var(--color-info-500), 1); }
+    &:hover { color: var(--color-info-500); }
   }
   & nav[aria-label="site"] {
     margin: var(--space-3x) 0 0;

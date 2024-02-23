@@ -1,7 +1,7 @@
 input[type='checkbox'].is-switch {
   width: 32px;
   border-radius: 11px;
-  background: rgba(var(--color-bg), 1);
+  background: var(--color-grey-20);
 
   &::after {
     opacity: 1;
@@ -10,16 +10,16 @@ input[type='checkbox'].is-switch {
     border-radius: 50%;
     width: 10px;
     height: 10px;
-    background: rgba(var(--color-grey-300), 1);
+    background: var(--color-grey-300);
     transform: translateX(var(--x, 0));
     border: 0;
   }
   &:checked {
-    background: rgba(var(--color-info-500), 1);
+    background: var(--color-info-500);
     --x: var(--space-2x);
     &::after {
-      background: rgba(var(--color-grey-00), 1);
+      background: var(--color-grey-00);
     }
   }
-  &:disabled:not(:checked) { background: rgba(var(--color-grey-200), 1); }
+  &:disabled:not(:checked) { background: var(--color-grey-200); }
 }
