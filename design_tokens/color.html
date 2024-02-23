@@ -6,7 +6,7 @@ title: Ariato
   <h1>color</h1>
   <pre><p><span class="badge is-success">CSS</span> design_tokens/color.css</p></pre>
   <p class="is-large">
-    <strong><acronym title="Lightness Chroma Hue">LCH</acronym> colors</strong><br>
+    <strong><acronym title="Lightness Chroma Hue">OKLCH</acronym> colors</strong><br>
     <span style="color: var(--color-info-500);">All colors</span> <span style="color: var(--color-danger-500);">with the same value</span> <span style="color: var(--color-warning-500);">have the same</span> <span style="color: var(--color-success-500);">perceived contrast</span>.<br/>
     This helps ensuring contrast is WCAG compliant. Any color with value 500 (and more) meets AA guidelines for text, with a contrast > 4.5:1.
   </p>
@@ -16,11 +16,6 @@ title: Ariato
     It will automatically switch to dark mode using <code>prefers-color-scheme: dark</code>. 
     You may use the theme switcher component (shown in the banner of this page).
   </p>
-
-  <div role="alert" class="is-warning">
-    {% include svg/icons/alert-circle.svg %}
-    <p><acronym title="Lightness Chroma Hue">LCH</acronym> colors are not yet available in css (coming soon). As a result, color values were converted to rgb, making this is not super convenient to modify at this time.</p>
-  </div>
 </header>
 
 <section class="colors-bg-container">
