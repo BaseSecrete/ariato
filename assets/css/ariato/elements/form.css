@@ -1,17 +1,16 @@
 form {
   overflow: visible;
-  & > * + * { margin-top: var(--space-3x, 1em); }
+  & > * + * { margin-top: var(--space-3x); }
   & *[hidden] { margin: 0; }
 }
 
 fieldset {
   padding: 0 var(--space-3x) var(--space-3x);
-  margin: var(--space) 0 0;
+  margin-inline: 0;
   border: 1px solid rgba(var(--color-grey-50), 1);
-  min-width: auto;
   display: block;
   overflow: visible;
-  & > * + * { margin-top: var(--space-3x, 1em); }
+  & > * + * { margin-top: var(--space-3x); }
 }
 
 legend {

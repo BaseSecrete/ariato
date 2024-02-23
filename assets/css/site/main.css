@@ -8,42 +8,42 @@ main {
 main p {
   max-width: 65ch;
 }
-/* main header */ 
+
 main > header {
   position: relative;
   margin: 0;
   padding: var(--space-6x) 0;
 }
 
-main > header picture { /* landing hero picture */
+main > header picture {
   position: relative;
+  overflow: visible;
   display: block;
   width: 176px;
   float: right;
   margin: 0 0 var(--space-3x) var(--space-3x);
   padding: var(--space-3x);
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: conic-gradient(
+      rgba(var(--color-info-500), 1),
+      rgba(var(--color-success-500), 1),
+      rgba(var(--color-warning-500), 1),
+      rgba(var(--color-danger-500), 1),
+      rgba(var(--color-info-500), 1)
+    );
+    filter: blur(var(--space-6x));
+    z-index: -1;
+    border-radius: 50%;
+  }
 }
 
-main > header picture:before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-image: conic-gradient(
-    rgba(var(--color-info-500), 1),
-    rgba(var(--color-success-500), 1),
-    rgba(var(--color-warning-500), 1),
-    rgba(var(--color-danger-500), 1),
-    rgba(var(--color-info-500), 1)
-  );
-  -webkit-filter: blur(var(--space-6x));
-  filter: blur(var(--space-6x));
-  z-index: -1;
-  border-radius: 50%;
-}
 
 main > header picture svg {
   fill: rgba(var(--color-grey-50), 1);

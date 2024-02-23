@@ -12,13 +12,13 @@ title: Ariato
   <div id="example-toolbar">
     <div role="toolbar" data-ariato="Application.Toolbar">
       <div role="group">
-        <button aria-pressed="false" class="is-icon" data-theme="dark" data-event="click->changeTheme" title="Switch to dark theme">
+        <button aria-pressed="false" class="is-icon" data-ariato="ThemeSwitcher" data-theme="dark" data-event="click->changeTheme" title="Switch to dark theme">
           {% include svg/icons/moon.svg %}
         </button>
-        <button aria-pressed="false" class="is-icon" data-theme="light" data-event="click->changeTheme" title="Switch to light theme">
+        <button aria-pressed="false" class="is-icon" data-ariato="ThemeSwitcher" data-theme="light" data-event="click->changeTheme" title="Switch to light theme">
           {% include svg/icons/sun.svg %}
         </button>
-        <button aria-pressed="true" data-theme="auto" data-event="click->changeTheme" title="Switch automatically to light or drak theme">
+        <button aria-pressed="true" data-theme="auto" data-ariato="ThemeSwitcher" data-event="click->changeTheme" title="Switch automatically to light or dark theme">
           auto
         </button>
       </div>

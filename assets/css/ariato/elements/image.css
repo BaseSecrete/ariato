@@ -22,7 +22,7 @@ picture {
   position: relative;
   overflow: hidden;
 
-  & img { margin: 0 auto; }
+  & img { margin-inline: auto; }
   & svg {
     width: auto;
     height: auto;

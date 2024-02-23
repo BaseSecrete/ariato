@@ -130,7 +130,7 @@ input[type='radio'] {
     width: var(--space-2x);
     height: var(--space-2x);
     border-radius: 50%;
-    background: rgba(var(--color-info-20), 1);
+    background: rgba(var(--color-grey-20), 1);
     opacity: 0;
     left: -1px;
     top: -1px;
