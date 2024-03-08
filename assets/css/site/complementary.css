@@ -1,1 +1,3 @@
-body > aside nav { margin-top: var(--space-3x); }
+body > aside nav {
+  padding: var(--space-3x);
+}

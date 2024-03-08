@@ -17,10 +17,17 @@
     font-size: var(--font-size-30);
     display: inline-block;
     transform: translateY(2px);
-    padding: 0 24px;
+    padding: 0;
   }
   & [role="menu"] {
-    margin: 0 0 var(--space-3x, 1em);
+    margin: 0 0 var(--space-3x);
+    padding: 0;
+  }
+
+  &.is-horizontal {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2x);
     padding: 0;
   }
 }
@@ -31,7 +38,7 @@ li[role="menuitem"] {
 }
 
 a[role="menuitem"]:not(.button) {
-  padding: 0 24px;
+  padding: 0;
   margin: 0;
   font-size: inherit;
   text-decoration: none;
