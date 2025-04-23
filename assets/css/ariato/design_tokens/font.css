@@ -22,9 +22,11 @@
   --font-size-140: 5.16rem;
 }
 
-html,
-body {
+html { 
   font-size: var(--base-font-size);
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
 }
 
 body { font: 400 var(--font-size-50)/var(--space-3x) var(--font-sans); }

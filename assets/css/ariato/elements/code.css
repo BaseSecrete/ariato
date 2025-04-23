@@ -12,9 +12,7 @@ pre {
   margin: 0;
 }
 
-code {
-  background: var(--color-grey-50);
-}
+code { background: var(--color-grey-50); }
 
 pre {
   padding: calc(var(--space) * 1 - 1px) 0 calc(var(--space) * 2 + 1px);

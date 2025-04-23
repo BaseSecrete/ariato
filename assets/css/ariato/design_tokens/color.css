@@ -1,31 +1,31 @@
 :root,
 .theme-light {
   /* Grey scale with fine-grained steps */
-  --color-grey-00: oklch(100% 0 269);    /* Pure white */
-  --color-grey-20: oklch(98% 0.01 269);  /* Subtle white */
-  --color-grey-35: oklch(96% 0.01 269);  /* Background */
-  --color-grey-50: oklch(94% 0.01 269);  /* Light background */
-  --color-grey-100: oklch(92% 0.01 269); /* Subtle borders */
-  --color-grey-200: oklch(85% 0.01 269); /* Dividers */
-  --color-grey-300: oklch(75% 0.02 269); /* Disabled */
-  --color-grey-400: oklch(60% 0.02 269); /* Secondary text */
-  --color-grey-500: oklch(47% 0.02 269); /* Primary text */
-  --color-grey-600: oklch(0.40 0.02 269); /* Emphasis */
-  --color-grey-700: oklch(33% 0.02 269); /* Strong */
-  --color-grey-800: oklch(25% 0.02 269); /* Extra strong */
-  --color-grey-900: oklch(20% 0.02 269); /* Near black */
+  --color-grey-00: oklch(100% 0 269);
+  --color-grey-20: oklch(99% 0.01 269);
+  --color-grey-35: oklch(97% 0.01 269);
+  --color-grey-50: oklch(94% 0.01 269);
+  --color-grey-100: oklch(92% 0.01 269);
+  --color-grey-200: oklch(85% 0.01 269);
+  --color-grey-300: oklch(75% 0.02 269);
+  --color-grey-400: oklch(60% 0.02 269);
+  --color-grey-500: oklch(47% 0.02 269);
+  --color-grey-600: oklch(0.40 0.02 269);
+  --color-grey-700: oklch(33% 0.02 269);
+  --color-grey-800: oklch(25% 0.02 269);
+  --color-grey-900: oklch(20% 0.02 269);
 
   /* Info/Primary with optimized blue hue */
-  --color-info-50: oklch(96% 0.05 265);  /* Lightest */
-  --color-info-100: oklch(92% 0.07 265); /* Very light */
-  --color-info-200: oklch(88% 0.09 265); /* Light */
-  --color-info-400: oklch(65% 0.12 265); /* Medium */
-  --color-info-500: oklch(52% 0.15 265); /* Base */
-  --color-info-600: oklch(45% 0.17 265); /* Dark */
-  --color-info-700: oklch(38% 0.19 265); /* Darker */
+  --color-info-50: oklch(97% 0.03 265);
+  --color-info-100: oklch(92% 0.07 265);
+  --color-info-200: oklch(88% 0.09 265);
+  --color-info-400: oklch(65% 0.12 265);
+  --color-info-500: oklch(52% 0.15 265);
+  --color-info-600: oklch(45% 0.17 265);
+  --color-info-700: oklch(38% 0.19 265);
 
   /* Success with natural green hue */
-  --color-success-50: oklch(96% 0.05 145);
+  --color-success-50: oklch(97% 0.03 145);
   --color-success-100: oklch(92% 0.07 145);
   --color-success-200: oklch(88% 0.09 145);
   --color-success-400: oklch(65% 0.12 145);
@@ -34,7 +34,7 @@
   --color-success-700: oklch(38% 0.19 145);
 
   /* Warning with optimized yellow/orange */
-  --color-warning-50: oklch(96% 0.05 85);
+  --color-warning-50: oklch(97% 0.03 85);
   --color-warning-100: oklch(92% 0.07 85);
   --color-warning-200: oklch(88% 0.09 85);
   --color-warning-400: oklch(65% 0.12 85);
@@ -43,7 +43,7 @@
   --color-warning-700: oklch(38% 0.19 85);
 
   /* Danger with vibrant red */
-  --color-danger-50: oklch(96% 0.05 25);
+  --color-danger-50: oklch(97% 0.03 25);
   --color-danger-100: oklch(92% 0.07 25);
   --color-danger-200: oklch(88% 0.09 25);
   --color-danger-400: oklch(65% 0.12 25);

@@ -9,7 +9,6 @@
 
 {% include_relative ariato/design_tokens/color.css %}
 {% include_relative ariato/design_tokens/font.css %}
-{% include_relative ariato/design_tokens/gradient.css %}
 {% include_relative ariato/design_tokens/shadow.css %}
 {% include_relative ariato/design_tokens/shape.css %}
 {% include_relative ariato/design_tokens/space.css %}

@@ -8,10 +8,10 @@
 
 :root {
   --space: 0.5rem;
-  /* divided */
+
   --space-1-4: calc(var(--space) / 4);
   --space-1-2: calc(var(--space) / 2);
-  /* multiple */
+  
   --space-2x: calc(var(--space) * 2);
   --space-3x: calc(var(--space) * 3);
   --space-4x: calc(var(--space) * 4);
@@ -20,15 +20,6 @@
   --space-7x: calc(var(--space) * 7);
   --space-8x: calc(var(--space) * 8);
   --space-9x: calc(var(--space) * 9);
-  --space-10x: calc(var(--space) * 10);
-  --space-11x: calc(var(--space) * 11);
-  --space-12x: calc(var(--space) * 12);
-  --space-13x: calc(var(--space) * 13);
-  --space-14x: calc(var(--space) * 14);
-
-  --screen-s: 900px;
-  --screen-m: 1200px;
-  --screen-l: 1400px;
 }
 
 .is-flowing > * + * {

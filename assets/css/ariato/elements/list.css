@@ -16,19 +16,13 @@ ul.is-nobullet {
   padding: 0;
 }
 
-dl {
-  padding: 6px 0 18px 0;
-}
+dl { padding: 6px 0 18px 0; }
 
 dt {
   font-weight: 700;
   color: var(--color-grey-700);
 }
 
-dd {
-  margin: 0;
-}
+dd { margin: 0; }
 
-dd + dt {
-  margin-top: var(--space-3x)
-}
+dd + dt { margin-top: var(--space-3x) }

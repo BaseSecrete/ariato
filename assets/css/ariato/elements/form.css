@@ -65,7 +65,7 @@ output {
 
   &[disabled] {
     border-color: var(--color-grey-100);
-    color: var(--color-grey-20);
+    color: var(--color-grey-400);
     background-color: var(--color-grey-100);
     box-shadow: none;
     cursor: not-allowed;

@@ -1,8 +1,6 @@
 /* design_tokens/states.css */
 
-*[hidden=true] { 
-  display: none; 
-}
+*[hidden=true] { display: none; }
 
 /* hide visually but make it available to assistive technology. */
 .sr-only {
