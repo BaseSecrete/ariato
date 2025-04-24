@@ -1,7 +1,4 @@
-/* design_tokens/shape.css */
-
 :root {
-  /* border radius */
   --border-radius-s: calc(var(--space) * 0.25);
   --border-radius-m: var(--space-1-2);
   --border-radius-l: calc(var(--space) * 1);

@@ -1,8 +1,5 @@
-/* design_tokens/states.css */
-
 *[hidden=true] { display: none; }
 
-/* hide visually but make it available to assistive technology. */
 .sr-only {
   border: 0 !important;
   clip: rect(1px, 1px, 1px, 1px) !important;

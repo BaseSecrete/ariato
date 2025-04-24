@@ -1,10 +1,4 @@
-/* design_tokens/motion.css */
-
-html:focus-within {
-  scroll-behavior: smooth;
-}
-
-/* force reduced motion if preference is set */
+html:focus-within { scroll-behavior: smooth; }
 
 @media (prefers-reduced-motion: reduce) {
   *, ::before, ::after {

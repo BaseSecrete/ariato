@@ -1,4 +1,4 @@
-.card {
+:where(.card) {
   background: var(--color-grey-20);
   border: 0;
   border-radius: var(--border-radius-s, 0);
@@ -31,6 +31,7 @@
   & > picture {
     margin: calc(var(--space-3x) * -1) calc(var(--space-3x) * -1) calc(var(--space-3x) * 1);
     width: calc(100% + var(--space-6x));
+    max-width: unset;
   }
 
   & > footer {

@@ -30,7 +30,6 @@ label {
   color: var(--color-grey-500);
   -webkit-user-select: none;
 
-  & .badge,
   & small {
     text-transform: none;
     letter-spacing: 0; 

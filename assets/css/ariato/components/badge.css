@@ -1,4 +1,4 @@
-.badge {
+:where(.badge) {
   display: inline-block;
   height: var(--space-2x);
   padding: 0 var(--space-1-2);
@@ -11,6 +11,8 @@
   font-weight: 400;
   line-height: var(--space-2x);
   text-decoration: none;
+  text-transform: none;
+  letter-spacing: 0;
 
   & > svg {
     width: 12px;

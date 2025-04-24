@@ -2,8 +2,8 @@ code,
 pre {
   font-family: var(--font-mono);
   color: var(--color-grey-500);
-  font-size: inherit;
-  line-height: inherit;
+  font-size: 1em;
+  line-height: 1.5;
   overflow-y: auto;
   word-wrap: normal;
   white-space: pre-wrap;
