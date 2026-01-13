@@ -30,7 +30,6 @@ input[type="reset"],
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  text-shadow: var(--text-shadow-s);
 
   @media screen and (-ms-high-contrast: active) { border: 2px solid currentcolor; }
 
